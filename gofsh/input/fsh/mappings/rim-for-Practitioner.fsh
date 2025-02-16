@@ -1,0 +1,20 @@
+Mapping: rim-for-Practitioner
+Id: rim
+Title: "RIM Mapping"
+Source: Practitioner
+Target: "http://hl7.org/v3"
+* -> "Role"
+* identifier -> "./id"
+* active -> "./statusCode"
+* name -> "./name"
+* telecom -> "./telecom"
+* address -> "./addr"
+* gender -> "./administrativeGender"
+* birthDate -> "./birthTime"
+* photo -> "./subjectOf/ObservationEvent[code=\"photo\"]/value"
+* qualification -> ".playingEntity.playingRole[classCode=QUAL].code"
+* qualification.identifier -> ".playingEntity.playingRole[classCode=QUAL].id"
+* qualification.code -> ".playingEntity.playingRole[classCode=QUAL].code"
+* qualification.period -> ".playingEntity.playingRole[classCode=QUAL].effectiveTime"
+* qualification.issuer -> ".playingEntity.playingRole[classCode=QUAL].scoper"
+* communication -> "./languageCommunication"
