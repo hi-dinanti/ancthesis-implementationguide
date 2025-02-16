@@ -1,2 +1,2 @@
-[Encounter]: StructureDefinition-anc-encounter.html
-[Patient]: StructureDefinition-anc-patient.html
+[AdministrativeCode]: StructureDefinition-AdministrativeCode.html
+[BirthPlace]: StructureDefinition-BirthPlace.html

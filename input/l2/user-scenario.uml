@@ -1,0 +1,33 @@
+// Narratives for patient scenario
+// Aisyah visits a government health center for her first antenatal care (ANC) visit. A physical examination reveals elevated blood pressure, prompting a lab test that confirms proteinuria. 
+// Based on these findings, the nurse diagnoses pre-eclampsia and urgently refers Aisyah to the hospital for further management.
+
+@startuml
+actor Aisyah
+actor Clerk
+actor Nurse
+actor Lab Technician
+actor Hospital
+
+participant "Health Center System" as HCS
+
+Aisyah -> Clerk: Registers for ANC visit
+Clerk -> HCS: Enters Aisyah's demographic details
+HCS -> Clerk: Generates QR code
+Clerk -> Aisyah: Provides QR code for future visits
+
+Aisyah -> Nurse: Provides medical history
+Nurse -> HCS: Records history (Hypertension)
+Nurse -> Aisyah: Conducts physical examination
+Nurse -> HCS: Records elevated BP
+
+Nurse -> Lab Technician: Requests urine test
+Lab Technician -> Aisyah: Conducts proteinuria test
+Lab Technician -> HCS: Records test results
+HCS -> Nurse: Displays proteinuria result
+
+Nurse -> HCS: Diagnoses Pre-eclampsia
+Nurse -> Aisyah: Informs and refers to hospital
+Nurse -> Hospital: Sends referral for urgent management
+
+@enduml

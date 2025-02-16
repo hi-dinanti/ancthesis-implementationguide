@@ -1,6 +1,12 @@
-{
+{ "name": "anc.ig.satusehat",
+  "version": "0.1.0",
+  "type": "fhir.template",
+  "license": "CC0-1.0",
+  "description": "anc ig for satusehat client",
+  "author": "Diana WIjayanti",
+  "canonical": "https://github.com/hi-dinanti/smartanc-satusehat",
+  "base": "fhir.base.template",
   "dependencies": {
-    "hl7.fhir.r4.core": "4.0.1",
     "hl7.fhir.r4.id.core": "0.1.0"
   },
   "fhirVersions": [
