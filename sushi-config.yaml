@@ -12,7 +12,6 @@ releaseLabel: "draft"
 dependencies:
   hl7.fhir.r4.core: 4.0.1
   hl7.fhir.r4.id.core: 0.1.0
-  fhir.org/guides/who/anc-cds: 1.0.0
 
 pages:
   index.md:

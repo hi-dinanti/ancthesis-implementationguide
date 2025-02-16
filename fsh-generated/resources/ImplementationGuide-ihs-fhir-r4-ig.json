@@ -23,16 +23,27 @@
       "version": "0.1.0",
       "uri": "http://fhir.org/packages/hl7.fhir.r4.id.core/ImplementationGuide/hl7.fhir.r4.id.core",
       "id": "hl7_fhir_r4_id_core"
-    },
-    {
-      "packageId": "fhir.org/guides/who/anc-cds",
-      "version": "1.0.0",
-      "uri": "http://fhir.org/packages/fhir.org/guides/who/anc-cds/ImplementationGuide/fhir.org/guides/who/anc-cds",
-      "id": "fhir_org/guides/who/anc_cds"
     }
   ],
   "definition": {
-    "resource": [],
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/anc-encounter"
+        },
+        "description": "An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
+        "exampleBoolean": false,
+        "name": "Encounter"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/anc-patient"
+        },
+        "description": "Demographics and other administrative information about an individual receiving care or other health-related services. For antenatal care related service, patient gender is female.",
+        "exampleBoolean": false,
+        "name": "Patient"
+      }
+    ],
     "page": {
       "nameUrl": "toc.html",
       "title": "Table of Contents",
