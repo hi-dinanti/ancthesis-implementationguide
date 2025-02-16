@@ -1,0 +1,215 @@
+{
+  "Timestamp": "2025-02-11T04:22:53.5204876+00:00",
+  "Files": {
+    "package.json": {
+      "Length": 141,
+      "LastWriteTime": "2025-02-11T04:26:56.870865+00:00",
+      "Hash": "851D63DEFAA8BAFB52D7869BF7687B53"
+    },
+    "project.yaml": {
+      "Length": 20,
+      "LastWriteTime": "2025-02-11T04:22:53.3129298+00:00",
+      "Hash": "42B23FADEA2F80D9D76908D39CD8463A"
+    },
+    "input\\profiles\\core\\structuredefinition-core-coverage.json": {
+      "Length": 29508,
+      "LastWriteTime": "2025-02-11T05:22:36.9341766+00:00",
+      "Hash": "0E3CC9CF61F2325EE91C2A59194390B0"
+    },
+    "input\\profiles\\core\\structuredefinition-core-device.json": {
+      "Length": 33066,
+      "LastWriteTime": "2025-02-11T05:21:52.5177395+00:00",
+      "Hash": "2F4AD288A5F5ABF3EF61AD556B94AB22"
+    },
+    "input\\profiles\\core\\structuredefinition-core-diagnosticreport.json": {
+      "Length": 29997,
+      "LastWriteTime": "2025-02-11T05:37:51.9700762+00:00",
+      "Hash": "F45888BCA328A0D3F26BD875B6A7DB1B"
+    },
+    "input\\profiles\\core\\structuredefinition-core-dosage.json": {
+      "Length": 21913,
+      "LastWriteTime": "2025-02-11T05:37:37.9660462+00:00",
+      "Hash": "A0FDE7668E3CB751BC96DC1AEC2A3D4B"
+    },
+    "input\\profiles\\core\\structuredefinition-core-episodeofcare.json": {
+      "Length": 16097,
+      "LastWriteTime": "2025-02-11T05:34:55.0069423+00:00",
+      "Hash": "275DA6804B3C37DC246AE5413950DB92"
+    },
+    "input\\profiles\\core\\structuredefinition-core-healthcareservice.json": {
+      "Length": 28991,
+      "LastWriteTime": "2025-02-11T05:18:39.7952418+00:00",
+      "Hash": "88CFD1D423D81CECB99F1994140846A6"
+    },
+    "input\\profiles\\core\\structuredefinition-core-immunization.json": {
+      "Length": 42045,
+      "LastWriteTime": "2025-02-11T05:35:12.2310751+00:00",
+      "Hash": "435DB98D3FE2B2002424FD453276B6B6"
+    },
+    "input\\profiles\\core\\structuredefinition-core-location.json": {
+      "Length": 22382,
+      "LastWriteTime": "2025-02-11T05:35:27.5263997+00:00",
+      "Hash": "01CD8B2C5B09116D4D7BCB4C7136D5FB"
+    },
+    "input\\profiles\\core\\structuredefinition-core-medication.json": {
+      "Length": 17847,
+      "LastWriteTime": "2025-02-11T05:35:38.8612701+00:00",
+      "Hash": "FB0C2A12085C3F5C36A854BFD9BF0F11"
+    },
+    "input\\profiles\\core\\structuredefinition-core-medicationadministration.json": {
+      "Length": 35409,
+      "LastWriteTime": "2025-02-11T05:35:59.2483348+00:00",
+      "Hash": "4ADD01EB4BA8E7C635F3D2BD721DEB92"
+    },
+    "input\\profiles\\core\\structuredefinition-core-medicationdispense.json": {
+      "Length": 36606,
+      "LastWriteTime": "2025-02-11T05:36:18.9362109+00:00",
+      "Hash": "CC6C7D20647C3E5B903980E621E769B3"
+    },
+    "input\\profiles\\core\\structuredefinition-core-medicationrequest.json": {
+      "Length": 54876,
+      "LastWriteTime": "2025-02-11T05:36:37.1652026+00:00",
+      "Hash": "2BC48CFBF9FCA0E6398E84B5B45E7343"
+    },
+    "input\\profiles\\core\\structuredefinition-core-medicationstatement.json": {
+      "Length": 27391,
+      "LastWriteTime": "2025-02-11T05:36:49.3574404+00:00",
+      "Hash": "177B616DD72D4118C830D026199687FD"
+    },
+    "input\\profiles\\core\\structuredefinition-core-observation.json": {
+      "Length": 67889,
+      "LastWriteTime": "2025-02-11T05:07:56.8340586+00:00",
+      "Hash": "DE5DD812EE56083A30EDBA23E9A58F78"
+    },
+    "input\\profiles\\core\\structuredefinition-core-organization.json": {
+      "Length": 19693,
+      "LastWriteTime": "2025-02-11T05:37:18.0643296+00:00",
+      "Hash": "50BA716E8D8993DB833EF1FAA4E4DD11"
+    },
+    "input\\profiles\\core\\structuredefinition-core-person.json": {
+      "Length": 13709,
+      "LastWriteTime": "2025-02-11T05:31:58.2872673+00:00",
+      "Hash": "ACBA723E097A41D691FF9C0568DD5E5F"
+    },
+    "input\\profiles\\core\\structuredefinition-core-practitioner.json": {
+      "Length": 17576,
+      "LastWriteTime": "2025-02-11T05:32:29.6836902+00:00",
+      "Hash": "E3314774F63EA8977F994DB9532776B5"
+    },
+    "input\\profiles\\core\\structuredefinition-core-practitionerrole.json": {
+      "Length": 19467,
+      "LastWriteTime": "2025-02-11T05:32:43.3405211+00:00",
+      "Hash": "24B3A17E4A8899C9E00E8E450A81E6FF"
+    },
+    "input\\profiles\\core\\structuredefinition-core-procedure.json": {
+      "Length": 41705,
+      "LastWriteTime": "2025-02-11T05:32:58.4442162+00:00",
+      "Hash": "C4B7A381A65AA5F980EB69032741ADD6"
+    },
+    "input\\profiles\\core\\structuredefinition-core-provenance.json": {
+      "Length": 24421,
+      "LastWriteTime": "2025-02-11T05:02:17.3130424+00:00",
+      "Hash": "0FE285E2F48307539C0AE4EFBC2A1DA4"
+    },
+    "input\\profiles\\core\\structuredefinition-core-questionnaire.json": {
+      "Length": 62655,
+      "LastWriteTime": "2025-02-11T05:33:19.5227442+00:00",
+      "Hash": "1FF93E73214FBA590D8EAAEA572E907C"
+    },
+    "input\\profiles\\core\\structuredefinition-core-questionnaireresponse.json": {
+      "Length": 25410,
+      "LastWriteTime": "2025-02-11T05:33:36.6089928+00:00",
+      "Hash": "D6E5F2E2751314854233C9A93774A336"
+    },
+    "input\\profiles\\core\\structuredefinition-core-relatedperson.json": {
+      "Length": 16747,
+      "LastWriteTime": "2025-02-11T05:04:31.7527734+00:00",
+      "Hash": "B19C03A61C6B42A9A7B11A28A4B86E24"
+    },
+    "input\\profiles\\core\\structuredefinition-core-servicerequest.json": {
+      "Length": 49272,
+      "LastWriteTime": "2025-02-11T05:33:52.9536866+00:00",
+      "Hash": "8A0950CC375DD46FEF76D77D38014891"
+    },
+    "input\\profiles\\core\\structuredefinition-core-specimen.json": {
+      "Length": 29064,
+      "LastWriteTime": "2025-02-11T05:34:10.3169003+00:00",
+      "Hash": "0F7314C51D4BC907DF06C3E716E926FA"
+    },
+    "input\\profiles\\core\\structuredefinition-core-address.json": {
+      "Length": 17666,
+      "LastWriteTime": "2025-02-11T05:44:25.9465357+00:00",
+      "Hash": "CA377415D37F4FA61226B5F7AB7C670C"
+    },
+    "input\\profiles\\core\\structuredefinition-core-administrativecode-extension.json": {
+      "Length": 4644,
+      "LastWriteTime": "2025-02-11T05:43:58.2822568+00:00",
+      "Hash": "3F32B30409D056018D8567B633F083DF"
+    },
+    "input\\profiles\\core\\structuredefinition-core-allergyintolerance.json": {
+      "Length": 38769,
+      "LastWriteTime": "2025-02-11T05:43:15.8987193+00:00",
+      "Hash": "46B0620A5D4313355FAAF32621938EDD"
+    },
+    "input\\profiles\\core\\structuredefinition-core-birthplace-extension.json": {
+      "Length": 3087,
+      "LastWriteTime": "2025-02-11T05:42:34.9200707+00:00",
+      "Hash": "E984005EAA7960E717D6B0937013556F"
+    },
+    "input\\profiles\\core\\structuredefinition-core-bundle.json": {
+      "Length": 31845,
+      "LastWriteTime": "2025-02-11T05:41:59.3603562+00:00",
+      "Hash": "021602B0DD91F6837A5941BDC3459B1D"
+    },
+    "input\\profiles\\core\\structuredefinition-core-careplan.json": {
+      "Length": 55715,
+      "LastWriteTime": "2025-02-11T05:41:38.4252163+00:00",
+      "Hash": "0C8EFD1006EAA2C2324A70248DBBB2AC"
+    },
+    "input\\profiles\\core\\structuredefinition-core-careteam.json": {
+      "Length": 17855,
+      "LastWriteTime": "2025-02-11T05:40:44.4867051+00:00",
+      "Hash": "450A3F5BC2946D836A2218BCA6D7FC6E"
+    },
+    "input\\profiles\\core\\structuredefinition-core-claim.json": {
+      "Length": 94978,
+      "LastWriteTime": "2025-02-11T05:40:16.8304951+00:00",
+      "Hash": "45CB4DFD835BEBCDA9D2ACA99846AEE2"
+    },
+    "input\\profiles\\core\\structuredefinition-core-composition.json": {
+      "Length": 50311,
+      "LastWriteTime": "2025-02-11T05:39:31.8103692+00:00",
+      "Hash": "37E0589F4F7DE4B601E2E090C40FE9AF"
+    },
+    "input\\profiles\\core\\structuredefinition-core-condition.json": {
+      "Length": 35597,
+      "LastWriteTime": "2025-02-11T05:39:04.3907376+00:00",
+      "Hash": "6628981DC854BE042126C718AF5184F9"
+    },
+    "input\\profiles\\core\\structuredefinition-core-consent.json": {
+      "Length": 34635,
+      "LastWriteTime": "2025-02-11T05:38:36.1325347+00:00",
+      "Hash": "E65DF179E3FED1A05B0A1C9DFDBBCBD2"
+    },
+    "input\\profiles\\base\\structuredefinition-anc-encounter.json": {
+      "Length": 51056,
+      "LastWriteTime": "2025-02-11T06:32:07.6315784+00:00",
+      "Hash": "1552DAF0693AFBE4BD6A20621C6C1CC5"
+    },
+    "input\\profiles\\base\\structuredefinition-anc-patient.json": {
+      "Length": 42050,
+      "LastWriteTime": "2025-02-11T05:10:08.6431978+00:00",
+      "Hash": "2B27BC65E6724DE2ECADE42EDBD14734"
+    },
+    "library\\anc-custom-code-who.json": {
+      "Length": 1109,
+      "LastWriteTime": "2025-02-11T06:47:15.2308407+00:00",
+      "Hash": "AF0D45A4946275FF78E9230701AA8BC9"
+    },
+    "input\\profiles\\structuredefinition-anc-gravida.json": {
+      "Length": 67944,
+      "LastWriteTime": "2025-02-11T07:30:47.9740922+00:00",
+      "Hash": "8FB36613E094471113FE69C800D078BE"
+    }
+  }
+}

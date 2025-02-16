@@ -1,0 +1,24 @@
+id: "ihs-fhir-r4-ig"
+canonical: "https://simplifier.net/guide/ihs-fhir-r4-ig"
+name: "IHS FHIR Implementation Guide R4"
+title: "IHS FHIR Implementation Guide R4"
+description: "Version 0.1.0 of the Indonesian Health Service FHIR Implementation Guide"
+status: "draft"
+version: "0.1.0"
+fhirVersion: "4.0.1"
+copyrightYear: "2025+"
+releaseLabel: "draft"
+
+dependencies:
+  hl7.fhir.r4.core: 4.0.1
+  hl7.fhir.r4.id.core: 0.1.0
+  fhir.org/guides/who/anc-cds: 1.0.0
+
+pages:
+  index.md:
+    title: Home
+
+menu:
+  Home: index.html
+  Profiles: profiles.html
+  Artifacts: artifacts.html
