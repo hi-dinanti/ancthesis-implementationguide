@@ -9,7 +9,7 @@ actor Nurse
 actor Lab Technician
 actor Hospital
 
-participant "Health Center System" as HCS
+participant "Puskesmas Sampang" as HCS
 
 Aisyah -> Clerk: Registers for ANC visit
 Clerk -> HCS: Enters Aisyah's demographic details
