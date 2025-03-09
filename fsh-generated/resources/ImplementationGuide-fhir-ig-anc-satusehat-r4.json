@@ -1,7 +1,7 @@
 {
   "resourceType": "ImplementationGuide",
   "id": "fhir-ig-anc-satusehat-r4",
-  "url": "https://simplifier.net/fhir-ig-anc-satusehat-r4/ImplementationGuide/fhir-ig-anc-satusehat-r4",
+  "url": "https://simplifier.net/smart-anc-satusehat-r4/ImplementationGuide/fhir-ig-anc-satusehat-r4",
   "version": "0.1.0",
   "name": "FHIRIGANCSatusehatR4",
   "title": "FHIR IG ANC Satusehat R4",
@@ -31,10 +31,90 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/anc-code-system"
+        },
+        "name": "ANC Code Systems ValueSet",
+        "description": "A ValueSet that includes codes from multiple CodeSystems used in ANC and related implementations.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/anc-scenario-custom-code"
+        },
+        "name": "ANC Scenario-Custom-Code",
+        "description": "A collection of codes used in thesis scenario for referral of pre-eclampsia patient.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/encounter-anc"
+        },
+        "name": "Antenatal Care Encounter",
+        "description": "An interaction between a pregnant individual and a healthcare provider for the purpose of conducting antenatal assessments, providing maternal and fetal health services, and ensuring continuity of care throughout pregnancy. This includes routine check-ups, screenings, interventions, and counseling as part of comprehensive antenatal care.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/BirthPlace"
         },
         "name": "Birth Place",
         "description": "The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/anc-episodeofcare"
+        },
+        "name": "Episode of Care: Antenatal Care",
+        "description": "Represents the period of antenatal care management for a patient, linking them to a healthcare provider or organization. This period covers multiple encounters related to maternal and fetal.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/anc-custom-codes"
+        },
+        "name": "Extended Codes CodeSystem",
+        "description": "Set of WHO-Custom-ANC codes adapted in the implementation guide",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/location-codes"
+        },
+        "name": "Location Codes",
+        "description": "Codes representing different healthcare facilities and service locations.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/primary-care-lab-parameter-code"
+        },
+        "name": "Primary Care Lab Parameter Code",
+        "description": "List of LOINC code used in laboratory system based on Jakarta master data",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/primary-care-lab-value-code"
+        },
+        "name": "Primary Care Lab Value Code",
+        "description": "List of observation code used in laboratory result value based on Jakarta master data",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/satusehat-custom-codes"
+        },
+        "name": "SATUSEHAT Codes CodeSystem",
+        "description": "Set of codes representing SATUSEHAT concepts used in the implementation guide",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/service-request-codes"
+        },
+        "name": "Service Request Codes",
+        "description": "Codes for various types of service requests, including diagnostics, procedures, and referrals.",
         "exampleBoolean": false
       }
     ],

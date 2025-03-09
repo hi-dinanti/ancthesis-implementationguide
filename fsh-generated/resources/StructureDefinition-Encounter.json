@@ -1,0 +1,23 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Encounter",
+  "url": "https://simplifier.net/smart-anc-satusehat-r4/StructureDefinition/Encounter",
+  "name": "Encounter",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Encounter",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DomainResource",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "Encounter",
+        "path": "Encounter",
+        "short": "Encounter",
+        "definition": "Encounter"
+      }
+    ]
+  }
+}

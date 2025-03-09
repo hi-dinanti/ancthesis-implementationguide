@@ -69,6 +69,315 @@
           "Event",
           "Activity"
         ]
+      },
+      {
+        "id": "Provenance.target",
+        "path": "Provenance.target",
+        "comment": "Target references are usually version specific, but might not be, if a version has not been assigned or if the provenance information is part of the set of resources being maintained (i.e. a document). When using the RESTful API, the identity of the resource might not be known (especially not the version specific one); the client may either submit the resource first, and then the provenance, or it may submit both using a single transaction. See the notes on transaction for further discussion.",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Resource"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Provenance.occurred[x]",
+        "path": "Provenance.occurred[x]",
+        "short": "When the activity occurred",
+        "definition": "The period during which the activity occurred.",
+        "comment": "The period can be a little arbitrary; where possible, the time should correspond to human assessment of the activity time.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Period"
+          },
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Provenance.recorded",
+        "path": "Provenance.recorded",
+        "short": "When the activity was recorded / updated",
+        "definition": "The instant of time at which the activity was recorded.",
+        "comment": "This can be a little different from the time stamp on the resource if there is a delay between recording the event and updating the provenance and target resource.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "instant"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "id": "Provenance.policy",
+        "path": "Provenance.policy",
+        "short": "Policy or plan the activity was defined by",
+        "definition": "Policy or plan the activity was defined by. Typically, a single activity may have multiple applicable policy documents, such as patient consent, guarantor funding, etc.",
+        "comment": "For example: Where an OAuth token authorizes, the unique identifier from the OAuth token is placed into the policy element Where a policy engine (e.g. XACML) holds policy logic, the unique policy identifier is placed into the policy element.",
+        "min": 0,
+        "max": "0",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Provenance.location",
+        "path": "Provenance.location",
+        "short": "Where the activity occurred, if relevant",
+        "definition": "Where the activity occurred, if relevant.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Location"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Provenance.reason",
+        "path": "Provenance.reason",
+        "short": "Reason the activity is occurring",
+        "definition": "The reason that the activity was taking place.",
+        "min": 0,
+        "max": "0",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-PurposeOfUse",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ProvenanceReason"
+            }
+          ],
+          "description": "The reason the activity took place."
+        }
+      },
+      {
+        "id": "Provenance.activity",
+        "path": "Provenance.activity",
+        "short": "Activity that occurred",
+        "definition": "An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/provenance-activity-type",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ProvenanceActivity"
+            }
+          ],
+          "description": "The activity that took place."
+        }
+      },
+      {
+        "id": "Provenance.agent",
+        "path": "Provenance.agent",
+        "comment": "Several agents may be associated (i.e. has some responsibility for an activity) with an activity and vice-versa.",
+        "requirements": "An agent can be a person, an organization, software, device, or other entities that may be ascribed responsibility.",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Provenance.agent.type",
+        "path": "Provenance.agent.type",
+        "short": "How the agent participated",
+        "definition": "The participation the agent had with respect to the activity.",
+        "comment": "For example: author, performer, enterer, attester, etc.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "isSummary": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/provenance-agent-type",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ProvenanceAgentType"
+            }
+          ],
+          "description": "The type of participation that a provenance agent played with respect to the activity."
+        }
+      },
+      {
+        "id": "Provenance.agent.role",
+        "path": "Provenance.agent.role",
+        "short": "What the agents role was",
+        "definition": "The function of the agent with respect to the activity. The security role enabling the agent with respect to the activity.",
+        "comment": "For example: doctor, nurse, clerk, etc.",
+        "min": 0,
+        "max": "0",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/security-role-type",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ProvenanceAgentRole"
+            }
+          ],
+          "description": "The role that a provenance agent played with respect to the activity."
+        }
+      },
+      {
+        "id": "Provenance.agent.who",
+        "path": "Provenance.agent.who",
+        "short": "Who participated",
+        "definition": "The individual, device or organization that participated in the event.",
+        "comment": "whoIdentity should be used when the agent is not a Resource type.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Device",
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "id": "Provenance.agent.onBehalfOf",
+        "path": "Provenance.agent.onBehalfOf",
+        "short": "Who the agent is representing",
+        "definition": "The individual, device, or organization for whom the change was made.",
+        "comment": "onBehalfOfIdentity should be used when the agent is not a Resource type.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Device",
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Provenance.entity",
+        "path": "Provenance.entity",
+        "short": "An entity used in this activity",
+        "definition": "An entity used in this activity.",
+        "min": 0,
+        "max": "0",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Provenance.entity.role",
+        "path": "Provenance.entity.role",
+        "short": "derivation | revision | quotation | source | removal",
+        "definition": "How the entity was used during the activity.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "isSummary": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/provenance-entity-role|4.0.1",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ProvenanceEntityRole"
+            }
+          ],
+          "description": "How an entity was used in an activity."
+        }
+      },
+      {
+        "id": "Provenance.entity.what",
+        "path": "Provenance.entity.what",
+        "short": "Identity of entity",
+        "definition": "Identity of the  Entity used. May be a logical or physical uri and maybe absolute or relative.",
+        "comment": "whatIdentity should be used for entities that are not a Resource type.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Resource"
+            ]
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "id": "Provenance.entity.agent",
+        "path": "Provenance.entity.agent",
+        "short": "Entity is attributed to this agent",
+        "definition": "The entity is attributed to an agent to express the agent's responsibility for that entity, possibly along with other agents. This description can be understood as shorthand for saying that the agent was responsible for the activity which generated the entity.",
+        "comment": "A usecase where one Provenance.entity.agent is used where the Entity that was used in the creation/updating of the Target, is not in the context of the same custodianship as the Target, and thus the meaning of Provenance.entity.agent is to say that the entity referenced is managed elsewhere and that this Agent provided access to it.  This would be similar to where the Entity being referenced is managed outside FHIR, such as through HL7 v2, v3, or XDS. This might be where the Entity being referenced is managed in another FHIR resource server. Thus it explains the Provenance of that Entity's use in the context of this Provenance activity.",
+        "min": 0,
+        "max": "*",
+        "contentReference": "http://hl7.org/fhir/StructureDefinition/DomainResource#Provenance.agent"
+      },
+      {
+        "id": "Provenance.signature",
+        "path": "Provenance.signature",
+        "short": "Signature on target",
+        "definition": "A digital signature on the target Reference(s). The signer should match a Provenance.agent. The purpose of the signature is indicated.",
+        "min": 0,
+        "max": "0",
+        "type": [
+          {
+            "code": "Signature"
+          }
+        ]
       }
     ]
   }

@@ -78,25 +78,9 @@
         ]
       },
       {
-        "id": "Extension.value[x].extension:administrativeCode.extension:rt",
-        "path": "Extension.value[x].extension.extension",
-        "sliceName": "rt",
-        "max": "0"
-      },
-      {
-        "id": "Extension.value[x].extension:administrativeCode.extension:rw",
-        "path": "Extension.value[x].extension.extension",
-        "sliceName": "rw",
-        "max": "0"
-      },
-      {
         "id": "Extension.value[x].country",
         "path": "Extension.value[x].country",
-        "short": "Country ISO 3166 2 letter code",
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://hl7.org/fhir/ValueSet/iso3166-1-2"
-        }
+        "short": "Country ISO 3166 2 letter code"
       }
     ]
   }

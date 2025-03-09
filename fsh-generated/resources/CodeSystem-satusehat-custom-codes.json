@@ -1,0 +1,147 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "satusehat-custom-codes",
+  "id": "satusehat-custom-codes",
+  "title": "SATUSEHAT Codes CodeSystem",
+  "description": "Set of codes representing SATUSEHAT concepts used in the implementation guide",
+  "url": "https://simplifier.net/smart-anc-satusehat-r4/CodeSystem/satusehat-custom-codes",
+  "concept": [
+    {
+      "code": "ANC.SS.DE58",
+      "display": "IMT Sebelum Hamil"
+    },
+    {
+      "code": "ANC.SS.DE53",
+      "display": "Jarak kehamilan"
+    },
+    {
+      "code": "ANC.SS.DE13",
+      "display": "Trimester ke"
+    },
+    {
+      "code": "ANC.SS.DE3",
+      "display": "Lingkar Lengan Atas (LiLA)"
+    },
+    {
+      "code": "ANC.SS.DE2",
+      "display": "Pernapasan"
+    },
+    {
+      "code": "ANC.SS.DE26",
+      "display": "Pemeriksaan Fisik Konjungtiva"
+    },
+    {
+      "code": "ANC.SS.DE28",
+      "display": "Pemeriksaan Fisik Leher"
+    },
+    {
+      "code": "ANC.SS.DE29",
+      "display": "Pemeriksaan Fisik Area Mulut"
+    },
+    {
+      "code": "ANC.SS.DE30",
+      "display": "Pemeriksaan Fisik Telinga Hidung dan Tenggorokan (THT)"
+    },
+    {
+      "code": "ANC.SS.DE31",
+      "display": "Pemeriksaan Fisik Dada (Auskultasi Jantung)"
+    },
+    {
+      "code": "ANC.SS.DE32",
+      "display": "Pemeriksaan Fisik Dada (Auskultasi Paru)"
+    },
+    {
+      "code": "ANC.SS.DE33",
+      "display": "Pemeriksaan Fisik Perut"
+    },
+    {
+      "code": "ANC.SS.DE34",
+      "display": "Pemeriksaan Fisik Tungkai"
+    },
+    {
+      "code": "ANC.SS.DE46",
+      "display": "Kepala Terhadap PAP"
+    },
+    {
+      "code": "ANC.SS.DE36",
+      "display": "Gestational sac (GS) USG"
+    },
+    {
+      "code": "ANC.SS.DE37",
+      "display": "Fetal Crown Rump Length (CRL) USG"
+    },
+    {
+      "code": "ANC.SS.DE38",
+      "display": "Denyut Jantung Janin (DJJ) USG"
+    },
+    {
+      "code": "ANC.SS.DE40",
+      "display": "Hari Perkiraan Lahir (HPL) USG"
+    },
+    {
+      "code": "ANC.SS.DE41",
+      "display": "ANC.SS.DE41"
+    },
+    {
+      "code": "ANC.SS.DE59",
+      "display": "Biparietal Diameter (BPD) USG"
+    },
+    {
+      "code": "ANC.SS.DE42",
+      "display": "Head Circumference (HC) USG"
+    },
+    {
+      "code": "ANC.SS.DE43",
+      "display": "Abdominal Circumference (AC) USG"
+    },
+    {
+      "code": "ANC.SS.DE44",
+      "display": "Letak Janin USG"
+    },
+    {
+      "code": "ANC.SS.DE45",
+      "display": "Berat janin USG"
+    },
+    {
+      "code": "VG139",
+      "display": "Td"
+    },
+    {
+      "code": "OC000010",
+      "display": "Indeks Massa Tubuh Sebelum Hamil"
+    },
+    {
+      "code": "OC000011",
+      "display": "Target Kenaikan Berat Badan"
+    },
+    {
+      "code": "OC000001",
+      "display": "Jarak kehamilan"
+    },
+    {
+      "code": "OI000018",
+      "display": "Kurang Energi Kronis (KEK)"
+    },
+    {
+      "code": "OI000035",
+      "display": "Risiko Kurang Energi Kronis (KEK)"
+    },
+    {
+      "code": "FO000001",
+      "display": "MT Lokal"
+    },
+    {
+      "code": "FO000002",
+      "display": "MT Pabrikan"
+    },
+    {
+      "code": "IM-WUS",
+      "display": "Imunsasi Program Rutin Lanjutan Wanita Usia Subur"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 33
+}

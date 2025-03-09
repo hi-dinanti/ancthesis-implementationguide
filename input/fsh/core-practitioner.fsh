@@ -1,0 +1,73 @@
+Resource: Practitioner
+Id: Practitioner
+Description: "A person who is directly or indirectly involved in the provisioning of healthcare."
+* ^meta.lastUpdated = "2025-02-11T05:32:29.4581499+00:00"
+* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-category"
+* ^extension[=].valueString = "Base.Individuals"
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[=].valueCode = #trial-use
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 3
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category"
+* ^extension[=].valueCode = #individual
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
+* ^extension[=].valueCode = #pa
+* ^url = "https://fhir.kemkes.go.id/r4/StructureDefinition/Practitioner"
+* ^date = "2019-11-01T09:29:23+11:00"
+* ^publisher = "Health Level Seven International (Patient Administration)"
+* ^contact[0].telecom.system = #url
+* ^contact[=].telecom.value = "http://hl7.org/fhir"
+* ^contact[+].telecom.system = #url
+* ^contact[=].telecom.value = "http://www.hl7.org/Special/committees/pafm/index.cfm"
+* ^purpose = "Need to track doctors, staff, locums etc. for both healthcare practitioners, funders, etc."
+* . ^short = "A person with a  formal responsibility in the provisioning of healthcare or related services"
+* . ^definition = "A person who is directly or indirectly involved in the provisioning of healthcare."
+* identifier 0..0 SU Identifier "An identifier for the person as this agent" "An identifier that applies to this person in this role."
+* identifier ^requirements = "Often, specific identities are assigned for the agent."
+* active 0..1 SU boolean "Whether this practitioner's record is in active use" "Whether this practitioner's record is in active use."
+* active ^comment = "If the practitioner is not in use by one organization, then it should mark the period on the PractitonerRole with an end date (even if they are active) as they may be active in another role."
+* active ^requirements = "Need to be able to mark a practitioner record as not to be used because it was created in error."
+* active ^meaningWhenMissing = "This resource is generally assumed to be active if no value is provided for the active element"
+* name 0..0 SU HumanName "The name(s) associated with the practitioner" "The name(s) associated with the practitioner."
+* name ^comment = "The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.  \r\rIn general, select the value to be used in the ResourceReference.display based on this:\r\r1. There is more than 1 name\r2. Use = usual\r3. Period is current to the date of the usage\r4. Use = official\r5. Other order as decided by internal business rules."
+* name ^requirements = "The name(s) that a Practitioner is known by. Where there are multiple, the name that the practitioner is usually known as should be used in the display."
+* telecom 0..0 SU ContactPoint "A contact detail for the practitioner (that apply to all roles)" "A contact detail for the practitioner, e.g. a telephone number or an email address."
+* telecom ^comment = "Person may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently and to help with identification.  These typically will have home numbers, or mobile numbers that are not role specific."
+* telecom ^requirements = "Need to know how to reach a practitioner independent to any roles the practitioner may have."
+* address 0..0 SU Address "Address(es) of the practitioner that are not role specific (typically home address)" "Address(es) of the practitioner that are not role specific (typically home address). \rWork addresses are not typically entered in this property as they are usually role dependent."
+* address ^comment = "The PractitionerRole does not have an address value on it, as it is expected that the location property be used for this purpose (which has an address)."
+* address ^requirements = "The home/mailing address of the practitioner is often required for employee administration purposes, and also for some rostering services where the start point (practitioners home) can be used in calculations."
+* gender 0..1 SU code "male | female | other | unknown" "Administrative Gender - the gender that the person is considered to have for administration and record keeping purposes."
+* gender from http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1 (required)
+* gender ^requirements = "Needed to address the person correctly."
+* gender ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
+* gender ^binding.extension[=].valueString = "AdministrativeGender"
+* gender ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"
+* gender ^binding.extension[=].valueBoolean = true
+* gender ^binding.description = "The gender of a person used for administrative purposes."
+* birthDate 0..1 SU date "The date  on which the practitioner was born" "The date of birth for the practitioner."
+* birthDate ^requirements = "Needed for identification."
+* photo 0..0 Attachment "Image of the person" "Image of the person."
+* photo ^requirements = "Many EHR systems have the capability to capture an image of patients and personnel. Fits with newer social media usage too."
+* qualification 0..0 BackboneElement "Certification, licenses, or training pertaining to the provision of care" "The official certifications, training, and licenses that authorize or otherwise pertain to the provision of care by the practitioner.  For example, a medical license issued by a medical board authorizing the practitioner to practice medicine within a certian locality."
+* qualification.identifier 0..0 Identifier "An identifier for this qualification for the practitioner" "An identifier that applies to this person's qualification in this role."
+* qualification.identifier ^requirements = "Often, specific identities are assigned for the qualification."
+* qualification.code 1..1 CodeableConcept "Coded representation of the qualification" "Coded representation of the qualification."
+* qualification.code from http://terminology.hl7.org/ValueSet/v2-2.7-0360 (example)
+* qualification.code ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
+* qualification.code ^binding.extension[=].valueString = "Qualification"
+* qualification.code ^binding.description = "Specific qualification the practitioner has to provide a service."
+* qualification.period 0..1 Period "Period during which the qualification is valid" "Period during which the qualification is valid."
+* qualification.period ^requirements = "Qualifications are often for a limited period of time, and can be revoked."
+* qualification.issuer 0..1 Reference(http://hl7.org/fhir/StructureDefinition/Organization) "Organization that regulates and issues the qualification" "Organization that regulates and issues the qualification."
+* communication 0..0 CodeableConcept "A language the practitioner can use in patient communication" "A language the practitioner can use in patient communication."
+* communication from http://hl7.org/fhir/ValueSet/languages (preferred)
+* communication ^comment = "The structure aa-BB with this exact casing is one the most widely used notations for locale. However not all systems code this but instead have it as free text. Hence CodeableConcept instead of code as the data type."
+* communication ^requirements = "Knowing which language a practitioner speaks can help in facilitating communication with patients."
+* communication ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet"
+* communication ^binding.extension[=].valueCanonical = "http://hl7.org/fhir/ValueSet/all-languages"
+* communication ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
+* communication ^binding.extension[=].valueString = "Language"
+* communication ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"
+* communication ^binding.extension[=].valueBoolean = true
+* communication ^binding.description = "A human language."

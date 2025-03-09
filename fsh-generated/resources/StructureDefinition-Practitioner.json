@@ -64,6 +64,260 @@
         "path": "Practitioner",
         "short": "A person with a  formal responsibility in the provisioning of healthcare or related services",
         "definition": "A person who is directly or indirectly involved in the provisioning of healthcare."
+      },
+      {
+        "id": "Practitioner.identifier",
+        "path": "Practitioner.identifier",
+        "short": "An identifier for the person as this agent",
+        "definition": "An identifier that applies to this person in this role.",
+        "requirements": "Often, specific identities are assigned for the agent.",
+        "min": 0,
+        "max": "0",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "id": "Practitioner.active",
+        "path": "Practitioner.active",
+        "short": "Whether this practitioner's record is in active use",
+        "definition": "Whether this practitioner's record is in active use.",
+        "comment": "If the practitioner is not in use by one organization, then it should mark the period on the PractitonerRole with an end date (even if they are active) as they may be active in another role.",
+        "requirements": "Need to be able to mark a practitioner record as not to be used because it was created in error.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "meaningWhenMissing": "This resource is generally assumed to be active if no value is provided for the active element",
+        "isSummary": true
+      },
+      {
+        "id": "Practitioner.name",
+        "path": "Practitioner.name",
+        "short": "The name(s) associated with the practitioner",
+        "definition": "The name(s) associated with the practitioner.",
+        "comment": "The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.  \r\rIn general, select the value to be used in the ResourceReference.display based on this:\r\r1. There is more than 1 name\r2. Use = usual\r3. Period is current to the date of the usage\r4. Use = official\r5. Other order as decided by internal business rules.",
+        "requirements": "The name(s) that a Practitioner is known by. Where there are multiple, the name that the practitioner is usually known as should be used in the display.",
+        "min": 0,
+        "max": "0",
+        "type": [
+          {
+            "code": "HumanName"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "id": "Practitioner.telecom",
+        "path": "Practitioner.telecom",
+        "short": "A contact detail for the practitioner (that apply to all roles)",
+        "definition": "A contact detail for the practitioner, e.g. a telephone number or an email address.",
+        "comment": "Person may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently and to help with identification.  These typically will have home numbers, or mobile numbers that are not role specific.",
+        "requirements": "Need to know how to reach a practitioner independent to any roles the practitioner may have.",
+        "min": 0,
+        "max": "0",
+        "type": [
+          {
+            "code": "ContactPoint"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "id": "Practitioner.address",
+        "path": "Practitioner.address",
+        "short": "Address(es) of the practitioner that are not role specific (typically home address)",
+        "definition": "Address(es) of the practitioner that are not role specific (typically home address). \rWork addresses are not typically entered in this property as they are usually role dependent.",
+        "comment": "The PractitionerRole does not have an address value on it, as it is expected that the location property be used for this purpose (which has an address).",
+        "requirements": "The home/mailing address of the practitioner is often required for employee administration purposes, and also for some rostering services where the start point (practitioners home) can be used in calculations.",
+        "min": 0,
+        "max": "0",
+        "type": [
+          {
+            "code": "Address"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "id": "Practitioner.gender",
+        "path": "Practitioner.gender",
+        "short": "male | female | other | unknown",
+        "definition": "Administrative Gender - the gender that the person is considered to have for administration and record keeping purposes.",
+        "requirements": "Needed to address the person correctly.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "isSummary": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "AdministrativeGender"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "valueBoolean": true
+            }
+          ],
+          "description": "The gender of a person used for administrative purposes."
+        }
+      },
+      {
+        "id": "Practitioner.birthDate",
+        "path": "Practitioner.birthDate",
+        "short": "The date  on which the practitioner was born",
+        "definition": "The date of birth for the practitioner.",
+        "requirements": "Needed for identification.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "id": "Practitioner.photo",
+        "path": "Practitioner.photo",
+        "short": "Image of the person",
+        "definition": "Image of the person.",
+        "requirements": "Many EHR systems have the capability to capture an image of patients and personnel. Fits with newer social media usage too.",
+        "min": 0,
+        "max": "0",
+        "type": [
+          {
+            "code": "Attachment"
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.qualification",
+        "path": "Practitioner.qualification",
+        "short": "Certification, licenses, or training pertaining to the provision of care",
+        "definition": "The official certifications, training, and licenses that authorize or otherwise pertain to the provision of care by the practitioner.  For example, a medical license issued by a medical board authorizing the practitioner to practice medicine within a certian locality.",
+        "min": 0,
+        "max": "0",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.qualification.identifier",
+        "path": "Practitioner.qualification.identifier",
+        "short": "An identifier for this qualification for the practitioner",
+        "definition": "An identifier that applies to this person's qualification in this role.",
+        "requirements": "Often, specific identities are assigned for the qualification.",
+        "min": 0,
+        "max": "0",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.qualification.code",
+        "path": "Practitioner.qualification.code",
+        "short": "Coded representation of the qualification",
+        "definition": "Coded representation of the qualification.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-2.7-0360",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "Qualification"
+            }
+          ],
+          "description": "Specific qualification the practitioner has to provide a service."
+        }
+      },
+      {
+        "id": "Practitioner.qualification.period",
+        "path": "Practitioner.qualification.period",
+        "short": "Period during which the qualification is valid",
+        "definition": "Period during which the qualification is valid.",
+        "requirements": "Qualifications are often for a limited period of time, and can be revoked.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.qualification.issuer",
+        "path": "Practitioner.qualification.issuer",
+        "short": "Organization that regulates and issues the qualification",
+        "definition": "Organization that regulates and issues the qualification.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.communication",
+        "path": "Practitioner.communication",
+        "short": "A language the practitioner can use in patient communication",
+        "definition": "A language the practitioner can use in patient communication.",
+        "comment": "The structure aa-BB with this exact casing is one the most widely used notations for locale. However not all systems code this but instead have it as free text. Hence CodeableConcept instead of code as the data type.",
+        "requirements": "Knowing which language a practitioner speaks can help in facilitating communication with patients.",
+        "min": 0,
+        "max": "0",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/languages",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet",
+              "valueCanonical": "http://hl7.org/fhir/ValueSet/all-languages"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "Language"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "valueBoolean": true
+            }
+          ],
+          "description": "A human language."
+        }
       }
     ]
   }

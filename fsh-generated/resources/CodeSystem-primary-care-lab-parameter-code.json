@@ -1,0 +1,389 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "PrimaryCareLabParameter",
+  "id": "primary-care-lab-parameter-code",
+  "title": "Primary Care Lab Parameter Code",
+  "description": "List of LOINC code used in laboratory system based on Jakarta master data",
+  "url": "http://loinc.org",
+  "concept": [
+    {
+      "code": "88874-3",
+      "display": "Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method"
+    },
+    {
+      "code": "89372-7",
+      "display": "Mycobacterium tuberculosis complex rpoB gene rifAMPin resistance mutation [Presence] by Molecular method"
+    },
+    {
+      "code": "42902-7",
+      "display": "Elastase.pancreatic [Presence] in Stool"
+    },
+    {
+      "code": "42902-8",
+      "display": "Elastase.pancreatic [Presence] in Stool"
+    },
+    {
+      "code": "10704-5",
+      "display": "Ova and parasites identified in Stool by Light microscopy"
+    },
+    {
+      "code": "10704-6",
+      "display": "Ova and parasites identified in Stool by Light microscopy"
+    },
+    {
+      "code": "10704-7",
+      "display": "Ova and parasites identified in Stool by Light microscopy"
+    },
+    {
+      "code": "10704-8",
+      "display": "Ova and parasites identified in Stool by Light microscopy"
+    },
+    {
+      "code": "10704-9",
+      "display": "Ova and parasites identified in Stool by Light microscopy"
+    },
+    {
+      "code": "10704-10",
+      "display": "Ova and parasites identified in Stool by Light microscopy"
+    },
+    {
+      "code": "10704-11",
+      "display": "Ova and parasites identified in Stool by Light microscopy"
+    },
+    {
+      "code": "X099193",
+      "display": "Bakteri"
+    },
+    {
+      "code": "X099194",
+      "display": "Bakteri"
+    },
+    {
+      "code": "X099195",
+      "display": "Bakteri"
+    },
+    {
+      "code": "X099196",
+      "display": "Bakteri"
+    },
+    {
+      "code": "X099197",
+      "display": "Bakteri"
+    },
+    {
+      "code": "41278-3",
+      "display": "Gross blood [Presence] of Stool Qualitative"
+    },
+    {
+      "code": "X099192",
+      "display": "Eritrosit feses"
+    },
+    {
+      "code": "X099187",
+      "display": "Pemeriksaan feses lengkap"
+    },
+    {
+      "code": "11029-6",
+      "display": "Consistency of Stool"
+    },
+    {
+      "code": "11029-7",
+      "display": "Consistency of Stool"
+    },
+    {
+      "code": "11029-8",
+      "display": "Consistency of Stool"
+    },
+    {
+      "code": "11029-9",
+      "display": "Consistency of Stool"
+    },
+    {
+      "code": "11029-10",
+      "display": "Consistency of Stool"
+    },
+    {
+      "code": "11029-11",
+      "display": "Consistency of Stool"
+    },
+    {
+      "code": "11029-12",
+      "display": "Consistency of Stool"
+    },
+    {
+      "code": "11029-13",
+      "display": "Consistency of Stool"
+    },
+    {
+      "code": "11029-14",
+      "display": "Consistency of Stool"
+    },
+    {
+      "code": "11029-15",
+      "display": "Consistency of Stool"
+    },
+    {
+      "code": "11029-16",
+      "display": "Consistency of Stool"
+    },
+    {
+      "code": "11029-17",
+      "display": "Consistency of Stool"
+    },
+    {
+      "code": "2270-7",
+      "display": "Fat [Presence] in Stool"
+    },
+    {
+      "code": "2270-8",
+      "display": "Fat [Presence] in Stool"
+    },
+    {
+      "code": "42524-9",
+      "display": "Mucus [Presence] in Stool by Light microscopy"
+    },
+    {
+      "code": "42524-10",
+      "display": "Mucus [Presence] in Stool by Light microscopy"
+    },
+    {
+      "code": "51770-6",
+      "display": "Leukocytes [#/area] in Stool by Microscopy high power field"
+    },
+    {
+      "code": "17773-3",
+      "display": "Yeast [Presence] in Stool by Light microscopy"
+    },
+    {
+      "code": "17773-4",
+      "display": "Yeast [Presence] in Stool by Light microscopy"
+    },
+    {
+      "code": "2605-4",
+      "display": "Meat fibers [Presence] in Stool by Light microscopy"
+    },
+    {
+      "code": "55835-3",
+      "display": "Vegetable fibers [Presence] in Stool by Light microscopy"
+    },
+    {
+      "code": "9397-1",
+      "display": "Color of Stool"
+    },
+    {
+      "code": "9397-2",
+      "display": "Color of Stool"
+    },
+    {
+      "code": "9397-3",
+      "display": "Color of Stool"
+    },
+    {
+      "code": "9397-4",
+      "display": "Color of Stool"
+    },
+    {
+      "code": "20502-1",
+      "display": "Clue cells [Presence] in Vaginal fluid by Wet preparation"
+    },
+    {
+      "code": "48712-4",
+      "display": "Microscopic observation [Identifier] in Genital specimen by Gram stain"
+    },
+    {
+      "code": "698-1",
+      "display": "Neisseria gonorrhoeae [Presence] in Specimen by Organism specific culture"
+    },
+    {
+      "code": "14367-7",
+      "display": "Trichomonas vaginalis [Presence] in Vaginal fluid by Wet preparation"
+    },
+    {
+      "code": "14367-8",
+      "display": "Trichomonas vaginalis [Presence] in Vaginal fluid by Wet preparation"
+    },
+    {
+      "code": "30180-4",
+      "display": "Basophils/100 leukocytes in Blood"
+    },
+    {
+      "code": "706-2",
+      "display": "Basophils/100 leukocytes in Blood by Automated count"
+    },
+    {
+      "code": "57021-8",
+      "display": "CBC W Auto Differential panel - Blood"
+    },
+    {
+      "code": "26450-7",
+      "display": "Eosinophils/100 leukocytes in Blood"
+    },
+    {
+      "code": "713-8",
+      "display": "Eosinophils/100 leukocytes in Blood by Automated count"
+    },
+    {
+      "code": "26453-1",
+      "display": "Erythrocytes [#/volume] in Blood"
+    },
+    {
+      "code": "789-8",
+      "display": "Erythrocytes [#/volume] in Blood by Automated count"
+    },
+    {
+      "code": "6742-1",
+      "display": "Erythrocyte morphology finding [Identifier] in Blood"
+    },
+    {
+      "code": "882-1",
+      "display": "ABO and Rh group [Type] in Blood"
+    },
+    {
+      "code": "34530-6",
+      "display": "ABO and Rh group panel - Blood"
+    },
+    {
+      "code": "4544-3",
+      "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
+    },
+    {
+      "code": "20570-8",
+      "display": "Hematocrit [Volume Fraction] of Blood"
+    },
+    {
+      "code": "718-7",
+      "display": "Hemoglobin [Mass/volume] in Blood"
+    },
+    {
+      "code": "71693-6",
+      "display": "Platelets reticulated/100 platelets in Blood by Automated count"
+    },
+    {
+      "code": "82477-1",
+      "display": "Erythrocyte sedimentation rate by Photometric method"
+    },
+    {
+      "code": "6690-2",
+      "display": "Leukocytes [#/volume] in Blood by Automated count"
+    },
+    {
+      "code": "26478-8",
+      "display": "Lymphocytes/100 leukocytes in Blood"
+    },
+    {
+      "code": "736-9",
+      "display": "Lymphocytes/100 leukocytes in Blood by Automated count"
+    },
+    {
+      "code": "785-6",
+      "display": "MCH [Entitic mass] by Automated count"
+    },
+    {
+      "code": "786-4",
+      "display": "MCHC [Mass/volume] by Automated count"
+    },
+    {
+      "code": "787-2",
+      "display": "MCV [Entitic volume] by Automated count"
+    },
+    {
+      "code": "26485-3",
+      "display": "Monocytes/100 leukocytes in Blood"
+    },
+    {
+      "code": "5905-5",
+      "display": "Monocytes/100 leukocytes in Blood by Automated count"
+    },
+    {
+      "code": "26511-6",
+      "display": "Neutrophils/100 leukocytes in Blood"
+    },
+    {
+      "code": "32200-8",
+      "display": "Segmented neutrophils/100 leukocytes in Blood by Automated count"
+    },
+    {
+      "code": "17849-1",
+      "display": "Reticulocytes/100 erythrocytes in Blood by Automated count"
+    },
+    {
+      "code": "777-3",
+      "display": "Platelets [#/volume] in Blood by Automated count"
+    },
+    {
+      "code": "3178-1",
+      "display": "Bleeding time by Duke method"
+    },
+    {
+      "code": "3179-9",
+      "display": "Bleeding time by Ivy method"
+    },
+    {
+      "code": "3183-1",
+      "display": "Clotting time of Blood by Lee White method"
+    },
+    {
+      "code": "75410-1",
+      "display": "Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay"
+    },
+    {
+      "code": "16935-9",
+      "display": "Hepatitis B virus surface Ab [Units/volume] in Serum"
+    },
+    {
+      "code": "22312-3",
+      "display": "Hepatitis A virus Ab [Units/volume] in Serum"
+    },
+    {
+      "code": "72376-7",
+      "display": "Hepatitis C virus Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay"
+    },
+    {
+      "code": "80387-4",
+      "display": "HIV 1+2 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay"
+    },
+    {
+      "code": "69668-2",
+      "display": "HIV 1 and 2 Ab [Identifier] in Serum or Plasma by Rapid immunoassay"
+    },
+    {
+      "code": "95542-7",
+      "display": "SARS-CoV-2 (COVID-19) Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay"
+    },
+    {
+      "code": "87546-8",
+      "display": "Dengue virus IgG and IgM panel - Serum Qualitative"
+    },
+    {
+      "code": "75377-2",
+      "display": "Dengue virus NS1 Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay"
+    },
+    {
+      "code": "23202-5",
+      "display": "Leptospira sp IgM Ab [Presence] in Serum"
+    },
+    {
+      "code": "17566-1",
+      "display": "Salmonella typhi O Ab [Presence] in Serum"
+    },
+    {
+      "code": "70569-9",
+      "display": "Plasmodium sp Ag [Identifier] in Blood by Rapid immunoassay"
+    },
+    {
+      "code": "5339-7",
+      "display": "Salmonella paratyphi A H Ab [Presence] in Serum by Latex agglutination"
+    },
+    {
+      "code": "5340-5",
+      "display": "Salmonella paratyphi A O Ab [Presence] in Serum by Latex agglutination"
+    },
+    {
+      "code": "5341-3"
+    }
+  ],
+  "experimental": false,
+  "count": 94
+}

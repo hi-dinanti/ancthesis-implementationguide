@@ -18,6 +18,10 @@
     {
       "expression": "Address",
       "type": "element"
+    },
+    {
+      "expression": "https://fhir.kemkes.go.id/r4/StructureDefinition/Patient#Patient.address",
+      "type": "element"
     }
   ],
   "type": "Extension",
