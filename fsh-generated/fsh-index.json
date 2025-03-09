@@ -1,0 +1,290 @@
+[
+  {
+    "outputFile": "StructureDefinition-AdministrativeCode.json",
+    "fshName": "AdministrativeCode",
+    "fshType": "Extension",
+    "fshFile": "extensions\\AdministrativeCode.fsh",
+    "startLine": 1,
+    "endLine": 25
+  },
+  {
+    "outputFile": "StructureDefinition-AllergyIntolerance.json",
+    "fshName": "AllergyIntolerance",
+    "fshType": "Resource",
+    "fshFile": "resources\\AllergyIntolerance.fsh",
+    "startLine": 1,
+    "endLine": 30
+  },
+  {
+    "outputFile": "StructureDefinition-BirthPlace.json",
+    "fshName": "BirthPlace",
+    "fshType": "Extension",
+    "fshFile": "extensions\\BirthPlace.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
+    "outputFile": "StructureDefinition-Bundle.json",
+    "fshName": "Bundle",
+    "fshType": "Resource",
+    "fshFile": "resources\\Bundle.fsh",
+    "startLine": 1,
+    "endLine": 28
+  },
+  {
+    "outputFile": "StructureDefinition-CarePlan.json",
+    "fshName": "CarePlan",
+    "fshType": "Resource",
+    "fshFile": "resources\\CarePlan.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
+    "outputFile": "StructureDefinition-CareTeam.json",
+    "fshName": "CareTeam",
+    "fshType": "Resource",
+    "fshFile": "resources\\CareTeam.fsh",
+    "startLine": 1,
+    "endLine": 25
+  },
+  {
+    "outputFile": "StructureDefinition-Claim.json",
+    "fshName": "Claim",
+    "fshType": "Resource",
+    "fshFile": "resources\\Claim.fsh",
+    "startLine": 1,
+    "endLine": 30
+  },
+  {
+    "outputFile": "StructureDefinition-Composition.json",
+    "fshName": "Composition",
+    "fshType": "Resource",
+    "fshFile": "resources\\Composition.fsh",
+    "startLine": 1,
+    "endLine": 27
+  },
+  {
+    "outputFile": "StructureDefinition-Condition.json",
+    "fshName": "Condition",
+    "fshType": "Resource",
+    "fshFile": "resources\\Condition.fsh",
+    "startLine": 1,
+    "endLine": 25
+  },
+  {
+    "outputFile": "StructureDefinition-Consent.json",
+    "fshName": "Consent",
+    "fshType": "Resource",
+    "fshFile": "resources\\Consent.fsh",
+    "startLine": 1,
+    "endLine": 27
+  },
+  {
+    "outputFile": "StructureDefinition-Coverage.json",
+    "fshName": "Coverage",
+    "fshType": "Resource",
+    "fshFile": "resources\\Coverage.fsh",
+    "startLine": 1,
+    "endLine": 27
+  },
+  {
+    "outputFile": "StructureDefinition-Device.json",
+    "fshName": "Device",
+    "fshType": "Resource",
+    "fshFile": "resources\\Device.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
+    "outputFile": "StructureDefinition-DiagnosticReport.json",
+    "fshName": "DiagnosticReport",
+    "fshType": "Resource",
+    "fshFile": "resources\\DiagnosticReport.fsh",
+    "startLine": 1,
+    "endLine": 32
+  },
+  {
+    "outputFile": "StructureDefinition-EpisodeOfCare.json",
+    "fshName": "EpisodeOfCare",
+    "fshType": "Resource",
+    "fshFile": "resources\\EpisodeOfCare.fsh",
+    "startLine": 1,
+    "endLine": 25
+  },
+  {
+    "outputFile": "StructureDefinition-HealthcareService.json",
+    "fshName": "HealthcareService",
+    "fshType": "Resource",
+    "fshFile": "resources\\HealthcareService.fsh",
+    "startLine": 1,
+    "endLine": 25
+  },
+  {
+    "outputFile": "StructureDefinition-Immunization.json",
+    "fshName": "Immunization",
+    "fshType": "Resource",
+    "fshFile": "resources\\Immunization.fsh",
+    "startLine": 1,
+    "endLine": 24
+  },
+  {
+    "outputFile": "StructureDefinition-Location.json",
+    "fshName": "Location",
+    "fshType": "Resource",
+    "fshFile": "resources\\Location.fsh",
+    "startLine": 1,
+    "endLine": 24
+  },
+  {
+    "outputFile": "StructureDefinition-Medication.json",
+    "fshName": "Medication",
+    "fshType": "Resource",
+    "fshFile": "resources\\Medication.fsh",
+    "startLine": 1,
+    "endLine": 24
+  },
+  {
+    "outputFile": "StructureDefinition-MedicationAdministration.json",
+    "fshName": "MedicationAdministration",
+    "fshType": "Resource",
+    "fshFile": "resources\\MedicationAdministration.fsh",
+    "startLine": 1,
+    "endLine": 24
+  },
+  {
+    "outputFile": "StructureDefinition-MedicationDispense.json",
+    "fshName": "MedicationDispense",
+    "fshType": "Resource",
+    "fshFile": "resources\\MedicationDispense.fsh",
+    "startLine": 1,
+    "endLine": 25
+  },
+  {
+    "outputFile": "StructureDefinition-MedicationRequest.json",
+    "fshName": "MedicationRequest",
+    "fshType": "Resource",
+    "fshFile": "resources\\MedicationRequest.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
+    "outputFile": "StructureDefinition-MedicationStatement.json",
+    "fshName": "MedicationStatement",
+    "fshType": "Resource",
+    "fshFile": "resources\\MedicationStatement.fsh",
+    "startLine": 1,
+    "endLine": 27
+  },
+  {
+    "outputFile": "StructureDefinition-Observation.json",
+    "fshName": "Observation",
+    "fshType": "Resource",
+    "fshFile": "resources\\Observation.fsh",
+    "startLine": 1,
+    "endLine": 33
+  },
+  {
+    "outputFile": "StructureDefinition-Organization.json",
+    "fshName": "Organization",
+    "fshType": "Resource",
+    "fshFile": "resources\\Organization.fsh",
+    "startLine": 1,
+    "endLine": 25
+  },
+  {
+    "outputFile": "StructureDefinition-Person.json",
+    "fshName": "Person",
+    "fshType": "Resource",
+    "fshFile": "resources\\Person.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
+    "outputFile": "StructureDefinition-Practitioner.json",
+    "fshName": "Practitioner",
+    "fshType": "Resource",
+    "fshFile": "resources\\Practitioner.fsh",
+    "startLine": 1,
+    "endLine": 25
+  },
+  {
+    "outputFile": "StructureDefinition-PractitionerRole.json",
+    "fshName": "PractitionerRole",
+    "fshType": "Resource",
+    "fshFile": "resources\\PractitionerRole.fsh",
+    "startLine": 1,
+    "endLine": 25
+  },
+  {
+    "outputFile": "StructureDefinition-Procedure.json",
+    "fshName": "Procedure",
+    "fshType": "Resource",
+    "fshFile": "resources\\Procedure.fsh",
+    "startLine": 1,
+    "endLine": 24
+  },
+  {
+    "outputFile": "StructureDefinition-Provenance.json",
+    "fshName": "Provenance",
+    "fshType": "Resource",
+    "fshFile": "resources\\Provenance.fsh",
+    "startLine": 1,
+    "endLine": 29
+  },
+  {
+    "outputFile": "StructureDefinition-Questionnaire.json",
+    "fshName": "Questionnaire",
+    "fshType": "Resource",
+    "fshFile": "resources\\Questionnaire.fsh",
+    "startLine": 1,
+    "endLine": 31
+  },
+  {
+    "outputFile": "StructureDefinition-QuestionnaireResponse.json",
+    "fshName": "QuestionnaireResponse",
+    "fshType": "Resource",
+    "fshFile": "resources\\QuestionnaireResponse.fsh",
+    "startLine": 1,
+    "endLine": 28
+  },
+  {
+    "outputFile": "StructureDefinition-RelatedPerson.json",
+    "fshName": "RelatedPerson",
+    "fshType": "Resource",
+    "fshFile": "resources\\RelatedPerson.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
+    "outputFile": "StructureDefinition-ServiceRequest.json",
+    "fshName": "ServiceRequest",
+    "fshType": "Resource",
+    "fshFile": "resources\\ServiceRequest.fsh",
+    "startLine": 1,
+    "endLine": 29
+  },
+  {
+    "outputFile": "StructureDefinition-Specimen.json",
+    "fshName": "Specimen",
+    "fshType": "Resource",
+    "fshFile": "resources\\Specimen.fsh",
+    "startLine": 1,
+    "endLine": 24
+  },
+  {
+    "outputFile": "StructureDefinition-anc-encounter.json",
+    "fshName": "Encounter",
+    "fshType": "Resource",
+    "fshFile": "resources\\Encounter.fsh",
+    "startLine": 1,
+    "endLine": 27
+  },
+  {
+    "outputFile": "StructureDefinition-anc-patient.json",
+    "fshName": "Patient",
+    "fshType": "Resource",
+    "fshFile": "resources\\Patient.fsh",
+    "startLine": 1,
+    "endLine": 32
+  }
+]

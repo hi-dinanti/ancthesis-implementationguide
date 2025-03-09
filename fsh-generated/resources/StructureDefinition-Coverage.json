@@ -1,0 +1,71 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Coverage",
+  "meta": {
+    "lastUpdated": "2025-02-11T05:22:31.0832534+00:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Financial.Support"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fm"
+    }
+  ],
+  "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/Coverage",
+  "name": "Coverage",
+  "status": "draft",
+  "date": "2019-11-01T09:29:23+11:00",
+  "publisher": "Health Level Seven International (Financial Management)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Financial instrument which may be used to reimburse or pay for health care products and services. Includes both insurance and self-payment.",
+  "purpose": "Coverage provides a link between covered parties (patients) and the payors of their healthcare costs (both insurance and self-pay).",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Coverage",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DomainResource",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "Coverage",
+        "path": "Coverage",
+        "short": "Insurance or medical plan or a payment agreement",
+        "definition": "Financial instrument which may be used to reimburse or pay for health care products and services. Includes both insurance and self-payment.",
+        "comment": "The Coverage resource contains the insurance card level information, which is customary to provide on claims and other communications between providers and insurers."
+      }
+    ]
+  }
+}

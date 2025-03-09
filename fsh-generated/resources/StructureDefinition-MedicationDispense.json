@@ -1,0 +1,79 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MedicationDispense",
+  "meta": {
+    "lastUpdated": "2025-02-11T05:36:18.4486635+00:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Medications"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "phx"
+    }
+  ],
+  "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/MedicationDispense",
+  "name": "MedicationDispense",
+  "status": "draft",
+  "date": "2019-11-01T09:29:23+11:00",
+  "publisher": "Health Level Seven International (Pharmacy)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/medication/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates that a medication product is to be or has been dispensed for a named person/patient.  This includes a description of the medication product (supply) provided and the instructions for administering the medication.  The medication dispense is the result of a pharmacy system responding to a medication order.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationDispense",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DomainResource",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationDispense",
+        "path": "MedicationDispense",
+        "short": "Dispensing a medication to a named patient",
+        "definition": "Indicates that a medication product is to be or has been dispensed for a named person/patient.  This includes a description of the medication product (supply) provided and the instructions for administering the medication.  The medication dispense is the result of a pharmacy system responding to a medication order.",
+        "constraint": [
+          {
+            "key": "mdd-1",
+            "human": "whenHandedOver cannot be before whenPrepared",
+            "source": "http://hl7.org/fhir/StructureDefinition/MedicationDispense",
+            "severity": "error",
+            "expression": "whenHandedOver.empty() or whenPrepared.empty() or whenHandedOver >= whenPrepared",
+            "xpath": "not(exists(f:whenHandedOver/@value)) or not(exists(f:whenPrepared/@value)) or ( f:whenHandedOver/@value >= f:whenPrepared/@value)"
+          }
+        ]
+      }
+    ]
+  }
+}

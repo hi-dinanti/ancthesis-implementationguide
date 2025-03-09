@@ -1,0 +1,77 @@
+Resource: Provenance
+Id: Provenance
+Description: "Provenance of a resource is a record that describes entities and processes involved in producing and delivering or otherwise influencing that resource. Provenance provides a critical foundation for assessing authenticity, enabling trust, and allowing reproducibility. Provenance assertions are a form of contextual metadata and can themselves become important records with their own provenance. Provenance statement indicates clinical significance in terms of confidence in authenticity, reliability, and trustworthiness, integrity, and stage in lifecycle (e.g. Document Completion - has the artifact been legally authenticated), all of which may impact security, privacy, and trust policies."
+* ^meta.lastUpdated = "2025-02-11T05:02:05.0570649+00:00"
+* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-category"
+* ^extension[=].valueString = "Foundation.Security"
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[=].valueCode = #trial-use
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 3
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category"
+* ^extension[=].valueCode = #not-classified
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
+* ^extension[=].valueCode = #sec
+* ^url = "https://fhir.kemkes.go.id/r4/StructureDefinition/Provenance"
+* ^status = #draft
+* ^date = "2019-11-01T09:29:23+11:00"
+* ^publisher = "Health Level Seven International (Security)"
+* ^contact[0].telecom.system = #url
+* ^contact[=].telecom.value = "http://hl7.org/fhir"
+* ^contact[+].telecom.system = #url
+* ^contact[=].telecom.value = "http://www.hl7.org/Special/committees/secure/index.cfm"
+* . ^short = "Who, What, When for a set of resources"
+* . ^definition = "Provenance of a resource is a record that describes entities and processes involved in producing and delivering or otherwise influencing that resource. Provenance provides a critical foundation for assessing authenticity, enabling trust, and allowing reproducibility. Provenance assertions are a form of contextual metadata and can themselves become important records with their own provenance. Provenance statement indicates clinical significance in terms of confidence in authenticity, reliability, and trustworthiness, integrity, and stage in lifecycle (e.g. Document Completion - has the artifact been legally authenticated), all of which may impact security, privacy, and trust policies."
+* . ^comment = "Some parties may be duplicated between the target resource and its provenance.  For instance, the prescriber is usually (but not always) the author of the prescription resource. This resource is defined with close consideration for W3C Provenance."
+* . ^alias[0] = "History"
+* . ^alias[+] = "Event"
+* . ^alias[+] = "Activity"
+* target 1..undefined SU Reference(http://hl7.org/fhir/StructureDefinition/Resource) "Target Reference(s) (usually version specific)" "The Reference(s) that were generated or updated by  the activity described in this resource. A provenance can point to more than one target if multiple resources were created/updated by the same activity."
+* target ^comment = "Target references are usually version specific, but might not be, if a version has not been assigned or if the provenance information is part of the set of resources being maintained (i.e. a document). When using the RESTful API, the identity of the resource might not be known (especially not the version specific one); the client may either submit the resource first, and then the provenance, or it may submit both using a single transaction. See the notes on transaction for further discussion."
+* occurred[x] undefined..1 Period or dateTime "When the activity occurred" "The period during which the activity occurred."
+* occurred[x] ^comment = "The period can be a little arbitrary; where possible, the time should correspond to human assessment of the activity time."
+* recorded 1..1 SU instant "When the activity was recorded / updated" "The instant of time at which the activity was recorded."
+* recorded ^comment = "This can be a little different from the time stamp on the resource if there is a delay between recording the event and updating the provenance and target resource."
+* policy undefined..undefined uri "Policy or plan the activity was defined by" "Policy or plan the activity was defined by. Typically, a single activity may have multiple applicable policy documents, such as patient consent, guarantor funding, etc."
+* policy ^comment = "For example: Where an OAuth token authorizes, the unique identifier from the OAuth token is placed into the policy element Where a policy engine (e.g. XACML) holds policy logic, the unique policy identifier is placed into the policy element."
+* location undefined..1 Reference(http://hl7.org/fhir/StructureDefinition/Location) "Where the activity occurred, if relevant" "Where the activity occurred, if relevant."
+* reason undefined..undefined CodeableConcept "Reason the activity is occurring" "The reason that the activity was taking place."
+* reason from http://terminology.hl7.org/ValueSet/v3-PurposeOfUse (extensible)
+* reason ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
+* reason ^binding.extension.valueString = "ProvenanceReason"
+* reason ^binding.description = "The reason the activity took place."
+* activity undefined..1 CodeableConcept "Activity that occurred" "An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities."
+* activity from http://hl7.org/fhir/ValueSet/provenance-activity-type (extensible)
+* activity ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
+* activity ^binding.extension.valueString = "ProvenanceActivity"
+* activity ^binding.description = "The activity that took place."
+* agent 1..undefined BackboneElement "Actor involved" "An actor taking a role in an activity  for which it can be assigned some degree of responsibility for the activity taking place."
+* agent ^comment = "Several agents may be associated (i.e. has some responsibility for an activity) with an activity and vice-versa."
+* agent ^requirements = "An agent can be a person, an organization, software, device, or other entities that may be ascribed responsibility."
+* agent.type undefined..1 SU CodeableConcept "How the agent participated" "The participation the agent had with respect to the activity."
+* agent.type from http://hl7.org/fhir/ValueSet/provenance-agent-type (extensible)
+* agent.type ^comment = "For example: author, performer, enterer, attester, etc."
+* agent.type ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
+* agent.type ^binding.extension.valueString = "ProvenanceAgentType"
+* agent.type ^binding.description = "The type of participation that a provenance agent played with respect to the activity."
+* agent.role undefined..undefined CodeableConcept "What the agents role was" "The function of the agent with respect to the activity. The security role enabling the agent with respect to the activity."
+* agent.role from http://hl7.org/fhir/ValueSet/security-role-type (example)
+* agent.role ^comment = "For example: doctor, nurse, clerk, etc."
+* agent.role ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
+* agent.role ^binding.extension.valueString = "ProvenanceAgentRole"
+* agent.role ^binding.description = "The role that a provenance agent played with respect to the activity."
+* agent.who 1..1 SU Reference(http://hl7.org/fhir/StructureDefinition/Practitioner or http://hl7.org/fhir/StructureDefinition/PractitionerRole or http://hl7.org/fhir/StructureDefinition/RelatedPerson or http://hl7.org/fhir/StructureDefinition/Patient or http://hl7.org/fhir/StructureDefinition/Device or http://hl7.org/fhir/StructureDefinition/Organization) "Who participated" "The individual, device or organization that participated in the event."
+* agent.who ^comment = "whoIdentity should be used when the agent is not a Resource type."
+* agent.onBehalfOf undefined..1 Reference(http://hl7.org/fhir/StructureDefinition/Practitioner or http://hl7.org/fhir/StructureDefinition/PractitionerRole or http://hl7.org/fhir/StructureDefinition/RelatedPerson or http://hl7.org/fhir/StructureDefinition/Patient or http://hl7.org/fhir/StructureDefinition/Device or http://hl7.org/fhir/StructureDefinition/Organization) "Who the agent is representing" "The individual, device, or organization for whom the change was made."
+* agent.onBehalfOf ^comment = "onBehalfOfIdentity should be used when the agent is not a Resource type."
+* entity undefined..undefined BackboneElement "An entity used in this activity" "An entity used in this activity."
+* entity.role 1..1 SU code "derivation | revision | quotation | source | removal" "How the entity was used during the activity."
+* entity.role from http://hl7.org/fhir/ValueSet/provenance-entity-role|4.0.1 (required)
+* entity.role ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
+* entity.role ^binding.extension.valueString = "ProvenanceEntityRole"
+* entity.role ^binding.description = "How an entity was used in an activity."
+* entity.what 1..1 SU Reference(http://hl7.org/fhir/StructureDefinition/Resource) "Identity of entity" "Identity of the  Entity used. May be a logical or physical uri and maybe absolute or relative."
+* entity.what ^comment = "whatIdentity should be used for entities that are not a Resource type."
+* entity.agent 0..* contentReference http://hl7.org/fhir/StructureDefinition/DomainResource#Provenance.agent "Entity is attributed to this agent" "The entity is attributed to an agent to express the agent's responsibility for that entity, possibly along with other agents. This description can be understood as shorthand for saying that the agent was responsible for the activity which generated the entity."
+* entity.agent ^comment = "A usecase where one Provenance.entity.agent is used where the Entity that was used in the creation/updating of the Target, is not in the context of the same custodianship as the Target, and thus the meaning of Provenance.entity.agent is to say that the entity referenced is managed elsewhere and that this Agent provided access to it.  This would be similar to where the Entity being referenced is managed outside FHIR, such as through HL7 v2, v3, or XDS. This might be where the Entity being referenced is managed in another FHIR resource server. Thus it explains the Provenance of that Entity's use in the context of this Provenance activity."
+* signature undefined..undefined Signature "Signature on target" "A digital signature on the target Reference(s). The signer should match a Provenance.agent. The purpose of the signature is indicated."

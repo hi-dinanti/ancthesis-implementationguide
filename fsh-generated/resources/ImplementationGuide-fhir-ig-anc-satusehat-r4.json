@@ -1,0 +1,68 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "fhir-ig-anc-satusehat-r4",
+  "url": "https://simplifier.net/fhir-ig-anc-satusehat-r4/ImplementationGuide/fhir-ig-anc-satusehat-r4",
+  "version": "0.1.0",
+  "name": "FHIRIGANCSatusehatR4",
+  "title": "FHIR IG ANC Satusehat R4",
+  "status": "draft",
+  "description": "FHIR IG for SATUSEHAT Antenatal Care (Draft)",
+  "packageId": "fhir-ig-anc-satusehat-r4",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "hl7.fhir.r4.id.core",
+      "version": "0.1.0",
+      "uri": "http://fhir.org/packages/hl7.fhir.r4.id.core/ImplementationGuide/hl7.fhir.r4.id.core",
+      "id": "hl7_fhir_r4_id_core"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/AdministrativeCode"
+        },
+        "name": "Administrative Code",
+        "description": "The administrative code of the address, represented in six levels: province, city/regency, district, village, rt and rw.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/BirthPlace"
+        },
+        "name": "Birth Place",
+        "description": "The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements.",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2025+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "draft"
+      },
+      {
+        "code": "autoload-resources",
+        "value": "false"
+      }
+    ]
+  }
+}

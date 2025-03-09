@@ -1,0 +1,23 @@
+{
+  "name": "fhir-builder",
+  "version": "1.0.0",
+  "main": "./build/index.js",
+  "type": "module",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/convert-excel-to-json": "^1.7.4",
+    "@types/node": "^22.10.1",
+    "@types/node-xlsx": "^0.21.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "convert-excel-to-json": "^1.7.0",
+    "dotenv": "^16.4.7"
+  },
+  "scripts": {
+    "clean": "rm -rf coverage build tmp",
+    "build": "tsc -p tsconfig.json",
+    "start": "tsx --tsconfig ./tsconfig.json src/index.ts"
+  }
+}

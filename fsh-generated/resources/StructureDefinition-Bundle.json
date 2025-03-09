@@ -1,0 +1,147 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Bundle",
+  "meta": {
+    "lastUpdated": "2025-02-11T05:41:51.067876+00:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Foundation.Other"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+      "valueCode": "4.0.0"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 5
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "not-classified"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/Bundle",
+  "name": "Bundle",
+  "status": "draft",
+  "date": "2021-12-31T11:10:15.2517326+00:00",
+  "publisher": "Health Level Seven International (FHIR Infrastructure)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "A container for a collection of resources.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Bundle",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Resource",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "Bundle",
+        "path": "Bundle",
+        "short": "Contains a collection of resources",
+        "definition": "A container for a collection of resources.",
+        "constraint": [
+          {
+            "key": "bdl-7",
+            "human": "FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)",
+            "source": "http://hl7.org/fhir/StructureDefinition/Bundle",
+            "severity": "error",
+            "expression": "(type = 'history') or entry.where(fullUrl.exists()).select(fullUrl&resource.meta.versionId).isDistinct()",
+            "xpath": "(f:type/@value = 'history') or (count(for $entry in f:entry[f:resource] return $entry[count(parent::f:Bundle/f:entry[f:fullUrl/@value=$entry/f:fullUrl/@value and ((not(f:resource/*/f:meta/f:versionId/@value) and not($entry/f:resource/*/f:meta/f:versionId/@value)) or f:resource/*/f:meta/f:versionId/@value=$entry/f:resource/*/f:meta/f:versionId/@value)])!=1])=0)"
+          },
+          {
+            "key": "bdl-9",
+            "human": "A document must have an identifier with a system and a value",
+            "source": "http://hl7.org/fhir/StructureDefinition/Bundle",
+            "severity": "error",
+            "expression": "type = 'document' implies (identifier.system.exists() and identifier.value.exists())",
+            "xpath": "not(f:type/@value = 'document') or exists(f:identifier/f:system) or exists(f:identifier/f:value)"
+          },
+          {
+            "key": "bdl-3",
+            "human": "entry.request mandatory for batch/transaction/history, otherwise prohibited",
+            "source": "http://hl7.org/fhir/StructureDefinition/Bundle",
+            "severity": "error",
+            "expression": "entry.all(request.exists() = (%resource.type = 'batch' or %resource.type = 'transaction' or %resource.type = 'history'))",
+            "xpath": "not(f:entry/f:request) or (f:type/@value = 'batch') or (f:type/@value = 'transaction') or (f:type/@value = 'history')"
+          },
+          {
+            "key": "bdl-4",
+            "human": "entry.response mandatory for batch-response/transaction-response/history, otherwise prohibited",
+            "source": "http://hl7.org/fhir/StructureDefinition/Bundle",
+            "severity": "error",
+            "expression": "entry.all(response.exists() = (%resource.type = 'batch-response' or %resource.type = 'transaction-response' or %resource.type = 'history'))",
+            "xpath": "not(f:entry/f:response) or (f:type/@value = 'batch-response') or (f:type/@value = 'transaction-response') or (f:type/@value = 'history')"
+          },
+          {
+            "key": "bdl-12",
+            "human": "A message must have a MessageHeader as the first resource",
+            "source": "http://hl7.org/fhir/StructureDefinition/Bundle",
+            "severity": "error",
+            "expression": "type = 'message' implies entry.first().resource.is(MessageHeader)",
+            "xpath": "not(f:type/@value='message') or f:entry[1]/f:resource/f:MessageHeader"
+          },
+          {
+            "key": "bdl-1",
+            "human": "total only when a search or history",
+            "source": "http://hl7.org/fhir/StructureDefinition/Bundle",
+            "severity": "error",
+            "expression": "total.empty() or (type = 'searchset') or (type = 'history')",
+            "xpath": "not(f:total) or (f:type/@value = 'searchset') or (f:type/@value = 'history')"
+          },
+          {
+            "key": "bdl-2",
+            "human": "entry.search only when a search",
+            "source": "http://hl7.org/fhir/StructureDefinition/Bundle",
+            "severity": "error",
+            "expression": "entry.search.empty() or (type = 'searchset')",
+            "xpath": "not(f:entry/f:search) or (f:type/@value = 'searchset')"
+          },
+          {
+            "key": "bdl-11",
+            "human": "A document must have a Composition as the first resource",
+            "source": "http://hl7.org/fhir/StructureDefinition/Bundle",
+            "severity": "error",
+            "expression": "type = 'document' implies entry.first().resource.is(Composition)",
+            "xpath": "not(f:type/@value='document') or f:entry[1]/f:resource/f:Composition"
+          },
+          {
+            "key": "bdl-10",
+            "human": "A document must have a date",
+            "source": "http://hl7.org/fhir/StructureDefinition/Bundle",
+            "severity": "error",
+            "expression": "type = 'document' implies (timestamp.hasValue())",
+            "xpath": "not(f:type/@value = 'document') or exists(f:timestamp/@value)"
+          }
+        ]
+      }
+    ]
+  }
+}

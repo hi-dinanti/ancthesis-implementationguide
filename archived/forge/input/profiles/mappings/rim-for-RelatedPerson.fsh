@@ -1,0 +1,20 @@
+Mapping: rim-for-RelatedPerson
+Id: rim
+Title: "RIM Mapping"
+Source: RelatedPerson
+Target: "http://hl7.org/v3"
+* -> "role"
+* identifier -> ".id"
+* active -> ".statusCode"
+* patient -> "scoper[classCode=PSN|ANM and determinerCode='INSTANCE']/playedRole[classCode='PAT']/id"
+* relationship -> "code"
+* name -> "name"
+* telecom -> "telecom"
+* gender -> "administrativeGender"
+* birthDate -> "player.birthTime"
+* address -> "addr"
+* photo -> "player[classCode='PSN' and determinerCode='INSTANCE']/desc"
+* period -> ".effectiveTime"
+* communication -> "LanguageCommunication"
+* communication.language -> "player[classCode=PSN|ANM and determinerCode=INSTANCE]/languageCommunication/code"
+* communication.preferred -> "preferenceInd"

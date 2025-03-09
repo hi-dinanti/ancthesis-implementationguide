@@ -1,0 +1,502 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:2ba985a6-dccc-499b-a4ff-22d9564c9dbb",
+            "resource": {
+                "resourceType": "Encounter",
+                "identifier": [
+                    {
+                        "system": "http://sys-ids.kemkes.go.id/encounter/{{Org_id}}",
+                        "value": "P20240001"
+                    }
+                ],
+                "status": "finished",
+                "class": {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                    "code": "AMB",
+                    "display": "ambulatory"
+                },
+                "subject": {
+                    "reference": "Patient/100000030006",
+                    "display": "Jane Smith"
+                },
+                "participant": [
+                    {
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                                        "code": "ATND",
+                                        "display": "attender"
+                                    }
+                                ]
+                            }
+                        ],
+                        "individual": {
+                            "reference": "Practitioner/N10000001",
+                            "display": "Dokter Bronsig"
+                        }
+                    }
+                ],
+                "period": {
+                    "start": "2023-08-31T00:00:00+00:00",
+                    "end": "2023-08-31T02:00:00+00:00"
+                },
+                "location": [
+                    {
+                        "location": {
+                            "reference": "Location/c87e0ca7-badc-4c60-9080-277aaaf27a88",
+                            "display": "Ruang Poli ANC, Departemen KIA, Lantai 2, Gedung Utama"
+                        }
+                    }
+                ],
+                "diagnosis": [
+                    {
+                        "condition": {
+                            "reference": "urn:uuid:09cc2be2-a9f7-40d2-966e-f22c7d0a3095",
+                            "display": "Tuberculosis of lung, confirmed by sputum microscopy with or without culture"
+                        },
+                        "use": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+                                    "code": "DD",
+                                    "display": "Discharge diagnosis"
+                                }
+                            ]
+                        },
+                        "rank": 1
+                    },
+                    {
+                        "condition": {
+                            "reference": "urn:uuid:0afdc07e-b7ff-4011-aaef-8d32fefe9ea6",
+                            "display": "Mild protein-calorie malnutrition"
+                        },
+                        "use": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+                                    "code": "DD",
+                                    "display": "Discharge diagnosis"
+                                }
+                            ]
+                        },
+                        "rank": 2
+                    }
+                ],
+                "statusHistory": [
+                    {
+                        "status": "arrived",
+                        "period": {
+                            "start": "2023-08-31T00:00:00+00:00",
+                            "end": "2023-08-31T01:00:00+00:00"
+                        }
+                    },
+                    {
+                        "status": "in-progress",
+                        "period": {
+                            "start": "2023-08-31T01:00:00+00:00",
+                            "end": "2023-08-31T02:00:00+00:00"
+                        }
+                    },
+                    {
+                        "status": "finished",
+                        "period": {
+                            "start": "2023-08-31T02:00:00+00:00",
+                            "end": "2023-08-31T02:00:00+00:00"
+                        }
+                    }
+                ],
+                "hospitalization": {
+                    "dischargeDisposition": {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/discharge-disposition",
+                                "code": "home",
+                                "display": "Home"
+                            }
+                        ],
+                        "text": "Anjuran dokter untuk pulang dan kontrol kembali 1 bulan setelah minum obat"
+                    }
+                },
+                "serviceProvider": {
+                    "reference": "Organization/{{Org_id}}"
+                },
+                "episodeOfCare": [
+                    {
+                        "reference": "urn:uuid:8e9e5e3b-52a1-42a0-b39e-7cc67db3ad17"
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "Encounter"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:09cc2be2-a9f7-40d2-966e-f22c7d0a3095",
+            "resource": {
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "encounter-diagnosis",
+                                "display": "Encounter Diagnosis",
+                                "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+                            }
+                        ]
+                    }
+                ],
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "code": "active",
+                            "display": "Active",
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "code": "A15.0",
+                            "display": "Tuberculosis of lung, confirmed by sputum microscopy with or without culture",
+                            "system": "http://hl7.org/fhir/sid/icd-10"
+                        }
+                    ]
+                },
+                "encounter": {
+                    "reference": "urn:uuid:2ba985a6-dccc-499b-a4ff-22d9564c9dbb"
+                },
+                "meta": {
+                    "lastUpdated": "2022-11-30T08:12:21.445698+00:00",
+                    "versionId": "MTY2OTc5NTk0MTQ0NTY5ODAwMA"
+                },
+                "onsetDateTime": "2023-06-14T00:00:00+00:00",
+                "recordedDate": "2023-06-14T00:00:00+00:00",
+                "resourceType": "Condition",
+                "subject": {
+                    "display": "Jane Smith",
+                    "reference": "Patient/100000030006"
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "Condition"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:0afdc07e-b7ff-4011-aaef-8d32fefe9ea6",
+            "resource": {
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "encounter-diagnosis",
+                                "display": "Encounter Diagnosis",
+                                "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+                            }
+                        ]
+                    }
+                ],
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "code": "active",
+                            "display": "Active",
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "code": "E44.1",
+                            "display": "Mild protein-calorie malnutrition",
+                            "system": "http://hl7.org/fhir/sid/icd-10"
+                        }
+                    ]
+                },
+                "encounter": {
+                    "display": "Kunjungan Jane Smith di hari Selasa, 14 Juni 2023",
+                    "reference": "urn:uuid:2ba985a6-dccc-499b-a4ff-22d9564c9dbb"
+                },
+                "meta": {
+                    "lastUpdated": "2022-11-30T08:17:52.530758+00:00",
+                    "versionId": "MTY2OTc5NjI3MjUzMDc1ODAwMA"
+                },
+                "onsetDateTime": "2023-06-14T00:00:00+00:00",
+                "recordedDate": "2023-06-14T00:00:00+00:00",
+                "resourceType": "Condition",
+                "subject": {
+                    "display": "Jane Smith",
+                    "reference": "Patient/100000030006"
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "Condition"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:8e9e5e3b-52a1-42a0-b39e-7cc67db3ad17",
+            "resource": {
+                "resourceType": "EpisodeOfCare",
+                "identifier": [
+                    {
+                        "system": "http://sys-ids.kemkes.go.id/episode-of-care/{{Org_id}}",
+                        "value": "EOC998800"
+                    }
+                ],
+                "status": "finished",
+                "statusHistory": [
+                    {
+                        "status": "active",
+                        "period": {
+                            "start": "2023-06-14T00:00:00+00:00",
+                            "end": "2023-06-14T01:00:00+00:00"
+                        }
+                    },
+                    {
+                        "status": "finished",
+                        "period": {
+                            "start": "2024-02-06T00:00:00+00:00",
+                            "end": "2024-02-06T00:00:00+00:00"
+                        }
+                    }
+                ],
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type",
+                                "code": "ANC",
+                                "display": "Antenatal Care"
+                            }
+                        ]
+                    }
+                ],
+                "patient": {
+                    "reference": "Patient/100000030006",
+                    "display": "Jane Smith"
+                },
+                "managingOrganization": {
+                    "reference": "Organization/{{Org_id}}"
+                },
+                "period": {
+                    "start": "2023-05-02T00:00:00+00:00",
+                    "end": "2024-02-06T00:00:00+00:00"
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "EpisodeOfCare"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:788d6f05-1248-48fd-b9bd-0667aa5b168d",
+            "resource": {
+                "resourceType": "Procedure",
+                "status": "completed",
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "103693007",
+                            "display": "Diagnostic procedure"
+                        }
+                    ],
+                    "text": "Diagnostic procedure"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                            "code": "88.78",
+                            "display": "Diagnostic ultrasound of gravid uterus"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/100000030006",
+                    "display": "Jane Smith"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:2ba985a6-dccc-499b-a4ff-22d9564c9dbb"
+                },
+                "performedPeriod": {
+                    "start": "2023-06-14T12:31:00+00:00",
+                    "end": "2023-06-14T13:27:00+00:00"
+                },
+                "performer": [
+                    {
+                        "actor": {
+                            "reference": "Practitioner/N10000001",
+                            "display": "Dokter Bronsig"
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "Procedure"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:0563571f-8174-4455-8179-f0293aeb53dd",
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "survey",
+                                "display": "Survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "11996-6",
+                            "display": "[#] Pregnancies"
+                        },
+                        {
+                            "system": "http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes",
+                            "code": "ANC.B6.DE24",
+                            "display": "Number of pregnancies (gravida)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/100000030006",
+                    "display": "Jane Smith"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:2ba985a6-dccc-499b-a4ff-22d9564c9dbb"
+                },
+                "effectiveDateTime": "2023-06-14T00:00:00+00:00",
+                "issued": "2023-06-14T14:30:10+00:00",
+                "performer": [
+                    {
+                        "reference": "Practitioner/N10000001"
+                    }
+                ],
+                "valueInteger": 2
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:d421b572-b7b3-4233-9c51-0383cce64fd4",
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "survey",
+                                "display": "Survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "11977-6",
+                            "display": "[#] Parity"
+                        },
+                        {
+                            "system": "http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes",
+                            "code": "ANC.B6.DE32",
+                            "display": "Parity"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/100000030006",
+                    "display": "Jane Smith"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:2ba985a6-dccc-499b-a4ff-22d9564c9dbb"
+                },
+                "effectiveDateTime": "2023-06-14T00:00:00+00:00",
+                "issued": "2023-06-14T14:30:10+00:00",
+                "performer": [
+                    {
+                        "reference": "Practitioner/N10000001"
+                    }
+                ],
+                "valueInteger": 1
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:30971c1b-6dfd-480b-9946-9d86a16378b9",
+            "resource": {
+                "resourceType": "Observation",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "survey",
+                                "display": "Survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "69043-8",
+                            "display": "Other pregnancy outcomes #"
+                        },
+                        {
+                            "system": "http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes",
+                            "code": "ANC.B6.DE25",
+                            "display": "Number of miscarriages and/or abortions"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/100000030006",
+                    "display": "Jane Smith"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:2ba985a6-dccc-499b-a4ff-22d9564c9dbb"
+                },
+                "effectiveDateTime": "2023-06-14T00:00:00+00:00",
+                "issued": "2023-06-14T14:30:10+00:00",
+                "performer": [
+                    {
+                        "reference": "Practitioner/N10000001"
+                    }
+                ],
+                "valueInteger": 0
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        }
+    ]
+}

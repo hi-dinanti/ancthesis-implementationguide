@@ -1,0 +1,112 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Consent",
+  "meta": {
+    "lastUpdated": "2025-02-11T05:38:35.7073526+00:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Foundation.Security"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cbcc"
+    }
+  ],
+  "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/Consent",
+  "name": "Consent",
+  "status": "draft",
+  "date": "2019-11-01T09:29:23+11:00",
+  "publisher": "Health Level Seven International (Community Based Collaborative Care)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/homehealth/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "A record of a healthcare consumer’s  choices, which permits or denies identified recipient(s) or recipient role(s) to perform one or more actions within a given policy context, for specific purposes and periods of time.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Consent",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DomainResource",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "Consent",
+        "path": "Consent",
+        "short": "A healthcare consumer's  choices to permit or deny recipients or roles to perform actions for specific purposes and periods of time",
+        "definition": "A record of a healthcare consumer’s  choices, which permits or denies identified recipient(s) or recipient role(s) to perform one or more actions within a given policy context, for specific purposes and periods of time.",
+        "comment": "Broadly, there are 3 key areas of consent for patients: Consent around sharing information (aka Privacy Consent Directive - Authorization to Collect, Use, or Disclose information), consent for specific treatment, or kinds of treatment, and general advance care directives.",
+        "constraint": [
+          {
+            "key": "ppc-4",
+            "human": "IF Scope=adr, there must be a patient",
+            "source": "http://hl7.org/fhir/StructureDefinition/Consent",
+            "severity": "error",
+            "expression": "patient.exists() or scope.coding.where(system='something' and code='adr').exists().not()",
+            "xpath": "exists(f:patient) or not(exists(f:scope/f:coding[f:system/@value='something' and f:code/@value='adr'])))"
+          },
+          {
+            "key": "ppc-5",
+            "human": "IF Scope=treatment, there must be a patient",
+            "source": "http://hl7.org/fhir/StructureDefinition/Consent",
+            "severity": "error",
+            "expression": "patient.exists() or scope.coding.where(system='something' and code='treatment').exists().not()",
+            "xpath": "exists(f:patient) or not(exists(f:scope/f:coding[f:system/@value='something' and f:code/@value='treatment'])))"
+          },
+          {
+            "key": "ppc-2",
+            "human": "IF Scope=privacy, there must be a patient",
+            "source": "http://hl7.org/fhir/StructureDefinition/Consent",
+            "severity": "error",
+            "expression": "patient.exists() or scope.coding.where(system='something' and code='patient-privacy').exists().not()",
+            "xpath": "exists(f:patient) or not(exists(f:scope/f:coding[f:system/@value='something' and f:code/@value='patient-privacy'])))"
+          },
+          {
+            "key": "ppc-3",
+            "human": "IF Scope=research, there must be a patient",
+            "source": "http://hl7.org/fhir/StructureDefinition/Consent",
+            "severity": "error",
+            "expression": "patient.exists() or scope.coding.where(system='something' and code='research').exists().not()",
+            "xpath": "exists(f:patient) or not(exists(f:scope/f:coding[f:system/@value='something' and f:code/@value='research'])))"
+          },
+          {
+            "key": "ppc-1",
+            "human": "Either a Policy or PolicyRule",
+            "source": "http://hl7.org/fhir/StructureDefinition/Consent",
+            "severity": "error",
+            "expression": "policy.exists() or policyRule.exists()",
+            "xpath": "exists(f:policy) or exists(f:policyRule)"
+          }
+        ]
+      }
+    ]
+  }
+}

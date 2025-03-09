@@ -1,0 +1,70 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PractitionerRole",
+  "meta": {
+    "lastUpdated": "2025-02-11T05:32:43.0938828+00:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Individuals"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "individual"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pa"
+    }
+  ],
+  "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/PractitionerRole",
+  "name": "PractitionerRole",
+  "status": "draft",
+  "date": "2019-11-01T09:29:23+11:00",
+  "publisher": "Health Level Seven International (Patient Administration)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "A specific set of Roles/Locations/specialties/services that a practitioner may perform at an organization for a period of time.",
+  "purpose": "Need to track services that a healthcare provider is able to provide at an organization's location, and the services that they can perform there.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "PractitionerRole",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DomainResource",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "PractitionerRole",
+        "path": "PractitionerRole",
+        "short": "Roles/organizations the practitioner is associated with",
+        "definition": "A specific set of Roles/Locations/specialties/services that a practitioner may perform at an organization for a period of time."
+      }
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "anc-encounter",
+  "meta": {
+    "lastUpdated": "2025-02-11T06:32:01.879599+00:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Management"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pa"
+    }
+  ],
+  "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/Encounter",
+  "name": "Encounter",
+  "status": "draft",
+  "date": "2019-11-01T09:29:23+11:00",
+  "publisher": "Health Level Seven International (Patient Administration)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Encounter",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DomainResource",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "Encounter",
+        "path": "Encounter",
+        "short": "An interaction during which services are provided to the patient",
+        "definition": "An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
+        "alias": [
+          "Visit"
+        ]
+      },
+      {
+        "id": "Encounter.identifier",
+        "path": "Encounter.identifier",
+        "short": "Identifier(s) by which this encounter is known",
+        "definition": "Identifier(s) by which this encounter is known. The transmission of ANC visit data through the Encounter.identifier element is carried out for each ANC/pregnancy visit by providing information on whether the visit falls into the category of K1 akses, K1 murni, K2 visit, and so on.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "isSummary": true
+      }
+    ]
+  }
+}

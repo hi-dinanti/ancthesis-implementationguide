@@ -1,6 +1,7 @@
 // Narratives for patient scenario
-// Aisyah visits a government health center for her first antenatal care (ANC) visit. A physical examination reveals elevated blood pressure, prompting a lab test that confirms proteinuria. 
-// Based on these findings, the nurse diagnoses pre-eclampsia and urgently refers Aisyah to the hospital for further management.
+// Aisyah, a pregnant woman, visits a government health center for her first antenatal care (ANC) visit. 
+// During the visit, the healthcare provider conducts a comprehensive assessment, including a physical examination and laboratory tests. 
+// Elevated blood pressure is detected, and a urine test confirms proteinuria. Based on these findings, the nurse diagnoses pre-eclampsia and urgently refers Aisyah to the hospital for further management.
 
 @startuml
 actor Aisyah

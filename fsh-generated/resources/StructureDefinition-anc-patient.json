@@ -1,0 +1,77 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "anc-patient",
+  "meta": {
+    "lastUpdated": "2025-02-11T05:10:03.7379533+00:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Individuals"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+      "valueCode": "4.0.0"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 5
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pa"
+    }
+  ],
+  "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/Patient",
+  "name": "Patient",
+  "status": "draft",
+  "date": "2022-02-02T03:24:29.0074533Z",
+  "publisher": "Health Level Seven International (Patient Administration)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Demographics and other administrative information about an individual receiving care or other health-related services. For antenatal care related service, patient gender is female.",
+  "purpose": "Tracking patient is the center of the healthcare process.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DomainResource",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient",
+        "path": "Patient",
+        "short": "Information about an individual or animal receiving health care services",
+        "definition": "Demographics and other administrative information about an individual or animal receiving care or other health-related services.",
+        "alias": [
+          "SubjectOfCare Client Resident"
+        ]
+      }
+    ]
+  }
+}

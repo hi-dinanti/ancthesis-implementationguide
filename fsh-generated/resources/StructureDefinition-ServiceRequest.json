@@ -1,0 +1,85 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ServiceRequest",
+  "meta": {
+    "lastUpdated": "2025-02-11T05:33:51.9235582+00:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Care Provision"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "oo"
+    }
+  ],
+  "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/ServiceRequest",
+  "name": "ServiceRequest",
+  "status": "draft",
+  "date": "2019-11-01T09:29:23+11:00",
+  "publisher": "Health Level Seven International (Orders and Observations)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/orders/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "A record of a request for service such as diagnostic investigations, treatments, or operations to be performed.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ServiceRequest",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DomainResource",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "ServiceRequest",
+        "path": "ServiceRequest",
+        "short": "A request for a service to be performed",
+        "definition": "A record of a request for service such as diagnostic investigations, treatments, or operations to be performed.",
+        "alias": [
+          "diagnostic request",
+          "referral",
+          "referral request",
+          "transfer of care request"
+        ],
+        "constraint": [
+          {
+            "key": "prr-1",
+            "human": "orderDetail SHALL only be present if code is present",
+            "source": "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
+            "severity": "error",
+            "expression": "orderDetail.empty() or code.exists()",
+            "xpath": "exists(f:code) or not(exists(f:orderDetail))"
+          }
+        ]
+      }
+    ]
+  }
+}
