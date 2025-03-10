@@ -1,0 +1,22 @@
+Mapping: workflow-for-MedicationAdministration
+Id: workflow
+Title: "Workflow Pattern"
+Source: MedicationAdministration
+Target: "http://hl7.org/fhir/workflow"
+* -> "Event"
+* identifier -> "Event.identifier"
+* instantiates -> "Event.instantiates"
+* partOf -> "Event.partOf"
+* status -> "Event.status"
+* statusReason -> "Event.statusReason"
+* medication[x] -> "Event.code"
+* subject -> "Event.subject"
+* context -> "Event.context"
+* effective[x] -> "Event.occurrence[x]"
+* performer -> "Event.performer"
+* performer.function -> "Event.performer.function"
+* performer.actor -> "Event.performer.actor"
+* reasonCode -> "Event.reasonCode"
+* reasonReference -> "Event.reasonReference"
+* request -> "Event.basedOn"
+* note -> "Event.note"

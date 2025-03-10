@@ -1,0 +1,22 @@
+Mapping: w5-for-Claim
+Id: w5
+Title: "FiveWs Pattern Mapping"
+Source: Claim
+Target: "http://hl7.org/fhir/fivews"
+* identifier -> "FiveWs.identifier"
+* status -> "FiveWs.status"
+* type -> "FiveWs.class"
+* subType -> "FiveWs.class"
+* use -> "FiveWs.class"
+* patient -> "FiveWs.subject[x]"
+* patient -> "FiveWs.subject"
+* billablePeriod -> "FiveWs.done[x]"
+* created -> "FiveWs.recorded"
+* enterer -> "FiveWs.author"
+* provider -> "FiveWs.source"
+* referral -> "FiveWs.cause"
+* facility -> "FiveWs.where[x]"
+* careTeam.provider -> "FiveWs.actor"
+* insurance.identifier -> "FiveWs.identifier"
+* item.serviced[x] -> "FiveWs.done[x]"
+* item.location[x] -> "FiveWs.where[x]"

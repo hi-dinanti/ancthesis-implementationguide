@@ -2,214 +2,1939 @@
   "Timestamp": "2025-02-11T04:22:53.5204876+00:00",
   "Files": {
     "package.json": {
+      "Length": 391,
+      "LastWriteTime": "2025-03-09T17:13:59.5111656+00:00",
+      "Hash": "E5829CD6A6C7B2A37560B08BF5A8184F"
+    },
+    "README.md": {
+      "Length": 1449,
+      "LastWriteTime": "2025-03-10T06:03:49.2864977+00:00",
+      "Hash": "4C50613EA2CE9706F37FDF6BC3D0E62A"
+    },
+    "sushi-config.yaml": {
+      "Length": 11120,
+      "LastWriteTime": "2025-03-10T06:01:38.6270305+00:00",
+      "Hash": "4E2239A067E824B3410015AE3926BCD4"
+    },
+    "fsh-generated\\fsh-index.txt": {
+      "Length": 10332,
+      "LastWriteTime": "2025-03-10T07:06:13.845749+00:00",
+      "Hash": "479F46E6B157D14FFDBC6C9BD7EFF36A"
+    },
+    "fsh-generated\\includes\\fsh-link-references.md": {
+      "Length": 1512,
+      "LastWriteTime": "2025-03-10T07:06:13.9175019+00:00",
+      "Hash": "9C384CC3577ADCEDB0EE5E93A873A658"
+    },
+    "fsh-generated\\resources\\StructureDefinition-AllergyIntolerance.json": {
+      "Length": 3097,
+      "LastWriteTime": "2025-03-10T07:06:13.6786894+00:00",
+      "Hash": "7B2819C973A1B099163D4380DE8CDA12"
+    },
+    "fsh-generated\\resources\\StructureDefinition-CarePlan.json": {
+      "Length": 2894,
+      "LastWriteTime": "2025-03-10T07:06:13.6879493+00:00",
+      "Hash": "208D30E3AD28F49FE2C30A825A89CADC"
+    },
+    "fsh-generated\\resources\\StructureDefinition-Claim.json": {
+      "Length": 3357,
+      "LastWriteTime": "2025-03-10T07:06:13.6703949+00:00",
+      "Hash": "6A378DD62779962BA4CA8718D68E1584"
+    },
+    "fsh-generated\\resources\\StructureDefinition-Composition.json": {
+      "Length": 4851,
+      "LastWriteTime": "2025-03-10T07:06:13.6564166+00:00",
+      "Hash": "D150309D7DA37BD72F5371BB5B09AF64"
+    },
+    "fsh-generated\\resources\\StructureDefinition-Condition.json": {
+      "Length": 3612,
+      "LastWriteTime": "2025-03-10T07:06:13.7133843+00:00",
+      "Hash": "F04A29C62348FCB5C716B608CD3013C0"
+    },
+    "fsh-generated\\resources\\StructureDefinition-Coverage.json": {
+      "Length": 3315,
+      "LastWriteTime": "2025-03-10T07:06:13.6741714+00:00",
+      "Hash": "D548C5900289A868A64CA231D861BF97"
+    },
+    "fsh-generated\\resources\\StructureDefinition-DiagnosticReport.json": {
+      "Length": 3921,
+      "LastWriteTime": "2025-03-10T07:06:13.7188321+00:00",
+      "Hash": "50EB44AC5CBD9B04870AE3E04AE27F2B"
+    },
+    "fsh-generated\\resources\\StructureDefinition-Location.json": {
+      "Length": 2441,
+      "LastWriteTime": "2025-03-10T07:06:13.6644921+00:00",
+      "Hash": "731F8F4777797F2F4E37EDBC207BB0EF"
+    },
+    "fsh-generated\\resources\\StructureDefinition-Medication.json": {
+      "Length": 2999,
+      "LastWriteTime": "2025-03-10T07:06:13.7527267+00:00",
+      "Hash": "3ACC42DB6297F7482BD9B50B7183A188"
+    },
+    "fsh-generated\\resources\\StructureDefinition-MedicationAdministration.json": {
+      "Length": 3222,
+      "LastWriteTime": "2025-03-10T07:06:13.7527267+00:00",
+      "Hash": "40EF246F695146BDF3445A039C31BC48"
+    },
+    "fsh-generated\\resources\\StructureDefinition-MedicationDispense.json": {
+      "Length": 3233,
+      "LastWriteTime": "2025-03-10T07:06:13.7527267+00:00",
+      "Hash": "AF52C9F3E805B0B464CE93EB5D32CCCD"
+    },
+    "fsh-generated\\resources\\StructureDefinition-MedicationRequest.json": {
+      "Length": 3497,
+      "LastWriteTime": "2025-03-10T07:06:13.7527267+00:00",
+      "Hash": "1ABCFF26C504C87B4F267D5017E21106"
+    },
+    "fsh-generated\\resources\\StructureDefinition-MedicationStatement.json": {
+      "Length": 6179,
+      "LastWriteTime": "2025-03-10T07:06:13.7527267+00:00",
+      "Hash": "97DE90DDC379ABA25F6D973CB1CE8AA8"
+    },
+    "fsh-generated\\resources\\StructureDefinition-Organization.json": {
+      "Length": 17652,
+      "LastWriteTime": "2025-03-10T07:06:13.782457+00:00",
+      "Hash": "5D7D0E058846C97D5BF149D1E631B736"
+    },
+    "fsh-generated\\resources\\ValueSet-location-codes.json": {
+      "Length": 420,
+      "LastWriteTime": "2025-03-10T06:10:54.5701728+00:00",
+      "Hash": "A082ED67FD8832603A8807064D2DFA79"
+    },
+    "input\\examples\\0-episodeofcare.json": {
+      "Length": 980,
+      "LastWriteTime": "2025-03-09T07:08:27.1545968+00:00",
+      "Hash": "A436B0D99BA8E3D9B5A233CB86AD218F"
+    },
+    "input\\examples\\1-encounter.json": {
+      "Length": 1789,
+      "LastWriteTime": "2025-03-09T07:07:34.2617003+00:00",
+      "Hash": "A1C965C165BD17932DF65F50BB35CEB0"
+    },
+    "input\\examples\\10-observation-lila.json": {
+      "Length": 1652,
+      "LastWriteTime": "2025-03-09T07:00:33.0375537+00:00",
+      "Hash": "D2E68E7FBB47C86164C14C92F5F6D6F7"
+    },
+    "input\\examples\\11-observation-gol-darah.json": {
+      "Length": 1568,
+      "LastWriteTime": "2025-03-09T07:07:09.1995435+00:00",
+      "Hash": "72E0EC70C1E9B2610AB8E5DC38F2EA23"
+    },
+    "input\\examples\\12-observation-rhesus.json": {
+      "Length": 1562,
+      "LastWriteTime": "2025-03-09T07:02:04.6912603+00:00",
+      "Hash": "3E018D5E5B2A8E2B474B3B65C75762B9"
+    },
+    "input\\examples\\13-observation-hemoglobin-10t.json": {
+      "Length": 1803,
+      "LastWriteTime": "2025-03-09T07:02:56.3390385+00:00",
+      "Hash": "0D8327062F28D1BCC53AA56D6662E322"
+    },
+    "input\\examples\\14-observation-protein-urin-10t.json": {
+      "Length": 1766,
+      "LastWriteTime": "2025-03-09T07:03:43.4003305+00:00",
+      "Hash": "1F099788779596D9ACCCC5B85CCED0DA"
+    },
+    "input\\examples\\15-observation-gds-10t.json": {
+      "Length": 1772,
+      "LastWriteTime": "2025-03-09T07:04:32.8310699+00:00",
+      "Hash": "6B8CBD751F6EB4260B070A28F409A00E"
+    },
+    "input\\examples\\16-observation-ppia-vdrl-10t.json": {
+      "Length": 1911,
+      "LastWriteTime": "2025-03-09T07:05:04.7819736+00:00",
+      "Hash": "92CBCE7DA4698571E8834B85267000C7"
+    },
+    "input\\examples\\17-observation-ppia-hepb-10t.json": {
+      "Length": 1923,
+      "LastWriteTime": "2025-03-09T07:09:56.0904133+00:00",
+      "Hash": "879047E738E34660A4E264E09D1FD750"
+    },
+    "input\\examples\\18-observation-ppia-hiv-10t.json": {
+      "Length": 1922,
+      "LastWriteTime": "2025-03-09T07:06:55.3274415+00:00",
+      "Hash": "E349F0EF43D8D000FC196342FA9E5020"
+    },
+    "input\\examples\\19-immunization-riwayatT1.json": {
+      "Length": 2220,
+      "LastWriteTime": "2025-03-09T07:13:14.6816833+00:00",
+      "Hash": "3F6CADBCC4A9CD09C4EE09F9653791C3"
+    },
+    "input\\examples\\2-observation-gravida.json": {
+      "Length": 1213,
+      "LastWriteTime": "2025-03-09T06:56:18.6244834+00:00",
+      "Hash": "58F54BAB8877ABCF3F608AA07E0F952C"
+    },
+    "input\\examples\\20-immunization-pemberianT2.json": {
+      "Length": 1963,
+      "LastWriteTime": "2025-03-09T07:13:12.9628864+00:00",
+      "Hash": "EB2FEFD4853A42D2539D1A9839C97C14"
+    },
+    "input\\examples\\21-procedure.json": {
+      "Length": 1089,
+      "LastWriteTime": "2025-03-09T07:14:04.6885536+00:00",
+      "Hash": "2110F41564C340CBCF9B9FAAABC1D8E1"
+    },
+    "input\\examples\\22-condition.json": {
+      "Length": 1089,
+      "LastWriteTime": "2025-03-09T07:14:43.3685694+00:00",
+      "Hash": "2110F41564C340CBCF9B9FAAABC1D8E1"
+    },
+    "input\\examples\\23-servicerequest-rujukan.json": {
+      "Length": 1929,
+      "LastWriteTime": "2025-03-09T07:15:39.2842042+00:00",
+      "Hash": "4F991DA70C902147CF03E6C5C48844C4"
+    },
+    "input\\examples\\24-bundle-anc.json": {
+      "Length": 19833,
+      "LastWriteTime": "2025-03-09T07:15:34.1564823+00:00",
+      "Hash": "EE60CBA3ECFF0BA773FF8CCD52EA3DF7"
+    },
+    "input\\examples\\3-observation-paritas.json": {
+      "Length": 1183,
+      "LastWriteTime": "2025-03-09T07:07:29.5242168+00:00",
+      "Hash": "B30F99CCD1D2A6AA8237CEF53B472D57"
+    },
+    "input\\examples\\4-observation-abortus.json": {
+      "Length": 1232,
+      "LastWriteTime": "2025-03-09T07:07:26.5332051+00:00",
+      "Hash": "7916C5AEE42FCC17E5DCD1EA23567F6A"
+    },
+    "input\\examples\\5-observation-hpht.json": {
+      "Length": 1257,
+      "LastWriteTime": "2025-03-09T07:07:23.9074047+00:00",
+      "Hash": "5390866135BE5BEF62E1455E4501ACCA"
+    },
+    "input\\examples\\6-observation-bb.json": {
+      "Length": 1325,
+      "LastWriteTime": "2025-03-09T07:07:18.571145+00:00",
+      "Hash": "5111056BCEA43696E395347305B93DC0"
+    },
+    "input\\examples\\7-observation-tb.json": {
+      "Length": 1316,
+      "LastWriteTime": "2025-03-09T06:59:05.4664919+00:00",
+      "Hash": "887E01DFAA6A49164E5DF1DC10AF7862"
+    },
+    "input\\examples\\8-observation-sistolik.json": {
+      "Length": 1354,
+      "LastWriteTime": "2025-03-09T07:07:13.4661173+00:00",
+      "Hash": "3BAFDD0DCDB7DFABDB2909F910B10948"
+    },
+    "input\\examples\\9-observation-diastolik.json": {
+      "Length": 1355,
+      "LastWriteTime": "2025-03-09T07:00:07.1574037+00:00",
+      "Hash": "0D1DEF633EE94CC5D22F124B87A12DF3"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\package.json": {
+      "Length": 556,
+      "LastWriteTime": "2025-02-17T01:04:54.6486292+00:00",
+      "Hash": "47B606826C46D0980DA7048D0F1F3516"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\README.md": {
+      "Length": 6195,
+      "LastWriteTime": "2025-02-17T01:04:54.4750691+00:00",
+      "Hash": "FF2FC0592E4F461579C641988EA5983F"
+    },
+    "archived\\satusehat-integration-laravel\\satusehat-integration-laravel\\CHANGELOG.md": {
+      "Length": 20683,
+      "LastWriteTime": "2025-02-17T01:14:46.0213449+00:00",
+      "Hash": "F14CC7321407D9E4E4713274577D0F21"
+    },
+    "archived\\satusehat-integration-laravel\\satusehat-integration-laravel\\CODE_OF_CONDUCT.md": {
+      "Length": 5330,
+      "LastWriteTime": "2025-02-17T01:14:46.0253237+00:00",
+      "Hash": "88B7E7B53EB8E1EFCB0A2C823A1B2119"
+    },
+    "archived\\satusehat-integration-laravel\\satusehat-integration-laravel\\CONTRIBUTING.md": {
+      "Length": 489,
+      "LastWriteTime": "2025-02-17T01:14:46.0253237+00:00",
+      "Hash": "2A644229BF2853949A1B3C8650F5B409"
+    },
+    "archived\\satusehat-integration-laravel\\satusehat-integration-laravel\\FREEMIUM_COMPARISON.md": {
+      "Length": 6139,
+      "LastWriteTime": "2025-02-17T01:14:46.0281976+00:00",
+      "Hash": "D15CEE2DDFFB6A9053435F3376E108A6"
+    },
+    "archived\\satusehat-integration-laravel\\satusehat-integration-laravel\\LICENSE.md": {
+      "Length": 1123,
+      "LastWriteTime": "2025-02-17T01:14:46.0281976+00:00",
+      "Hash": "0957BE4884BA3CE0EAF9B8EC233991BD"
+    },
+    "archived\\satusehat-integration-laravel\\satusehat-integration-laravel\\README.md": {
+      "Length": 4413,
+      "LastWriteTime": "2025-02-17T01:14:46.0281976+00:00",
+      "Hash": "F482BD34518604C2DDEE8A2A0F2A6EB8"
+    },
+    "archived\\satusehat-integration-laravel\\satusehat-integration-laravel\\SECURITY.md": {
+      "Length": 729,
+      "LastWriteTime": "2025-02-17T01:14:46.0281976+00:00",
+      "Hash": "36637D6357ABBC9B78DC2D1D34D2E5F7"
+    },
+    "archived\\satusehat-integration-laravel\\satusehat-integration-laravel\\.github\\ISSUE_TEMPLATE\\bug_report.md": {
+      "Length": 872,
+      "LastWriteTime": "2025-02-17T01:14:46.0054395+00:00",
+      "Hash": "188FD8A11F28F0E50DC7CB27A22AF1EB"
+    },
+    "archived\\satusehat-integration-laravel\\satusehat-integration-laravel\\.github\\ISSUE_TEMPLATE\\custom.md": {
+      "Length": 136,
+      "LastWriteTime": "2025-02-17T01:14:46.0115709+00:00",
+      "Hash": "FF56B786844615BA1920A5ED736DD44A"
+    },
+    "archived\\satusehat-integration-laravel\\satusehat-integration-laravel\\.github\\ISSUE_TEMPLATE\\feature_request.md": {
+      "Length": 615,
+      "LastWriteTime": "2025-02-17T01:14:46.0115709+00:00",
+      "Hash": "2C95CB00EBD7546CCEC06638CD813767"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\templates\\Examples\\CarePlan\\IGD.json": {
+      "Length": 843,
+      "LastWriteTime": "2025-02-17T01:04:56.0266316+00:00",
+      "Hash": "DE50F5B1879AB1FCDED2D6461022CC09"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\templates\\Examples\\CarePlan\\Rawat-Inap.json": {
+      "Length": 805,
+      "LastWriteTime": "2025-02-17T01:04:56.1058545+00:00",
+      "Hash": "7AFABFE8A99186C59CC42A6625EE81AA"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\templates\\Examples\\CarePlan\\Rawat-Jalan.json": {
+      "Length": 880,
+      "LastWriteTime": "2025-02-17T01:04:56.186504+00:00",
+      "Hash": "A71A9448C2A74561B556557A63E133A8"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\templates\\Examples\\Condition\\Diagnosis.json": {
+      "Length": 1258,
+      "LastWriteTime": "2025-02-17T01:04:56.3024769+00:00",
+      "Hash": "1EE8CF66777D1EE6E0E2CA4F0E68943D"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\templates\\Examples\\Condition\\Keluhan-Utama.json": {
+      "Length": 1169,
+      "LastWriteTime": "2025-02-17T01:04:56.3912031+00:00",
+      "Hash": "68027C279DA979CB7D276A2D842B2499"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\templates\\Examples\\Condition\\Keluhan.json": {
+      "Length": 1198,
+      "LastWriteTime": "2025-02-17T01:04:56.5011421+00:00",
+      "Hash": "8057C314F6F0E3C671B74AC57555EB75"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\templates\\Examples\\Condition\\Riwayat-Penyakit-Sekarang.json": {
+      "Length": 1242,
+      "LastWriteTime": "2025-02-17T01:04:56.5932841+00:00",
+      "Hash": "C3FF6D3D5D93FE089799FB64FB0FBDBC"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\templates\\Examples\\DiagnosticReport\\DiagnosticReport.json": {
+      "Length": 1802,
+      "LastWriteTime": "2025-02-17T01:04:56.7088019+00:00",
+      "Hash": "E813BF9B7BD65AB88E0960CA77F28AC8"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\templates\\Examples\\Encounter\\Kunjungan.json": {
+      "Length": 5271,
+      "LastWriteTime": "2025-02-17T01:04:56.8111908+00:00",
+      "Hash": "583D920DE41AC48FC0CCF3B4DEBF0428"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\templates\\Examples\\EpisodeOfCare\\EpisodeOfCare.json": {
+      "Length": 911,
+      "LastWriteTime": "2025-02-17T01:04:56.9191836+00:00",
+      "Hash": "60BACFBACB9C00D106EBA1BFE6674FB7"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\templates\\Examples\\Goal\\Tujuan-Perawatan.json": {
+      "Length": 2707,
+      "LastWriteTime": "2025-02-17T01:04:57.052335+00:00",
+      "Hash": "26D6EC4C938A00E38C5780504FB825C1"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\templates\\Examples\\Observation\\Component.json": {
+      "Length": 1967,
+      "LastWriteTime": "2025-02-17T01:04:57.743139+00:00",
+      "Hash": "D4570DBE9F74B5C4417D36561BAA4F73"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\templates\\Examples\\Observation\\Kode.json": {
+      "Length": 2163,
+      "LastWriteTime": "2025-02-17T01:04:57.8507942+00:00",
+      "Hash": "42D9684B57C29BE4C2978BF002FB457B"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\templates\\Examples\\Observation\\Teks.json": {
+      "Length": 1974,
+      "LastWriteTime": "2025-02-17T01:04:58.0545255+00:00",
+      "Hash": "4CD0022AADAB9886A42A53D4DB62EEC5"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\templates\\Examples\\Observation\\Tidak-Ada-Nilai.json": {
+      "Length": 1859,
+      "LastWriteTime": "2025-02-17T01:04:58.1513337+00:00",
+      "Hash": "796178DAD7718D86D02693D745672729"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\templates\\Examples\\Procedure\\Procedure.json": {
+      "Length": 943,
+      "LastWriteTime": "2025-02-17T01:04:58.3614809+00:00",
+      "Hash": "E0889D93712134630DD5C2C27FC3417B"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\templates\\Examples\\QuestionnaireResponse\\QuestionnaireResponse-HIV.json": {
+      "Length": 6518,
+      "LastWriteTime": "2025-02-17T01:04:58.4671128+00:00",
+      "Hash": "89CA4B63561F43CE0EFF0B8668672211"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\templates\\Examples\\ServiceRequest\\Lab.json": {
+      "Length": 1548,
+      "LastWriteTime": "2025-02-17T01:04:58.5840937+00:00",
+      "Hash": "76A55EE46425899222DA47F0E4637400"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\templates\\Examples\\ServiceRequest\\Rujukan-Eksternal.json": {
+      "Length": 2309,
+      "LastWriteTime": "2025-02-17T01:04:58.6853802+00:00",
+      "Hash": "CB0C2446842798680EB50D4764D285C5"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\templates\\Examples\\ServiceRequest\\Rujukan-Internal.json": {
+      "Length": 1995,
+      "LastWriteTime": "2025-02-17T01:04:58.8029004+00:00",
+      "Hash": "A25E32855A3A0008BA53BD2EF82BF66B"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\templates\\Examples\\Specimen\\Specimen.json": {
+      "Length": 2014,
+      "LastWriteTime": "2025-02-17T01:04:58.9156209+00:00",
+      "Hash": "D9092B1E6B223D75B7B985DDF063179E"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\templates\\StructureDefinitions\\Condition\\Keluhan.json": {
+      "Length": 5051,
+      "LastWriteTime": "2025-02-17T01:04:59.0739489+00:00",
+      "Hash": "C8B207A5CAE9F3557408E23C89DB757F"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\templates\\StructureDefinitions\\Encounter\\Kunjungan.json": {
+      "Length": 5346,
+      "LastWriteTime": "2025-02-17T01:04:59.1699883+00:00",
+      "Hash": "F2FF4853C24EDE072D75EF90DCABA7DF"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\templates\\StructureDefinitions\\Observation\\Angka.json": {
+      "Length": 1411,
+      "LastWriteTime": "2025-02-17T01:04:59.263621+00:00",
+      "Hash": "4181560F97B883E4F13F77057CD35C8F"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\templates\\StructureDefinitions\\Observation\\Component.json": {
+      "Length": 2270,
+      "LastWriteTime": "2025-02-17T01:04:59.3530326+00:00",
+      "Hash": "1F1B275E16791B5609E34B0FDCA03819"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\templates\\StructureDefinitions\\Observation\\Kode.json": {
+      "Length": 1419,
+      "LastWriteTime": "2025-02-17T01:04:59.4761341+00:00",
+      "Hash": "204ABEAC4FB5CFCC85355089D376D86F"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\templates\\StructureDefinitions\\Observation\\Satuan.json": {
+      "Length": 1417,
+      "LastWriteTime": "2025-02-17T01:04:59.5804408+00:00",
+      "Hash": "666DCA23CFC38DD9114F8F4870DFDED0"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\templates\\StructureDefinitions\\Observation\\Teks.json": {
+      "Length": 1410,
+      "LastWriteTime": "2025-02-17T01:04:59.6776946+00:00",
+      "Hash": "F179F051C54F70783EFCA2A24EC78E8D"
+    },
+    "archived\\fhir-ig-builder-main\\fhir-ig-builder-main\\templates\\StructureDefinitions\\Observation\\Ya-Tidak.json": {
+      "Length": 1411,
+      "LastWriteTime": "2025-02-17T01:04:59.7619814+00:00",
+      "Hash": "B96BD18626A26B1287358B0AEB3ADDD9"
+    },
+    "fsh-generated\\resources\\StructureDefinition-ANCPatient.json": {
+      "Length": 814,
+      "LastWriteTime": "2025-03-10T07:26:43.34902+00:00",
+      "Hash": "FA498289DFE531F27DC0805B2132CB51"
+    },
+    "fsh-generated\\resources\\StructureDefinition-Encounter-ANC.json": {
+      "Length": 5024,
+      "LastWriteTime": "2025-03-10T07:35:25.5537241+00:00",
+      "Hash": "D0AF92E2E1F8FC34244C2CCFD6652450"
+    },
+    "fsh-generated\\resources\\StructureDefinition-EpisodeOfCare-ANC.json": {
+      "Length": 3342,
+      "LastWriteTime": "2025-03-10T07:31:55.4703122+00:00",
+      "Hash": "E16C2B3070AD1CFCFAD9A3DD0D4308CC"
+    },
+    "input\\fsh\\aliases.fsh": {
+      "Length": 5253,
+      "LastWriteTime": "2025-03-10T06:26:16.7799153+00:00",
+      "Hash": "ACDC97A9B641AA1494D9F2960D9781B1"
+    },
+    "input\\fsh\\core\\core-anc-encounter.fsh": {
+      "Length": 26261,
+      "LastWriteTime": "2025-03-10T06:27:31.801611+00:00",
+      "Hash": "CD15441A988916193EAA1DA34D364730"
+    },
+    "input\\fsh\\core\\core-anc-episodeofcare.fsh": {
+      "Length": 8191,
+      "LastWriteTime": "2025-03-10T07:22:17.6530172+00:00",
+      "Hash": "CE6AD84D256DDC337618564328B16805"
+    },
+    "input\\fsh\\core\\core-patient-anc.fsh": {
+      "Length": 1070,
+      "LastWriteTime": "2025-03-10T05:50:05.2932515+00:00",
+      "Hash": "958938392143F9EA0D80D5827770398A"
+    },
+    "input\\fsh\\instances\\anc-client-management.fsh": {
+      "Length": 0,
+      "LastWriteTime": "2025-03-09T12:47:07.6328377+00:00",
+      "Hash": "D41D8CD98F00B204E9800998ECF8427E"
+    },
+    "input\\fsh\\instances\\anc-concept-map.fsh": {
+      "Length": 786,
+      "LastWriteTime": "2025-03-09T12:37:08.5659577+00:00",
+      "Hash": "63473BD6ABFB00E38DFF59459EA32BB3"
+    },
+    "input\\fsh\\instances\\anc-logical-model.fsh": {
+      "Length": 1424,
+      "LastWriteTime": "2025-03-10T06:08:53.5056083+00:00",
+      "Hash": "6DC2AFF601A94FA435A60CC826BB3B7E"
+    },
+    "input\\fsh\\instances\\anc-referral.fsh": {
+      "Length": 0,
+      "LastWriteTime": "2025-03-09T12:48:58.8208317+00:00",
+      "Hash": "D41D8CD98F00B204E9800998ECF8427E"
+    },
+    "input\\fsh\\mappings\\rim-for-Encounter.fsh": {
+      "Length": 2022,
+      "LastWriteTime": "2025-03-10T04:16:56.2029316+00:00",
+      "Hash": "9FB7065C05F633A2CD52F3CB78E7EF55"
+    },
+    "input\\fsh\\valueset\\valueset-anc-custom-code.fsh": {
+      "Length": 1399,
+      "LastWriteTime": "2025-03-10T06:32:29.0486572+00:00",
+      "Hash": "39F5114468344AE11E49D8112E617CF7"
+    },
+    "input\\fsh\\valueset\\valueset-anc-encounter-identifier.fsh": {
+      "Length": 1139,
+      "LastWriteTime": "2025-03-10T06:09:17.4283503+00:00",
+      "Hash": "C27E86A918E30A78FF0B429D366AD738"
+    },
+    "input\\fsh\\valueset\\valueset-code-system.fsh": {
+      "Length": 1121,
+      "LastWriteTime": "2025-03-10T06:09:33.9921116+00:00",
+      "Hash": "4BE6BD5962393E5BBFFE23D1BE45454A"
+    },
+    "input\\fsh\\valueset\\valueset-primary-care-lab-parameter.fsh": {
+      "Length": 10942,
+      "LastWriteTime": "2025-03-10T06:09:41.5881887+00:00",
+      "Hash": "25448238A12369558629711F649B4ABA"
+    },
+    "input\\fsh\\valueset\\valueset-primary-care-lab-value.fsh": {
+      "Length": 3885,
+      "LastWriteTime": "2025-03-10T06:09:47.9808822+00:00",
+      "Hash": "A8FAE1D25CBEE6A51D196273309E6BA5"
+    },
+    "input\\fsh\\valueset\\valueset-satusehat-custom-code.fsh": {
+      "Length": 2122,
+      "LastWriteTime": "2025-03-10T06:09:53.992852+00:00",
+      "Hash": "84D0A6602E38FC5E9319E290331495E4"
+    },
+    "input\\fsh\\valueset\\valueset-scenario-custom-code.fsh": {
+      "Length": 1497,
+      "LastWriteTime": "2025-03-10T06:09:58.9693516+00:00",
+      "Hash": "4762A5083D40F47CA85C31EBE1E6AC49"
+    },
+    "input\\fsh\\valueset\\valueset-service-request-code.fsh": {
+      "Length": 859,
+      "LastWriteTime": "2025-03-10T06:10:07.1913659+00:00",
+      "Hash": "9C38B22841022392E318C2B0A0B6BAB2"
+    },
+    "pagecontent\\artifacts.md": {
+      "Length": 0,
+      "LastWriteTime": "2025-03-10T04:16:56.2347722+00:00",
+      "Hash": "D41D8CD98F00B204E9800998ECF8427E"
+    },
+    "pagecontent\\index.md": {
+      "Length": 96,
+      "LastWriteTime": "2025-03-10T04:16:56.2347722+00:00",
+      "Hash": "1CE405864C91BD309E4A9F5C0EBBFDC5"
+    },
+    "pagecontent\\profiles.md": {
+      "Length": 0,
+      "LastWriteTime": "2025-03-10T04:16:56.2347722+00:00",
+      "Hash": "D41D8CD98F00B204E9800998ECF8427E"
+    },
+    "fsh-generated\\resources\\CodeSystem-PrimaryCareLabParameter.json": {
+      "Length": 9780,
+      "LastWriteTime": "2025-03-10T06:10:54.5734226+00:00",
+      "Hash": "C9E7B70B56F1847B80AF35F63ED85A14"
+    },
+    "fsh-generated\\resources\\CodeSystem-PrimaryCareLabValue.json": {
+      "Length": 8759,
+      "LastWriteTime": "2025-03-10T06:10:54.5796827+00:00",
+      "Hash": "4B2EF26661FB9DE0953903D980B7A5C1"
+    },
+    "fsh-generated\\resources\\CodeSystem-SATUSEHATCustomCode.json": {
+      "Length": 3261,
+      "LastWriteTime": "2025-03-10T06:10:54.5818751+00:00",
+      "Hash": "9E41BA00E95AC1F0607375AAAB8CDC43"
+    },
+    "fsh-generated\\resources\\ImplementationGuide-smartanc-satusehat.json": {
+      "Length": 8136,
+      "LastWriteTime": "2025-03-10T07:06:13.9826019+00:00",
+      "Hash": "4B72BE541D20399AB94094CDA1A817A8"
+    },
+    "fsh-generated\\resources\\StructureDefinition-ANCVisit.json": {
+      "Length": 8135,
+      "LastWriteTime": "2025-03-10T06:10:54.5566315+00:00",
+      "Hash": "CC191902C5B7D3D81076864FAC670737"
+    },
+    "fsh-generated\\resources\\StructureDefinition-EpisodeOfCare.json": {
+      "Length": 2902,
+      "LastWriteTime": "2025-03-10T07:06:13.727251+00:00",
+      "Hash": "8FD48CB2F2C1D543112FBCFE73177973"
+    },
+    "fsh-generated\\resources\\ValueSet-ANCCodeSystem.json": {
+      "Length": 1263,
+      "LastWriteTime": "2025-03-10T06:10:54.5658836+00:00",
+      "Hash": "3DE3C8775AE6541C622CC756C9108B11"
+    },
+    "fsh-generated\\resources\\ValueSet-ANCEncounterIdentifier.json": {
+      "Length": 1189,
+      "LastWriteTime": "2025-03-10T06:10:54.5619792+00:00",
+      "Hash": "C08758323B7CC9D5BA19339CE3422563"
+    },
+    "fsh-generated\\resources\\ValueSet-ANCScenario.json": {
+      "Length": 619,
+      "LastWriteTime": "2025-03-10T06:10:54.5658836+00:00",
+      "Hash": "7C0B990C2D315F45363C02DB4AE852FC"
+    },
+    "fsh-generated\\resources\\ValueSet-ServiceRequestCodes.json": {
+      "Length": 687,
+      "LastWriteTime": "2025-03-10T06:10:54.5701728+00:00",
+      "Hash": "9AE6A93D3563316BC761D85A9742BA87"
+    },
+    "fsh-generated\\resources\\CodeSystem-ANCCustomCode.json": {
+      "Length": 194,
+      "LastWriteTime": "2025-03-10T07:06:13.8264329+00:00",
+      "Hash": "0040B689E2F970C6E84398ABF215D7A6"
+    },
+    "fsh-generated\\resources\\StructureDefinition-Account.json": {
+      "Length": 15554,
+      "LastWriteTime": "2025-03-10T07:06:13.6786894+00:00",
+      "Hash": "ED2EF7E4B1E46612F67BD9C48E80B28B"
+    },
+    "fsh-generated\\resources\\StructureDefinition-ChargeItem.json": {
+      "Length": 3260,
+      "LastWriteTime": "2025-03-10T07:06:13.6485937+00:00",
+      "Hash": "66C5B73C9EFE3190AD9473617FD42B13"
+    },
+    "fsh-generated\\resources\\StructureDefinition-ChargeItemResponse.json": {
+      "Length": 8454,
+      "LastWriteTime": "2025-03-10T07:06:13.5724403+00:00",
+      "Hash": "36C8BC532F37A93B874BADE78B9CAE74"
+    },
+    "fsh-generated\\resources\\StructureDefinition-ClaimResponse.json": {
+      "Length": 78332,
+      "LastWriteTime": "2025-03-10T07:06:13.7071387+00:00",
+      "Hash": "D19DDCD7F41A1DF36D5EF40E1C78562B"
+    },
+    "fsh-generated\\resources\\StructureDefinition-ClinicalImpression.json": {
+      "Length": 3509,
+      "LastWriteTime": "2025-03-10T07:06:13.7098751+00:00",
+      "Hash": "01AA14BBA4A14C058E06E194964C028C"
+    },
+    "fsh-generated\\resources\\StructureDefinition-ConditionHistory.json": {
+      "Length": 2821,
+      "LastWriteTime": "2025-03-10T07:06:13.5815628+00:00",
+      "Hash": "A9CD7BA18843E5F525ED5A93CD91F572"
+    },
+    "fsh-generated\\resources\\StructureDefinition-CoverageEligibilityRequest.json": {
+      "Length": 29370,
+      "LastWriteTime": "2025-03-10T07:06:13.7188321+00:00",
+      "Hash": "B2B97D1BF77DE39D730D9219A17C3BE8"
+    },
+    "fsh-generated\\resources\\StructureDefinition-CoverageEligibilityResponse.json": {
+      "Length": 2692,
+      "LastWriteTime": "2025-03-10T07:06:13.6604552+00:00",
+      "Hash": "E2188C0F38ADDEEB74BBF8FC0B52F0D9"
+    },
+    "fsh-generated\\resources\\StructureDefinition-DocumentStatus.json": {
+      "Length": 3130,
+      "LastWriteTime": "2025-03-10T07:06:13.5889372+00:00",
+      "Hash": "6DE17699944C3FBFA9A2A9892E2FBB2F"
+    },
+    "fsh-generated\\resources\\StructureDefinition-DomainResource.json": {
+      "Length": 7735,
+      "LastWriteTime": "2025-03-10T07:06:13.64456+00:00",
+      "Hash": "3E7A77A6AFE7979BB07F7135F22B670C"
+    },
+    "fsh-generated\\resources\\StructureDefinition-EligibilityStatus.json": {
+      "Length": 1253,
+      "LastWriteTime": "2025-03-10T07:06:13.5929364+00:00",
+      "Hash": "63937B4B6C703B1DECB0FBE271903D00"
+    },
+    "fsh-generated\\resources\\StructureDefinition-Encounter.json": {
+      "Length": 2788,
+      "LastWriteTime": "2025-03-10T07:06:13.676193+00:00",
+      "Hash": "F4D531B4E4511A5C861AB1DA3EFA53E0"
+    },
+    "fsh-generated\\resources\\StructureDefinition-FamilyMemberHistory.json": {
+      "Length": 25407,
+      "LastWriteTime": "2025-03-10T07:06:13.7346398+00:00",
+      "Hash": "1FA75101CD2257F6BFB49BE6A1985870"
+    },
+    "fsh-generated\\resources\\StructureDefinition-HealthcareService.json": {
+      "Length": 2283,
+      "LastWriteTime": "2025-03-10T07:06:13.7380514+00:00",
+      "Hash": "53559AE7422459F633B408EDEB779C17"
+    },
+    "fsh-generated\\resources\\StructureDefinition-ImagingStudy.json": {
+      "Length": 3466,
+      "LastWriteTime": "2025-03-10T07:06:13.7380514+00:00",
+      "Hash": "F2854651E10A99548921357999225E33"
+    },
+    "fsh-generated\\resources\\StructureDefinition-Immunization.json": {
+      "Length": 2935,
+      "LastWriteTime": "2025-03-10T07:06:13.7380514+00:00",
+      "Hash": "4E13C94F1011BDB17D0F80BFE7F6D334"
+    },
+    "fsh-generated\\resources\\StructureDefinition-Invoice.json": {
+      "Length": 23110,
+      "LastWriteTime": "2025-03-10T07:06:13.7380514+00:00",
+      "Hash": "E5E382D9CE32D456BA432341A6A0DABE"
+    },
+    "fsh-generated\\resources\\StructureDefinition-List.json": {
+      "Length": 2286,
+      "LastWriteTime": "2025-03-10T07:06:13.7507135+00:00",
+      "Hash": "FA3A80FA30CE33F355ACD272828405B7"
+    },
+    "fsh-generated\\resources\\StructureDefinition-LocationServiceClass.json": {
+      "Length": 1112,
+      "LastWriteTime": "2025-03-10T07:06:13.5929364+00:00",
+      "Hash": "D6C85E5F5CE44ED4A666DE124B4E03BB"
+    },
+    "fsh-generated\\resources\\StructureDefinition-Observation.json": {
+      "Length": 3772,
+      "LastWriteTime": "2025-03-10T07:06:13.7695446+00:00",
+      "Hash": "2E0EA712AD83CCB476425469EE7EBE52"
+    },
+    "fsh-generated\\resources\\StructureDefinition-ObservationDefinition.json": {
+      "Length": 22637,
+      "LastWriteTime": "2025-03-10T07:06:13.7716858+00:00",
+      "Hash": "6F477262959CE0FE6F6A4B9828344759"
+    },
+    "fsh-generated\\resources\\StructureDefinition-OperationOutcome.json": {
+      "Length": 2534,
+      "LastWriteTime": "2025-03-10T07:06:13.7716858+00:00",
+      "Hash": "E9EE1F48DF6960CCF41DB257C66A4703"
+    },
+    "fsh-generated\\resources\\StructureDefinition-OrganizationAffiliation.json": {
+      "Length": 12463,
+      "LastWriteTime": "2025-03-10T07:06:13.782457+00:00",
+      "Hash": "D5EE765A1830D888A4EC00429CAE93B1"
+    },
+    "fsh-generated\\resources\\StructureDefinition-Package.json": {
+      "Length": 6033,
+      "LastWriteTime": "2025-03-10T07:06:13.5992906+00:00",
+      "Hash": "20BB1936CE1CE54E4F60B90C07D6F778"
+    },
+    "fsh-generated\\resources\\StructureDefinition-PolicyClass.json": {
+      "Length": 6295,
+      "LastWriteTime": "2025-03-10T07:06:13.6090462+00:00",
+      "Hash": "9E64C03D18313A93B67F528EFBB7EC2D"
+    },
+    "fsh-generated\\resources\\StructureDefinition-primaryCareProvider.json": {
+      "Length": 1304,
+      "LastWriteTime": "2025-03-10T07:06:13.6138988+00:00",
+      "Hash": "F41489DEEE0890EC24AB8CEE2272A3AF"
+    },
+    "fsh-generated\\resources\\StructureDefinition-Procedure.json": {
+      "Length": 2775,
+      "LastWriteTime": "2025-03-10T07:06:13.782457+00:00",
+      "Hash": "E597BEEBD80A93068F9246C1DFFC15E5"
+    },
+    "fsh-generated\\resources\\StructureDefinition-Questionnaire.json": {
+      "Length": 3674,
+      "LastWriteTime": "2025-03-10T07:06:13.782457+00:00",
+      "Hash": "22286E40937297D7BD3E819503616985"
+    },
+    "fsh-generated\\resources\\StructureDefinition-QuestionnaireResponse.json": {
+      "Length": 3317,
+      "LastWriteTime": "2025-03-10T07:06:13.782457+00:00",
+      "Hash": "7D8084F815F53432566792CAB9B3DE02"
+    },
+    "fsh-generated\\resources\\StructureDefinition-ReceivedPerson.json": {
+      "Length": 1288,
+      "LastWriteTime": "2025-03-10T07:06:13.6170967+00:00",
+      "Hash": "5BDCDC12CD0127136F5994AC95707E83"
+    },
+    "fsh-generated\\resources\\StructureDefinition-RelatedPerson.json": {
+      "Length": 2649,
+      "LastWriteTime": "2025-03-10T07:06:13.7985123+00:00",
+      "Hash": "372F13FB3875FCCC6F8AF10865EF7CC8"
+    },
+    "fsh-generated\\resources\\StructureDefinition-ServiceClass.json": {
+      "Length": 4900,
+      "LastWriteTime": "2025-03-10T07:06:13.6221583+00:00",
+      "Hash": "DF18CEBCA3620366A01E7F90D5201395"
+    },
+    "fsh-generated\\resources\\StructureDefinition-ServiceRequest.json": {
+      "Length": 3042,
+      "LastWriteTime": "2025-03-10T07:06:13.8004538+00:00",
+      "Hash": "68597C9999819064A7C02A0D30291EAB"
+    },
+    "fsh-generated\\resources\\StructureDefinition-Specimen.json": {
+      "Length": 2346,
+      "LastWriteTime": "2025-03-10T07:06:13.6526316+00:00",
+      "Hash": "5D3103161322F10C42E067EDCF650634"
+    },
+    "fsh-generated\\resources\\StructureDefinition-SpecimenDefinition.json": {
+      "Length": 20180,
+      "LastWriteTime": "2025-03-10T07:06:13.8098295+00:00",
+      "Hash": "D20D5CE98BAAEDBF80BD0DFBB2EC64D5"
+    },
+    "fsh-generated\\resources\\StructureDefinition-totalPrice.json": {
+      "Length": 1056,
+      "LastWriteTime": "2025-03-10T07:06:13.6288432+00:00",
+      "Hash": "E65B05D6593EBE393D32C95D87C3A7EB"
+    },
+    "fsh-generated\\resources\\StructureDefinition-TransportedPerson.json": {
+      "Length": 1213,
+      "LastWriteTime": "2025-03-10T07:06:13.6327083+00:00",
+      "Hash": "88F5F8C5610B198E2FD0FA2B2FA5FEB0"
+    },
+    "fsh-generated\\resources\\StructureDefinition-TransportedTime.json": {
+      "Length": 1404,
+      "LastWriteTime": "2025-03-10T07:06:13.6347325+00:00",
+      "Hash": "2BAD2431A1FB8AEC36CA962C156E70E7"
+    },
+    "fsh-generated\\resources\\StructureDefinition-unitPrice.json": {
+      "Length": 1052,
+      "LastWriteTime": "2025-03-10T07:06:13.5754431+00:00",
+      "Hash": "EA9337273F82D32093468E96299D0D2B"
+    },
+    "input\\fsh\\base-satusehat\\Account.fsh": {
+      "Length": 7780,
+      "LastWriteTime": "2025-03-10T06:54:09.4709666+00:00",
+      "Hash": "B5CC4A05489D279153A05F107B51E947"
+    },
+    "input\\fsh\\base-satusehat\\AllergyIntolerance.fsh": {
+      "Length": 23025,
+      "LastWriteTime": "2025-03-10T06:54:09.4709666+00:00",
+      "Hash": "01FF162753062E794FA707E44DFC060A"
+    },
+    "input\\fsh\\base-satusehat\\CarePlan.fsh": {
+      "Length": 30978,
+      "LastWriteTime": "2025-03-10T06:54:09.4866584+00:00",
+      "Hash": "0F0C84235C2AE81D162D439016461524"
+    },
+    "input\\fsh\\base-satusehat\\ChargeItem.fsh": {
+      "Length": 16469,
+      "LastWriteTime": "2025-03-10T06:54:09.4866584+00:00",
+      "Hash": "F7EC5ADD1AD742C7FCC8926F6207E324"
+    },
+    "input\\fsh\\base-satusehat\\Claim.fsh": {
+      "Length": 66302,
+      "LastWriteTime": "2025-03-10T06:54:09.4866584+00:00",
+      "Hash": "4360BDDF09ED8875EE20BB475CEBF515"
+    },
+    "input\\fsh\\base-satusehat\\ClaimResponse.fsh": {
+      "Length": 50755,
+      "LastWriteTime": "2025-03-10T06:54:09.4866584+00:00",
+      "Hash": "E138A429DF721A7C0CFEEABBD61A565C"
+    },
+    "input\\fsh\\base-satusehat\\ClinicalImpression.fsh": {
+      "Length": 13122,
+      "LastWriteTime": "2025-03-10T06:54:09.4866584+00:00",
+      "Hash": "339EEC923F665C1D656F96D31BB800C2"
+    },
+    "input\\fsh\\base-satusehat\\Composition.fsh": {
+      "Length": 25347,
+      "LastWriteTime": "2025-03-10T06:54:09.4866584+00:00",
+      "Hash": "96D68E55F03F52B0A256C1110830970F"
+    },
+    "input\\fsh\\base-satusehat\\Condition.fsh": {
+      "Length": 14211,
+      "LastWriteTime": "2025-03-10T06:54:09.4866584+00:00",
+      "Hash": "968C19679037D7A7C6FD225CF6C49DE4"
+    },
+    "input\\fsh\\base-satusehat\\Coverage.fsh": {
+      "Length": 15478,
+      "LastWriteTime": "2025-03-10T06:54:09.4866584+00:00",
+      "Hash": "AA7B520CF77ACBF328623A98F2194A31"
+    },
+    "input\\fsh\\base-satusehat\\CoverageEligibilityRequest.fsh": {
+      "Length": 17283,
+      "LastWriteTime": "2025-03-10T06:54:09.5026882+00:00",
+      "Hash": "9A4334E1DC556E7A6C253C8FCEB42F11"
+    },
+    "input\\fsh\\base-satusehat\\CoverageEligibilityResponse.fsh": {
+      "Length": 21851,
+      "LastWriteTime": "2025-03-10T06:54:09.5026882+00:00",
+      "Hash": "DBEC2749D43050ACBF3C1AD3CB59D582"
+    },
+    "input\\fsh\\base-satusehat\\DiagnosticReport.fsh": {
+      "Length": 15906,
+      "LastWriteTime": "2025-03-10T06:54:09.5026882+00:00",
+      "Hash": "A24C08853B61720FDB1DB0ECAB14AAC3"
+    },
+    "input\\fsh\\base-satusehat\\DomainResource.fsh": {
+      "Length": 5801,
+      "LastWriteTime": "2025-03-10T06:54:09.5078465+00:00",
+      "Hash": "A125A65E2A25DA8EF225ADE94FFBCB3B"
+    },
+    "input\\fsh\\base-satusehat\\Encounter.fsh": {
+      "Length": 25506,
+      "LastWriteTime": "2025-03-10T06:54:09.5098658+00:00",
+      "Hash": "21EFA5540518D96FA9D34916034587FC"
+    },
+    "input\\fsh\\base-satusehat\\EpisodeOfCare.fsh": {
+      "Length": 8143,
+      "LastWriteTime": "2025-03-10T06:54:09.5118858+00:00",
+      "Hash": "C0C804A4E8D9F6F718E9A75B95092DDD"
+    },
+    "input\\fsh\\base-satusehat\\FamilyMemberHistory.fsh": {
+      "Length": 12759,
+      "LastWriteTime": "2025-03-10T06:54:09.5144575+00:00",
+      "Hash": "336C836E5FB4670C02AC55B9F2ECB5E4"
+    },
+    "input\\fsh\\base-satusehat\\HealthcareService.fsh": {
+      "Length": 15485,
+      "LastWriteTime": "2025-03-10T06:54:09.5144575+00:00",
+      "Hash": "A4AF945F729B1263EF435249267F0DA5"
+    },
+    "input\\fsh\\base-satusehat\\ImagingStudy.fsh": {
+      "Length": 20846,
+      "LastWriteTime": "2025-03-10T06:54:09.5144575+00:00",
+      "Hash": "BC729898F1D41F7C182765E2128C77F4"
+    },
+    "input\\fsh\\base-satusehat\\Immunization.fsh": {
+      "Length": 16632,
+      "LastWriteTime": "2025-03-10T06:54:09.5183526+00:00",
+      "Hash": "2640507C62DAC3D062660C3BCC26CBE6"
+    },
+    "input\\fsh\\base-satusehat\\Invoice.fsh": {
+      "Length": 11355,
+      "LastWriteTime": "2025-03-10T06:54:09.5183526+00:00",
+      "Hash": "3F2665869558391CD0FBB62F4CB6F50C"
+    },
+    "input\\fsh\\base-satusehat\\List.fsh": {
+      "Length": 11209,
+      "LastWriteTime": "2025-03-10T06:54:09.5183526+00:00",
+      "Hash": "C25A3AE8B8F11FDFA9BDD482EF4637CB"
+    },
+    "input\\fsh\\base-satusehat\\Location.fsh": {
+      "Length": 11887,
+      "LastWriteTime": "2025-03-10T06:54:09.5183526+00:00",
+      "Hash": "D530C6494AB3EE5F09E8D0C9EF292C01"
+    },
+    "input\\fsh\\base-satusehat\\Medication.fsh": {
+      "Length": 9035,
+      "LastWriteTime": "2025-03-10T06:54:09.5183526+00:00",
+      "Hash": "FE3F471D0296F6474B1F061A0DE2A9BA"
+    },
+    "input\\fsh\\base-satusehat\\MedicationAdministration.fsh": {
+      "Length": 16236,
+      "LastWriteTime": "2025-03-10T06:54:09.5183526+00:00",
+      "Hash": "E18385DFF1B57549913CF31F80F22CF7"
+    },
+    "input\\fsh\\base-satusehat\\MedicationDispense.fsh": {
+      "Length": 15489,
+      "LastWriteTime": "2025-03-10T06:54:09.5183526+00:00",
+      "Hash": "04B1C7FA729C70AF7F557A60AC9AFF62"
+    },
+    "input\\fsh\\base-satusehat\\MedicationRequest.fsh": {
+      "Length": 25596,
+      "LastWriteTime": "2025-03-10T06:54:09.5183526+00:00",
+      "Hash": "39590B5E55D4C730534DAB65B153E72A"
+    },
+    "input\\fsh\\base-satusehat\\MedicationStatement.fsh": {
+      "Length": 15527,
+      "LastWriteTime": "2025-03-10T06:54:09.5341185+00:00",
+      "Hash": "6CF8DB7669B24122226D42FDB47E22D7"
+    },
+    "input\\fsh\\base-satusehat\\Observation.fsh": {
+      "Length": 36474,
+      "LastWriteTime": "2025-03-10T06:54:09.5361422+00:00",
+      "Hash": "C8B4F08ABC7702E0CDF1FF41BF05C85C"
+    },
+    "input\\fsh\\base-satusehat\\ObservationDefinition.fsh": {
+      "Length": 12820,
+      "LastWriteTime": "2025-03-10T06:54:09.5361422+00:00",
+      "Hash": "58F2126D4740DECA42DA54D86DEA4814"
+    },
+    "input\\fsh\\base-satusehat\\OperationOutcome.fsh": {
+      "Length": 6222,
+      "LastWriteTime": "2025-03-10T06:54:09.5361422+00:00",
+      "Hash": "3C6E287A689E2BF50BD1D9BA96364B5A"
+    },
+    "input\\fsh\\base-satusehat\\Organization.fsh": {
+      "Length": 9329,
+      "LastWriteTime": "2025-03-10T06:54:09.5361422+00:00",
+      "Hash": "515D951B62DD39FA34000466A8AE1F01"
+    },
+    "input\\fsh\\base-satusehat\\OrganizationAffiliation.fsh": {
+      "Length": 6218,
+      "LastWriteTime": "2025-03-10T06:54:09.5434731+00:00",
+      "Hash": "603B41BB52CB0408EA60C795532518D0"
+    },
+    "input\\fsh\\base-satusehat\\Procedure.fsh": {
+      "Length": 21419,
+      "LastWriteTime": "2025-03-10T06:54:09.5454914+00:00",
+      "Hash": "32D7F41014227D8EC2CDAE4C8A9B6775"
+    },
+    "input\\fsh\\base-satusehat\\Questionnaire.fsh": {
+      "Length": 32859,
+      "LastWriteTime": "2025-03-10T06:54:09.5454914+00:00",
+      "Hash": "60247641BD735028BD40EF09C12F492B"
+    },
+    "input\\fsh\\base-satusehat\\QuestionnaireResponse.fsh": {
+      "Length": 13494,
+      "LastWriteTime": "2025-03-10T06:54:09.5475113+00:00",
+      "Hash": "794BB3FE663479126550DBF2A4E5FE6E"
+    },
+    "input\\fsh\\base-satusehat\\RelatedPerson.fsh": {
+      "Length": 9338,
+      "LastWriteTime": "2025-03-10T06:54:09.5500335+00:00",
+      "Hash": "257528D782B5A17FEA4F0AA60A702E25"
+    },
+    "input\\fsh\\base-satusehat\\ServiceRequest.fsh": {
+      "Length": 23834,
+      "LastWriteTime": "2025-03-10T06:54:09.5500335+00:00",
+      "Hash": "306804A5A89D1255B373FA03057C6059"
+    },
+    "input\\fsh\\base-satusehat\\Specimen.fsh": {
+      "Length": 14557,
+      "LastWriteTime": "2025-03-10T06:54:09.5500335+00:00",
+      "Hash": "0954E387F5EF229F8AAE12162E54985D"
+    },
+    "input\\fsh\\base-satusehat\\SpecimenDefinition.fsh": {
+      "Length": 10932,
+      "LastWriteTime": "2025-03-10T06:54:09.5500335+00:00",
+      "Hash": "E4BA3615E0BFD0AE8F4E979F2E3553B2"
+    },
+    "input\\fsh\\extensions\\AdministrativeCode.fsh": {
+      "Length": 1197,
+      "LastWriteTime": "2025-03-10T06:54:09.439645+00:00",
+      "Hash": "B82DB539C3602EB8E3FA1BF24689C446"
+    },
+    "input\\fsh\\extensions\\BirthPlace.fsh": {
+      "Length": 1455,
+      "LastWriteTime": "2025-03-10T06:54:09.4709666+00:00",
+      "Hash": "B253FA542CFF6C764490839C4EEAB848"
+    },
+    "input\\fsh\\extensions\\ChargeItemResponse.fsh": {
+      "Length": 1126,
+      "LastWriteTime": "2025-03-10T06:54:09.439645+00:00",
+      "Hash": "7C9AD471860041FBAF588ECC44ABE319"
+    },
+    "input\\fsh\\extensions\\CitizenshipStatus.fsh": {
+      "Length": 479,
+      "LastWriteTime": "2025-03-10T06:54:09.4709666+00:00",
+      "Hash": "196604B0A3A2E4DD7971AA9597F245EE"
+    },
+    "input\\fsh\\extensions\\CollectorOrganization.fsh": {
+      "Length": 570,
+      "LastWriteTime": "2025-03-10T06:54:09.4553007+00:00",
+      "Hash": "5E41EB873A6F2ED59503C41839583736"
+    },
+    "input\\fsh\\extensions\\ConditionHistory.fsh": {
+      "Length": 366,
+      "LastWriteTime": "2025-03-10T06:54:09.4709666+00:00",
+      "Hash": "1BD4F95009D975CFDE4651FB3CE40CFD"
+    },
+    "input\\fsh\\extensions\\DocumentStatus.fsh": {
+      "Length": 365,
+      "LastWriteTime": "2025-03-10T06:54:09.4607679+00:00",
+      "Hash": "47C8D61BBE77EA56A968A953247105FD"
+    },
+    "input\\fsh\\extensions\\EligibilityStatus.fsh": {
+      "Length": 212,
+      "LastWriteTime": "2025-03-10T06:54:09.4627876+00:00",
+      "Hash": "7A8B377B58EC4B0DD4FE269217CB920D"
+    },
+    "input\\fsh\\extensions\\LocationServiceClass.fsh": {
+      "Length": 257,
+      "LastWriteTime": "2025-03-10T06:54:09.4692052+00:00",
+      "Hash": "85BA5BEAD2214F1D6A3DC8ADD68FDCB9"
+    },
+    "input\\fsh\\extensions\\MedicationType.fsh": {
+      "Length": 332,
+      "LastWriteTime": "2025-03-10T06:54:09.4692052+00:00",
+      "Hash": "17124054452072FABE751BC5DC9FA3D7"
+    },
+    "input\\fsh\\extensions\\nationality.fsh": {
+      "Length": 937,
+      "LastWriteTime": "2025-03-10T06:54:09.4709666+00:00",
+      "Hash": "1383A6E8F0DEC3ACA572F2BFA80D60DD"
+    },
+    "input\\fsh\\extensions\\Package.fsh": {
+      "Length": 1480,
+      "LastWriteTime": "2025-03-10T06:54:09.4553007+00:00",
+      "Hash": "76116D445317F0721969CB9EF607D14A"
+    },
+    "input\\fsh\\extensions\\PolicyClass.fsh": {
+      "Length": 930,
+      "LastWriteTime": "2025-03-10T06:54:09.4648072+00:00",
+      "Hash": "3AA97F261C000DF1C65E1C24890D3AFD"
+    },
+    "input\\fsh\\extensions\\PrimaryCareProvider.fsh": {
+      "Length": 171,
+      "LastWriteTime": "2025-03-10T06:54:09.4627876+00:00",
+      "Hash": "6DB9DD46761B8D46116D5CE0E19A1FC3"
+    },
+    "input\\fsh\\extensions\\ReceivedPerson.fsh": {
+      "Length": 258,
+      "LastWriteTime": "2025-03-10T06:54:09.4709666+00:00",
+      "Hash": "9A1632363F7832CB7C1B70F9E523811D"
+    },
+    "input\\fsh\\extensions\\ServiceClass.fsh": {
+      "Length": 1099,
+      "LastWriteTime": "2025-03-10T06:54:09.4671851+00:00",
+      "Hash": "160CB1ACEF869C0873AEE44863D651F3"
+    },
+    "input\\fsh\\extensions\\TotalPrice.fsh": {
+      "Length": 147,
+      "LastWriteTime": "2025-03-10T06:54:09.452092+00:00",
+      "Hash": "A774B44BDC6C77BBA3B144761CE3D3A8"
+    },
+    "input\\fsh\\extensions\\TransportedPerson.fsh": {
+      "Length": 276,
+      "LastWriteTime": "2025-03-10T06:54:09.4709666+00:00",
+      "Hash": "7D0719C5007819631AE38D2A3089944C"
+    },
+    "input\\fsh\\extensions\\TransportedTime.fsh": {
+      "Length": 365,
+      "LastWriteTime": "2025-03-10T06:54:09.4553007+00:00",
+      "Hash": "0CEF92443D695253D3902262AFA4E198"
+    },
+    "input\\fsh\\extensions\\UnitPrice.fsh": {
+      "Length": 145,
+      "LastWriteTime": "2025-03-10T06:54:09.452092+00:00",
+      "Hash": "95DD9C8E206B97BE45B3A042B230120E"
+    },
+    "input\\fsh\\mappings\\cda-for-Composition.fsh": {
+      "Length": 1393,
+      "LastWriteTime": "2025-03-10T06:54:09.2141779+00:00",
+      "Hash": "CFDA26C094E4777D2EE0BFAD80386B7B"
+    },
+    "input\\fsh\\mappings\\cda-for-Immunization.fsh": {
+      "Length": 1121,
+      "LastWriteTime": "2025-03-10T06:54:09.3001673+00:00",
+      "Hash": "011A271113D85762785721B83DB8AC7C"
+    },
+    "input\\fsh\\mappings\\cdanetv4-for-Coverage.fsh": {
+      "Length": 599,
+      "LastWriteTime": "2025-03-10T06:54:09.2360613+00:00",
+      "Hash": "4B829BC90D3BB6CB0457AAC92AEE7C88"
+    },
+    "input\\fsh\\mappings\\cdanetv4-for-CoverageEligibilityResponse.fsh": {
+      "Length": 392,
+      "LastWriteTime": "2025-03-10T06:54:09.2493354+00:00",
+      "Hash": "4863AB80AA0A9B244839EC6B6C8DDCFF"
+    },
+    "input\\fsh\\mappings\\cpha3pharm.fsh": {
+      "Length": 415,
+      "LastWriteTime": "2025-03-10T06:54:09.2360613+00:00",
+      "Hash": "1A596833F93EDDAC402A5D79B92FFB2C"
+    },
+    "input\\fsh\\mappings\\dicom.fsh": {
+      "Length": 1401,
+      "LastWriteTime": "2025-03-10T06:54:09.2808672+00:00",
+      "Hash": "D83D560168C0FE1669A0F9F6E1B93A72"
+    },
+    "input\\fsh\\mappings\\fhirdocumentreference.fsh": {
+      "Length": 1138,
+      "LastWriteTime": "2025-03-10T06:54:09.2173914+00:00",
+      "Hash": "0506F1EF972D3029CFF3A51A2D53530A"
+    },
+    "input\\fsh\\mappings\\objimpl.fsh": {
+      "Length": 342,
+      "LastWriteTime": "2025-03-10T06:54:09.3978482+00:00",
+      "Hash": "C78E316CCD4B019AC1B3A5C8A207231F"
+    },
+    "input\\fsh\\mappings\\quick.fsh": {
+      "Length": 680,
+      "LastWriteTime": "2025-03-10T06:54:09.4159326+00:00",
+      "Hash": "8A74B51C877857392F32932348EF9CBB"
+    },
+    "input\\fsh\\mappings\\rim-for-Account.fsh": {
+      "Length": 771,
+      "LastWriteTime": "2025-03-10T06:54:09.1695806+00:00",
+      "Hash": "A81902FC481105B2D0EF7951BBD163B1"
+    },
+    "input\\fsh\\mappings\\rim-for-AllergyIntolerance.fsh": {
+      "Length": 2627,
+      "LastWriteTime": "2025-03-10T06:54:09.1695806+00:00",
+      "Hash": "70BBD372E9C23CC62C760C462A790A1D"
+    },
+    "input\\fsh\\mappings\\rim-for-BirthPlace.fsh": {
+      "Length": 107,
+      "LastWriteTime": "2025-03-10T06:54:09.1695806+00:00",
+      "Hash": "62CA52494F80578497C43B58021C0AE5"
+    },
+    "input\\fsh\\mappings\\rim-for-CarePlan.fsh": {
+      "Length": 2351,
+      "LastWriteTime": "2025-03-10T06:54:09.185288+00:00",
+      "Hash": "3DF78BD5A9F0C01EAA3030E34F01A1E0"
+    },
+    "input\\fsh\\mappings\\rim-for-ChargeItem.fsh": {
+      "Length": 1150,
+      "LastWriteTime": "2025-03-10T06:54:09.185288+00:00",
+      "Hash": "FF6A188D7F9435E378F5462254840A40"
+    },
+    "input\\fsh\\mappings\\rim-for-Claim.fsh": {
+      "Length": 124,
+      "LastWriteTime": "2025-03-10T06:54:09.2013161+00:00",
+      "Hash": "8E3106A484235E60A4C90656FDC1AEB6"
+    },
+    "input\\fsh\\mappings\\rim-for-ClaimResponse.fsh": {
+      "Length": 599,
+      "LastWriteTime": "2025-03-10T06:54:09.2013161+00:00",
+      "Hash": "5A496A69BD7636DB223366B7496D411C"
+    },
+    "input\\fsh\\mappings\\rim-for-ClinicalImpression.fsh": {
+      "Length": 228,
+      "LastWriteTime": "2025-03-10T06:54:09.2013161+00:00",
+      "Hash": "FEB62432702EB0C946A576D95B7417F7"
+    },
+    "input\\fsh\\mappings\\rim-for-Composition.fsh": {
+      "Length": 3434,
+      "LastWriteTime": "2025-03-10T06:54:09.2141779+00:00",
+      "Hash": "1918D0E9CF2C6A234ADC0C5B1AC44C2B"
+    },
+    "input\\fsh\\mappings\\rim-for-Condition.fsh": {
+      "Length": 1999,
+      "LastWriteTime": "2025-03-10T06:54:09.2194084+00:00",
+      "Hash": "6BFA2CF9210F9245871FABC42CD0EB21"
+    },
+    "input\\fsh\\mappings\\rim-for-Coverage.fsh": {
+      "Length": 202,
+      "LastWriteTime": "2025-03-10T06:54:09.2333013+00:00",
+      "Hash": "9620FE38C60EBBA899DCFFA4DCA1BDA1"
+    },
+    "input\\fsh\\mappings\\rim-for-CoverageEligibilityResponse.fsh": {
+      "Length": 163,
+      "LastWriteTime": "2025-03-10T06:54:09.2493354+00:00",
+      "Hash": "3E776E88B029682EE1BBE8EFA066F83F"
+    },
+    "input\\fsh\\mappings\\rim-for-DiagnosticReport.fsh": {
+      "Length": 1564,
+      "LastWriteTime": "2025-03-10T06:54:09.2578467+00:00",
+      "Hash": "C241A334DFEBFB726135CA4BAD5B377F"
+    },
+    "input\\fsh\\mappings\\rim-for-DomainResource.fsh": {
+      "Length": 212,
+      "LastWriteTime": "2025-03-10T06:54:09.2598637+00:00",
+      "Hash": "EDF028ECF4D1582D9916F4194E783C21"
+    },
+    "input\\fsh\\mappings\\rim-for-EpisodeOfCare.fsh": {
+      "Length": 125,
+      "LastWriteTime": "2025-03-10T06:54:09.2706971+00:00",
+      "Hash": "E3FA16A00C86BA9B367CBA1C160E3CE1"
+    },
+    "input\\fsh\\mappings\\rim-for-FamilyMemberHistory.fsh": {
+      "Length": 1694,
+      "LastWriteTime": "2025-03-10T06:54:09.275555+00:00",
+      "Hash": "30A2EA292550EC62ADC8E63043B105D1"
+    },
+    "input\\fsh\\mappings\\rim-for-HealthcareService.fsh": {
+      "Length": 1734,
+      "LastWriteTime": "2025-03-10T06:54:09.2808672+00:00",
+      "Hash": "48B56757E3D4D170D2BC26B23D923E5A"
+    },
+    "input\\fsh\\mappings\\rim-for-ImagingStudy.fsh": {
+      "Length": 2712,
+      "LastWriteTime": "2025-03-10T06:54:09.2808672+00:00",
+      "Hash": "8CD15E81427B69237D003AEBB166914E"
+    },
+    "input\\fsh\\mappings\\rim-for-Immunization.fsh": {
+      "Length": 2368,
+      "LastWriteTime": "2025-03-10T06:54:09.2968111+00:00",
+      "Hash": "6F1967991D5506C85DC66136D18C79DC"
+    },
+    "input\\fsh\\mappings\\rim-for-Invoice.fsh": {
+      "Length": 1073,
+      "LastWriteTime": "2025-03-10T06:54:09.3021855+00:00",
+      "Hash": "76C6A363BD9123A1AD5CB47DEA2B64F3"
+    },
+    "input\\fsh\\mappings\\rim-for-List.fsh": {
+      "Length": 1405,
+      "LastWriteTime": "2025-03-10T06:54:09.304204+00:00",
+      "Hash": "B8AF3335E27AD07877ED9F1A586D60F3"
+    },
+    "input\\fsh\\mappings\\rim-for-Location.fsh": {
+      "Length": 1250,
+      "LastWriteTime": "2025-03-10T06:54:09.304204+00:00",
+      "Hash": "FA9854DE48DADF8075ECE0F98CC7B9EF"
+    },
+    "input\\fsh\\mappings\\rim-for-Medication.fsh": {
+      "Length": 674,
+      "LastWriteTime": "2025-03-10T06:54:09.3162585+00:00",
+      "Hash": "C2E268A9AAAC59B9E41880C848D65B72"
+    },
+    "input\\fsh\\mappings\\rim-for-MedicationAdministration.fsh": {
+      "Length": 2168,
+      "LastWriteTime": "2025-03-10T06:54:09.323886+00:00",
+      "Hash": "F9F2C01F299768DD49FD432CC442FCE1"
+    },
+    "input\\fsh\\mappings\\rim-for-MedicationDispense.fsh": {
+      "Length": 2302,
+      "LastWriteTime": "2025-03-10T06:54:09.3331546+00:00",
+      "Hash": "1FCA1479BA2609C416341C16D4305516"
+    },
+    "input\\fsh\\mappings\\rim-for-MedicationRequest.fsh": {
+      "Length": 3596,
+      "LastWriteTime": "2025-03-10T06:54:09.3446138+00:00",
+      "Hash": "8365CBAAFC7CD15928D7677014CAAB4B"
+    },
+    "input\\fsh\\mappings\\rim-for-MedicationStatement.fsh": {
+      "Length": 1631,
+      "LastWriteTime": "2025-03-10T06:54:09.3446138+00:00",
+      "Hash": "413AF6DBC8FCF59A1399859989C91DBE"
+    },
+    "input\\fsh\\mappings\\rim-for-nationality.fsh": {
+      "Length": 109,
+      "LastWriteTime": "2025-03-10T06:54:09.1695806+00:00",
+      "Hash": "F43E53917FA6B1D07C3C5D765ED7D61B"
+    },
+    "input\\fsh\\mappings\\rim-for-Observation.fsh": {
+      "Length": 2434,
+      "LastWriteTime": "2025-03-10T06:54:09.3622103+00:00",
+      "Hash": "15D194DA12D05A60B9668C3EEDC30A1D"
+    },
+    "input\\fsh\\mappings\\rim-for-ObservationDefinition.fsh": {
+      "Length": 328,
+      "LastWriteTime": "2025-03-10T06:54:09.3681407+00:00",
+      "Hash": "04F236FDDBCEABEBB66480A4DE063B0B"
+    },
+    "input\\fsh\\mappings\\rim-for-OperationOutcome.fsh": {
+      "Length": 878,
+      "LastWriteTime": "2025-03-10T06:54:09.3772497+00:00",
+      "Hash": "5FE5B15ACC37DB8AA7112EF7AA1C03E9"
+    },
+    "input\\fsh\\mappings\\rim-for-Organization.fsh": {
+      "Length": 572,
+      "LastWriteTime": "2025-03-10T06:54:09.3831588+00:00",
+      "Hash": "4C1ED94CC307C6ACAB555B327DE5CB0F"
+    },
+    "input\\fsh\\mappings\\rim-for-OrganizationAffiliation.fsh": {
+      "Length": 660,
+      "LastWriteTime": "2025-03-10T06:54:09.3872007+00:00",
+      "Hash": "FC10706296B20E8466FFB502736B13DD"
+    },
+    "input\\fsh\\mappings\\rim-for-Procedure.fsh": {
+      "Length": 2486,
+      "LastWriteTime": "2025-03-10T06:54:09.392463+00:00",
+      "Hash": "89B17E70FE041E7C034E51998176E738"
+    },
+    "input\\fsh\\mappings\\rim-for-Questionnaire.fsh": {
+      "Length": 2530,
+      "LastWriteTime": "2025-03-10T06:54:09.3978482+00:00",
+      "Hash": "4781FECEE838D35DCEB557C06AA9D5C6"
+    },
+    "input\\fsh\\mappings\\rim-for-QuestionnaireResponse.fsh": {
+      "Length": 1421,
+      "LastWriteTime": "2025-03-10T06:54:09.4026588+00:00",
+      "Hash": "3DC1675B7006DA9CD9C56A8C27D83278"
+    },
+    "input\\fsh\\mappings\\rim-for-RelatedPerson.fsh": {
+      "Length": 744,
+      "LastWriteTime": "2025-03-10T06:54:09.4050931+00:00",
+      "Hash": "CDFC0AFAE082FD4B3CE4AD5CB493DFEC"
+    },
+    "input\\fsh\\mappings\\rim-for-ServiceRequest.fsh": {
+      "Length": 2258,
+      "LastWriteTime": "2025-03-10T06:54:09.4141736+00:00",
+      "Hash": "6340BB6D35A34356A7D4F7F253FC7B20"
+    },
+    "input\\fsh\\mappings\\rim-for-Specimen.fsh": {
+      "Length": 1675,
+      "LastWriteTime": "2025-03-10T06:54:09.4159326+00:00",
+      "Hash": "121C549E57EEA7F8A58BA12978F52D57"
+    },
+    "input\\fsh\\mappings\\rim-for-SpecimenDefinition.fsh": {
+      "Length": 152,
+      "LastWriteTime": "2025-03-10T06:54:09.4264624+00:00",
+      "Hash": "F09C1F2E9B7895A7E6E57A2617BC3E49"
+    },
+    "input\\fsh\\mappings\\rx-dispense-rmim.fsh": {
+      "Length": 1171,
+      "LastWriteTime": "2025-03-10T06:54:09.3371893+00:00",
+      "Hash": "2EC16F00DF3B990542EE68D7C2908D50"
+    },
+    "input\\fsh\\mappings\\script10.6-for-Medication.fsh": {
+      "Length": 1081,
+      "LastWriteTime": "2025-03-10T06:54:09.3142401+00:00",
+      "Hash": "C650495EF539BF96F6AF638123D8D117"
+    },
+    "input\\fsh\\mappings\\script10.6-for-MedicationRequest.fsh": {
+      "Length": 1889,
+      "LastWriteTime": "2025-03-10T06:54:09.3392073+00:00",
+      "Hash": "8663D236C58AE832752521F408EE2AC0"
+    },
+    "input\\fsh\\mappings\\sct-attr-for-Condition.fsh": {
+      "Length": 262,
+      "LastWriteTime": "2025-03-10T06:54:09.2315421+00:00",
+      "Hash": "71C3071F13569FE372CB9A6C65F3EDDB"
+    },
+    "input\\fsh\\mappings\\sct-attr-for-Observation.fsh": {
+      "Length": 518,
+      "LastWriteTime": "2025-03-10T06:54:09.3656092+00:00",
+      "Hash": "2B87D1E527435BBA01C2E4225834E194"
+    },
+    "input\\fsh\\mappings\\sct-concept-for-Condition.fsh": {
+      "Length": 1429,
+      "LastWriteTime": "2025-03-10T06:54:09.2194084+00:00",
+      "Hash": "2254DB20264549468930425C287F56DB"
+    },
+    "input\\fsh\\mappings\\sct-concept-for-Observation.fsh": {
+      "Length": 2030,
+      "LastWriteTime": "2025-03-10T06:54:09.3446138+00:00",
+      "Hash": "0BA21F227D48DC668EF84A68D7D4F8C0"
+    },
+    "input\\fsh\\mappings\\servd.fsh": {
+      "Length": 571,
+      "LastWriteTime": "2025-03-10T06:54:09.3851809+00:00",
+      "Hash": "D186CC597990EC3B7244299A9CD71F12"
+    },
+    "input\\fsh\\mappings\\v2-for-AllergyIntolerance.fsh": {
+      "Length": 426,
+      "LastWriteTime": "2025-03-10T06:54:09.1695806+00:00",
+      "Hash": "B8640335EE0E459D5C794C2BD09BEF36"
+    },
+    "input\\fsh\\mappings\\v2-for-CarePlan.fsh": {
+      "Length": 1010,
+      "LastWriteTime": "2025-03-10T06:54:09.185288+00:00",
+      "Hash": "4CD3BB4DF03683CD48CD6D036A2DCF4F"
+    },
+    "input\\fsh\\mappings\\v2-for-ChargeItem.fsh": {
+      "Length": 871,
+      "LastWriteTime": "2025-03-10T06:54:09.185288+00:00",
+      "Hash": "182EBFEBE7FEC9FFE93F8F0941CCD719"
+    },
+    "input\\fsh\\mappings\\v2-for-ClinicalImpression.fsh": {
+      "Length": 488,
+      "LastWriteTime": "2025-03-10T06:54:09.2013161+00:00",
+      "Hash": "E931E7BEF824F9B1591FF19E2860DC28"
+    },
+    "input\\fsh\\mappings\\v2-for-Condition.fsh": {
+      "Length": 555,
+      "LastWriteTime": "2025-03-10T06:54:09.2194084+00:00",
+      "Hash": "8F2223ABE30E1B5AF9BFBB99A66BEE46"
+    },
+    "input\\fsh\\mappings\\v2-for-Coverage.fsh": {
+      "Length": 768,
+      "LastWriteTime": "2025-03-10T06:54:09.2360613+00:00",
+      "Hash": "7B2CA886F712FDFEFC7C65E92EE231B5"
+    },
+    "input\\fsh\\mappings\\v2-for-CoverageEligibilityRequest.fsh": {
+      "Length": 187,
+      "LastWriteTime": "2025-03-10T06:54:09.245121+00:00",
+      "Hash": "8DFC62C9C646D99EC00F2FDAF2522F66"
+    },
+    "input\\fsh\\mappings\\v2-for-DiagnosticReport.fsh": {
+      "Length": 975,
+      "LastWriteTime": "2025-03-10T06:54:09.2558301+00:00",
+      "Hash": "FE88FB7F29BDA37AEE8CD770E2585660"
+    },
+    "input\\fsh\\mappings\\v2-for-Encounter.fsh": {
+      "Length": 1910,
+      "LastWriteTime": "2025-03-10T06:54:09.2654673+00:00",
+      "Hash": "2A20328571EDAA0D3AE2A00720789E4F"
+    },
+    "input\\fsh\\mappings\\v2-for-FamilyMemberHistory.fsh": {
+      "Length": 154,
+      "LastWriteTime": "2025-03-10T06:54:09.275555+00:00",
+      "Hash": "E0CEEAF13D67704B3C328A21B7F1541C"
+    },
+    "input\\fsh\\mappings\\v2-for-ImagingStudy.fsh": {
+      "Length": 260,
+      "LastWriteTime": "2025-03-10T06:54:09.2808672+00:00",
+      "Hash": "57DCF18ECAAE845341DE6A78CCA42DD7"
+    },
+    "input\\fsh\\mappings\\v2-for-Immunization.fsh": {
+      "Length": 1153,
+      "LastWriteTime": "2025-03-10T06:54:09.2808672+00:00",
+      "Hash": "6C11B27B9CFE6BBAD46DC609E7097A42"
+    },
+    "input\\fsh\\mappings\\v2-for-Invoice.fsh": {
+      "Length": 892,
+      "LastWriteTime": "2025-03-10T06:54:09.3021855+00:00",
+      "Hash": "9CF8BBD213D9EB2C7D09AA4D3B3EBDB1"
+    },
+    "input\\fsh\\mappings\\v2-for-Medication.fsh": {
+      "Length": 1377,
+      "LastWriteTime": "2025-03-10T06:54:09.3198465+00:00",
+      "Hash": "74BB6A7345C7CEE0B1E80F962B880001"
+    },
+    "input\\fsh\\mappings\\v2-for-MedicationAdministration.fsh": {
+      "Length": 1098,
+      "LastWriteTime": "2025-03-10T06:54:09.323886+00:00",
+      "Hash": "010CFEE329D5FCF9F73C2BA0C1F3038A"
+    },
+    "input\\fsh\\mappings\\v2-for-MedicationDispense.fsh": {
+      "Length": 1437,
+      "LastWriteTime": "2025-03-10T06:54:09.3392073+00:00",
+      "Hash": "DC0239EE6339DEFFCF526FA4DDD79F58"
+    },
+    "input\\fsh\\mappings\\v2-for-MedicationRequest.fsh": {
+      "Length": 961,
+      "LastWriteTime": "2025-03-10T06:54:09.3446138+00:00",
+      "Hash": "16DBA28B98B8D47FF83CC3FB91610ECB"
+    },
+    "input\\fsh\\mappings\\v2-for-MedicationStatement.fsh": {
+      "Length": 164,
+      "LastWriteTime": "2025-03-10T06:54:09.3446138+00:00",
+      "Hash": "482E77E0CCED16363520137C342BFFF4"
+    },
+    "input\\fsh\\mappings\\v2-for-Observation.fsh": {
+      "Length": 2065,
+      "LastWriteTime": "2025-03-10T06:54:09.3446138+00:00",
+      "Hash": "C48C8E78926221B3C07D993F4453B35E"
+    },
+    "input\\fsh\\mappings\\v2-for-ObservationDefinition.fsh": {
+      "Length": 980,
+      "LastWriteTime": "2025-03-10T06:54:09.3661222+00:00",
+      "Hash": "978318A2D332A91260AE56EB76F3FC8F"
+    },
+    "input\\fsh\\mappings\\v2-for-OperationOutcome.fsh": {
+      "Length": 312,
+      "LastWriteTime": "2025-03-10T06:54:09.3791251+00:00",
+      "Hash": "A32A3DFE95DBE6DA81AD87397C87CCD6"
+    },
+    "input\\fsh\\mappings\\v2-for-Organization.fsh": {
+      "Length": 469,
+      "LastWriteTime": "2025-03-10T06:54:09.3811425+00:00",
+      "Hash": "3A97ED4CC3F073976DD9130A22471A89"
+    },
+    "input\\fsh\\mappings\\v2-for-Procedure.fsh": {
+      "Length": 524,
+      "LastWriteTime": "2025-03-10T06:54:09.3958256+00:00",
+      "Hash": "8FED30BF00ABA3280B4BE53239439F80"
+    },
+    "input\\fsh\\mappings\\v2-for-Questionnaire.fsh": {
       "Length": 141,
-      "LastWriteTime": "2025-02-11T04:26:56.870865+00:00",
-      "Hash": "851D63DEFAA8BAFB52D7869BF7687B53"
+      "LastWriteTime": "2025-03-10T06:54:09.4006437+00:00",
+      "Hash": "FAA849301C59CFA2795C3F37D5A95B65"
     },
-    "project.yaml": {
-      "Length": 20,
-      "LastWriteTime": "2025-02-11T04:22:53.3129298+00:00",
-      "Hash": "42B23FADEA2F80D9D76908D39CD8463A"
+    "input\\fsh\\mappings\\v2-for-RelatedPerson.fsh": {
+      "Length": 329,
+      "LastWriteTime": "2025-03-10T06:54:09.4077536+00:00",
+      "Hash": "140765A69EE58FE02B71AC89F6940C42"
     },
-    "input\\profiles\\core\\structuredefinition-core-coverage.json": {
-      "Length": 29508,
-      "LastWriteTime": "2025-02-11T05:22:36.9341766+00:00",
-      "Hash": "0E3CC9CF61F2325EE91C2A59194390B0"
+    "input\\fsh\\mappings\\v2-for-ServiceRequest.fsh": {
+      "Length": 1138,
+      "LastWriteTime": "2025-03-10T06:54:09.4077536+00:00",
+      "Hash": "B84CF4EA3D2342ED5F56685E59D44EF6"
     },
-    "input\\profiles\\core\\structuredefinition-core-device.json": {
-      "Length": 33066,
-      "LastWriteTime": "2025-02-11T05:21:52.5177395+00:00",
-      "Hash": "2F4AD288A5F5ABF3EF61AD556B94AB22"
+    "input\\fsh\\mappings\\v2-for-Specimen.fsh": {
+      "Length": 864,
+      "LastWriteTime": "2025-03-10T06:54:09.4159326+00:00",
+      "Hash": "A2021B5729E0C4A6BB96B04BEC0BD09F"
     },
-    "input\\profiles\\core\\structuredefinition-core-diagnosticreport.json": {
-      "Length": 29997,
-      "LastWriteTime": "2025-02-11T05:37:51.9700762+00:00",
-      "Hash": "F45888BCA328A0D3F26BD875B6A7DB1B"
+    "input\\fsh\\mappings\\v2-for-SpecimenDefinition.fsh": {
+      "Length": 781,
+      "LastWriteTime": "2025-03-10T06:54:09.4244422+00:00",
+      "Hash": "51EA2ABE3B23B26815C9CF17077CF033"
     },
-    "input\\profiles\\core\\structuredefinition-core-dosage.json": {
-      "Length": 21913,
-      "LastWriteTime": "2025-02-11T05:37:37.9660462+00:00",
-      "Hash": "A0FDE7668E3CB751BC96DC1AEC2A3D4B"
+    "input\\fsh\\mappings\\w3c.prov.fsh": {
+      "Length": 156,
+      "LastWriteTime": "2025-03-10T06:54:09.3286018+00:00",
+      "Hash": "C675C15801E6FF13CD54B03E0B79F1FA"
     },
-    "input\\profiles\\core\\structuredefinition-core-episodeofcare.json": {
-      "Length": 16097,
-      "LastWriteTime": "2025-02-11T05:34:55.0069423+00:00",
-      "Hash": "275DA6804B3C37DC246AE5413950DB92"
+    "input\\fsh\\mappings\\w5-for-Account.fsh": {
+      "Length": 341,
+      "LastWriteTime": "2025-03-10T06:54:09.1695806+00:00",
+      "Hash": "4C40601DCB01500395C7BBE2F398590B"
     },
-    "input\\profiles\\core\\structuredefinition-core-healthcareservice.json": {
-      "Length": 28991,
-      "LastWriteTime": "2025-02-11T05:18:39.7952418+00:00",
-      "Hash": "88CFD1D423D81CECB99F1994140846A6"
+    "input\\fsh\\mappings\\w5-for-AllergyIntolerance.fsh": {
+      "Length": 599,
+      "LastWriteTime": "2025-03-10T06:54:09.1695806+00:00",
+      "Hash": "5DA50F7833A70DC9A39FF00FFB6DF76B"
     },
-    "input\\profiles\\core\\structuredefinition-core-immunization.json": {
-      "Length": 42045,
-      "LastWriteTime": "2025-02-11T05:35:12.2310751+00:00",
-      "Hash": "435DB98D3FE2B2002424FD453276B6B6"
+    "input\\fsh\\mappings\\w5-for-CarePlan.fsh": {
+      "Length": 503,
+      "LastWriteTime": "2025-03-10T06:54:09.185288+00:00",
+      "Hash": "12F8504E71B5D1DE863DABE540272A7A"
     },
-    "input\\profiles\\core\\structuredefinition-core-location.json": {
-      "Length": 22382,
-      "LastWriteTime": "2025-02-11T05:35:27.5263997+00:00",
-      "Hash": "01CD8B2C5B09116D4D7BCB4C7136D5FB"
+    "input\\fsh\\mappings\\w5-for-ChargeItem.fsh": {
+      "Length": 477,
+      "LastWriteTime": "2025-03-10T06:54:09.185288+00:00",
+      "Hash": "8C9867D770A07A5189BB34A5C0B29CDC"
     },
-    "input\\profiles\\core\\structuredefinition-core-medication.json": {
-      "Length": 17847,
-      "LastWriteTime": "2025-02-11T05:35:38.8612701+00:00",
-      "Hash": "FB0C2A12085C3F5C36A854BFD9BF0F11"
+    "input\\fsh\\mappings\\w5-for-Claim.fsh": {
+      "Length": 687,
+      "LastWriteTime": "2025-03-10T06:54:09.185288+00:00",
+      "Hash": "EC72FE4C390DE19CAB48F54F75A953EE"
     },
-    "input\\profiles\\core\\structuredefinition-core-medicationadministration.json": {
-      "Length": 35409,
-      "LastWriteTime": "2025-02-11T05:35:59.2483348+00:00",
-      "Hash": "4ADD01EB4BA8E7C635F3D2BD721DEB92"
+    "input\\fsh\\mappings\\w5-for-ClaimResponse.fsh": {
+      "Length": 562,
+      "LastWriteTime": "2025-03-10T06:54:09.2013161+00:00",
+      "Hash": "7CA0CC3DC2D94D6B97FF9E1D8D8DA15C"
     },
-    "input\\profiles\\core\\structuredefinition-core-medicationdispense.json": {
-      "Length": 36606,
-      "LastWriteTime": "2025-02-11T05:36:18.9362109+00:00",
-      "Hash": "CC6C7D20647C3E5B903980E621E769B3"
+    "input\\fsh\\mappings\\w5-for-ClinicalImpression.fsh": {
+      "Length": 459,
+      "LastWriteTime": "2025-03-10T06:54:09.2013161+00:00",
+      "Hash": "6C3789ABA89211831C95A58DDCE4E49F"
     },
-    "input\\profiles\\core\\structuredefinition-core-medicationrequest.json": {
-      "Length": 54876,
-      "LastWriteTime": "2025-02-11T05:36:37.1652026+00:00",
-      "Hash": "2BC48CFBF9FCA0E6398E84B5B45E7343"
+    "input\\fsh\\mappings\\w5-for-Composition.fsh": {
+      "Length": 513,
+      "LastWriteTime": "2025-03-10T06:54:09.2194084+00:00",
+      "Hash": "39D4AC061FF087B86AF8934964F38B37"
     },
-    "input\\profiles\\core\\structuredefinition-core-medicationstatement.json": {
-      "Length": 27391,
-      "LastWriteTime": "2025-02-11T05:36:49.3574404+00:00",
-      "Hash": "177B616DD72D4118C830D026199687FD"
+    "input\\fsh\\mappings\\w5-for-Condition.fsh": {
+      "Length": 662,
+      "LastWriteTime": "2025-03-10T06:54:09.2295249+00:00",
+      "Hash": "5F4CBDC1FD1CA7D622C50AA6465441B6"
     },
-    "input\\profiles\\core\\structuredefinition-core-observation.json": {
-      "Length": 67889,
-      "LastWriteTime": "2025-02-11T05:07:56.8340586+00:00",
-      "Hash": "DE5DD812EE56083A30EDBA23E9A58F78"
+    "input\\fsh\\mappings\\w5-for-Coverage.fsh": {
+      "Length": 565,
+      "LastWriteTime": "2025-03-10T06:54:09.2360613+00:00",
+      "Hash": "80F723B304603B9F66C5736BF7DC77CB"
     },
-    "input\\profiles\\core\\structuredefinition-core-organization.json": {
-      "Length": 19693,
-      "LastWriteTime": "2025-02-11T05:37:18.0643296+00:00",
-      "Hash": "50BA716E8D8993DB833EF1FAA4E4DD11"
+    "input\\fsh\\mappings\\w5-for-CoverageEligibilityRequest.fsh": {
+      "Length": 571,
+      "LastWriteTime": "2025-03-10T06:54:09.245121+00:00",
+      "Hash": "075066AEB915E346AC4391D934000A28"
     },
-    "input\\profiles\\core\\structuredefinition-core-person.json": {
-      "Length": 13709,
-      "LastWriteTime": "2025-02-11T05:31:58.2872673+00:00",
-      "Hash": "ACBA723E097A41D691FF9C0568DD5E5F"
+    "input\\fsh\\mappings\\w5-for-CoverageEligibilityResponse.fsh": {
+      "Length": 494,
+      "LastWriteTime": "2025-03-10T06:54:09.2493354+00:00",
+      "Hash": "8BF0609354138F506679862EEB81FAE1"
     },
-    "input\\profiles\\core\\structuredefinition-core-practitioner.json": {
-      "Length": 17576,
-      "LastWriteTime": "2025-02-11T05:32:29.6836902+00:00",
-      "Hash": "E3314774F63EA8977F994DB9532776B5"
+    "input\\fsh\\mappings\\w5-for-DiagnosticReport.fsh": {
+      "Length": 497,
+      "LastWriteTime": "2025-03-10T06:54:09.2578467+00:00",
+      "Hash": "2A66E62FBB03B18AE2FDCEA84A6F10DB"
     },
-    "input\\profiles\\core\\structuredefinition-core-practitionerrole.json": {
-      "Length": 19467,
-      "LastWriteTime": "2025-02-11T05:32:43.3405211+00:00",
-      "Hash": "24B3A17E4A8899C9E00E8E450A81E6FF"
+    "input\\fsh\\mappings\\w5-for-Encounter.fsh": {
+      "Length": 601,
+      "LastWriteTime": "2025-03-10T06:54:09.2654673+00:00",
+      "Hash": "149F69BDD69973547AA8A447BFC67D66"
     },
-    "input\\profiles\\core\\structuredefinition-core-procedure.json": {
-      "Length": 41705,
-      "LastWriteTime": "2025-02-11T05:32:58.4442162+00:00",
-      "Hash": "C4B7A381A65AA5F980EB69032741ADD6"
+    "input\\fsh\\mappings\\w5-for-EpisodeOfCare.fsh": {
+      "Length": 358,
+      "LastWriteTime": "2025-03-10T06:54:09.2706971+00:00",
+      "Hash": "DD506515642FAEEDAC8C98C8861AE0F1"
     },
-    "input\\profiles\\core\\structuredefinition-core-provenance.json": {
-      "Length": 24421,
-      "LastWriteTime": "2025-02-11T05:02:17.3130424+00:00",
-      "Hash": "0FE285E2F48307539C0AE4EFBC2A1DA4"
+    "input\\fsh\\mappings\\w5-for-FamilyMemberHistory.fsh": {
+      "Length": 374,
+      "LastWriteTime": "2025-03-10T06:54:09.275555+00:00",
+      "Hash": "EED6FE7630DB901BB10DFE8DB18374FF"
     },
-    "input\\profiles\\core\\structuredefinition-core-questionnaire.json": {
-      "Length": 62655,
-      "LastWriteTime": "2025-02-11T05:33:19.5227442+00:00",
-      "Hash": "1FF93E73214FBA590D8EAAEA572E907C"
+    "input\\fsh\\mappings\\w5-for-HealthcareService.fsh": {
+      "Length": 268,
+      "LastWriteTime": "2025-03-10T06:54:09.2808672+00:00",
+      "Hash": "9ABC97252671D8B88D328D7DD880D557"
     },
-    "input\\profiles\\core\\structuredefinition-core-questionnaireresponse.json": {
-      "Length": 25410,
-      "LastWriteTime": "2025-02-11T05:33:36.6089928+00:00",
-      "Hash": "D6E5F2E2751314854233C9A93774A336"
+    "input\\fsh\\mappings\\w5-for-ImagingStudy.fsh": {
+      "Length": 593,
+      "LastWriteTime": "2025-03-10T06:54:09.2808672+00:00",
+      "Hash": "5204A5E2DE583B49FA87F39FDA0A40ED"
     },
-    "input\\profiles\\core\\structuredefinition-core-relatedperson.json": {
-      "Length": 16747,
-      "LastWriteTime": "2025-02-11T05:04:31.7527734+00:00",
-      "Hash": "B19C03A61C6B42A9A7B11A28A4B86E24"
+    "input\\fsh\\mappings\\w5-for-Immunization.fsh": {
+      "Length": 539,
+      "LastWriteTime": "2025-03-10T06:54:09.2968111+00:00",
+      "Hash": "6123C82FFE36178763BAB714FDDD7FCE"
     },
-    "input\\profiles\\core\\structuredefinition-core-servicerequest.json": {
-      "Length": 49272,
-      "LastWriteTime": "2025-02-11T05:33:52.9536866+00:00",
-      "Hash": "8A0950CC375DD46FEF76D77D38014891"
+    "input\\fsh\\mappings\\w5-for-Invoice.fsh": {
+      "Length": 345,
+      "LastWriteTime": "2025-03-10T06:54:09.304204+00:00",
+      "Hash": "27CF6DBC2D97286505F53CA7CC32A085"
     },
-    "input\\profiles\\core\\structuredefinition-core-specimen.json": {
-      "Length": 29064,
-      "LastWriteTime": "2025-02-11T05:34:10.3169003+00:00",
-      "Hash": "0F7314C51D4BC907DF06C3E716E926FA"
+    "input\\fsh\\mappings\\w5-for-List.fsh": {
+      "Length": 389,
+      "LastWriteTime": "2025-03-10T06:54:09.304204+00:00",
+      "Hash": "4923838F96AAF4938A35E48FC9560BA9"
     },
-    "input\\profiles\\core\\structuredefinition-core-address.json": {
-      "Length": 17666,
-      "LastWriteTime": "2025-02-11T05:44:25.9465357+00:00",
-      "Hash": "CA377415D37F4FA61226B5F7AB7C670C"
+    "input\\fsh\\mappings\\w5-for-Location.fsh": {
+      "Length": 313,
+      "LastWriteTime": "2025-03-10T06:54:09.3129396+00:00",
+      "Hash": "4CE7FC42E9CA91C677DC04E236698322"
     },
-    "input\\profiles\\core\\structuredefinition-core-administrativecode-extension.json": {
-      "Length": 4644,
-      "LastWriteTime": "2025-02-11T05:43:58.2822568+00:00",
-      "Hash": "3F32B30409D056018D8567B633F083DF"
+    "input\\fsh\\mappings\\w5-for-Medication.fsh": {
+      "Length": 222,
+      "LastWriteTime": "2025-03-10T06:54:09.3162585+00:00",
+      "Hash": "1E609D3AF5979750210811E8BC6F2F7D"
     },
-    "input\\profiles\\core\\structuredefinition-core-allergyintolerance.json": {
-      "Length": 38769,
-      "LastWriteTime": "2025-02-11T05:43:15.8987193+00:00",
-      "Hash": "46B0620A5D4313355FAAF32621938EDD"
+    "input\\fsh\\mappings\\w5-for-MedicationAdministration.fsh": {
+      "Length": 502,
+      "LastWriteTime": "2025-03-10T06:54:09.323886+00:00",
+      "Hash": "7F294782E2B919F340FC824C2069B900"
     },
-    "input\\profiles\\core\\structuredefinition-core-birthplace-extension.json": {
-      "Length": 3087,
-      "LastWriteTime": "2025-02-11T05:42:34.9200707+00:00",
-      "Hash": "E984005EAA7960E717D6B0937013556F"
+    "input\\fsh\\mappings\\w5-for-MedicationDispense.fsh": {
+      "Length": 354,
+      "LastWriteTime": "2025-03-10T06:54:09.3351704+00:00",
+      "Hash": "ACC5BC98C74A20E4AAEB241A2B767267"
     },
-    "input\\profiles\\core\\structuredefinition-core-bundle.json": {
-      "Length": 31845,
-      "LastWriteTime": "2025-02-11T05:41:59.3603562+00:00",
-      "Hash": "021602B0DD91F6837A5941BDC3459B1D"
+    "input\\fsh\\mappings\\w5-for-MedicationRequest.fsh": {
+      "Length": 715,
+      "LastWriteTime": "2025-03-10T06:54:09.3446138+00:00",
+      "Hash": "C6CCC58290976E6CDAD5A8D0FA79B1C8"
     },
-    "input\\profiles\\core\\structuredefinition-core-careplan.json": {
-      "Length": 55715,
-      "LastWriteTime": "2025-02-11T05:41:38.4252163+00:00",
-      "Hash": "0C8EFD1006EAA2C2324A70248DBBB2AC"
+    "input\\fsh\\mappings\\w5-for-MedicationStatement.fsh": {
+      "Length": 525,
+      "LastWriteTime": "2025-03-10T06:54:09.3446138+00:00",
+      "Hash": "7CB9F4163812D78AE0EAE9D5B27357B0"
     },
-    "input\\profiles\\core\\structuredefinition-core-careteam.json": {
-      "Length": 17855,
-      "LastWriteTime": "2025-02-11T05:40:44.4867051+00:00",
-      "Hash": "450A3F5BC2946D836A2218BCA6D7FC6E"
+    "input\\fsh\\mappings\\w5-for-Observation.fsh": {
+      "Length": 546,
+      "LastWriteTime": "2025-03-10T06:54:09.3622103+00:00",
+      "Hash": "180396EBDE451CFE043625742B61B932"
     },
-    "input\\profiles\\core\\structuredefinition-core-claim.json": {
-      "Length": 94978,
-      "LastWriteTime": "2025-02-11T05:40:16.8304951+00:00",
-      "Hash": "45CB4DFD835BEBCDA9D2ACA99846AEE2"
+    "input\\fsh\\mappings\\w5-for-ObservationDefinition.fsh": {
+      "Length": 205,
+      "LastWriteTime": "2025-03-10T06:54:09.3735217+00:00",
+      "Hash": "3A13150ED75B7E0A179E40629DF65C49"
     },
-    "input\\profiles\\core\\structuredefinition-core-composition.json": {
-      "Length": 50311,
-      "LastWriteTime": "2025-02-11T05:39:31.8103692+00:00",
-      "Hash": "37E0589F4F7DE4B601E2E090C40FE9AF"
+    "input\\fsh\\mappings\\w5-for-Organization.fsh": {
+      "Length": 221,
+      "LastWriteTime": "2025-03-10T06:54:09.3872007+00:00",
+      "Hash": "8157335BC055D99B56BBB5002229892F"
     },
-    "input\\profiles\\core\\structuredefinition-core-condition.json": {
-      "Length": 35597,
-      "LastWriteTime": "2025-02-11T05:39:04.3907376+00:00",
-      "Hash": "6628981DC854BE042126C718AF5184F9"
+    "input\\fsh\\mappings\\w5-for-OrganizationAffiliation.fsh": {
+      "Length": 280,
+      "LastWriteTime": "2025-03-10T06:54:09.3904495+00:00",
+      "Hash": "F1F095E0440FC62335961B7BA078C5B0"
     },
-    "input\\profiles\\core\\structuredefinition-core-consent.json": {
-      "Length": 34635,
-      "LastWriteTime": "2025-02-11T05:38:36.1325347+00:00",
-      "Hash": "E65DF179E3FED1A05B0A1C9DFDBBCBD2"
+    "input\\fsh\\mappings\\w5-for-Procedure.fsh": {
+      "Length": 584,
+      "LastWriteTime": "2025-03-10T06:54:09.392463+00:00",
+      "Hash": "594F008D4C00B262B1BA05CFAAEEBE35"
     },
-    "input\\profiles\\base\\structuredefinition-anc-encounter.json": {
-      "Length": 51056,
-      "LastWriteTime": "2025-02-11T06:32:07.6315784+00:00",
-      "Hash": "1552DAF0693AFBE4BD6A20621C6C1CC5"
+    "input\\fsh\\mappings\\w5-for-Questionnaire.fsh": {
+      "Length": 384,
+      "LastWriteTime": "2025-03-10T06:54:09.3978482+00:00",
+      "Hash": "1619474FF984E15D279D107A90B4EE5D"
     },
-    "input\\profiles\\base\\structuredefinition-anc-patient.json": {
-      "Length": 42050,
-      "LastWriteTime": "2025-02-11T05:10:08.6431978+00:00",
-      "Hash": "2B27BC65E6724DE2ECADE42EDBD14734"
+    "input\\fsh\\mappings\\w5-for-QuestionnaireResponse.fsh": {
+      "Length": 402,
+      "LastWriteTime": "2025-03-10T06:54:09.4026588+00:00",
+      "Hash": "9663B953FA46F661D20CA0948ADF0132"
     },
-    "library\\anc-custom-code-who.json": {
-      "Length": 1109,
-      "LastWriteTime": "2025-02-11T06:47:15.2308407+00:00",
-      "Hash": "AF0D45A4946275FF78E9230701AA8BC9"
+    "input\\fsh\\mappings\\w5-for-RelatedPerson.fsh": {
+      "Length": 261,
+      "LastWriteTime": "2025-03-10T06:54:09.4071129+00:00",
+      "Hash": "A4EC4861E9FE776B00AC684184E2C8A8"
     },
-    "input\\profiles\\structuredefinition-anc-gravida.json": {
-      "Length": 67944,
-      "LastWriteTime": "2025-02-11T07:30:47.9740922+00:00",
-      "Hash": "8FB36613E094471113FE69C800D078BE"
+    "input\\fsh\\mappings\\w5-for-ServiceRequest.fsh": {
+      "Length": 727,
+      "LastWriteTime": "2025-03-10T06:54:09.4159326+00:00",
+      "Hash": "A4466FCCDCFAF96F12AA941D61AFE3B4"
+    },
+    "input\\fsh\\mappings\\w5-for-Specimen.fsh": {
+      "Length": 518,
+      "LastWriteTime": "2025-03-10T06:54:09.4159326+00:00",
+      "Hash": "10838B0BD7E8DED661ABEF2F7CBC1B09"
+    },
+    "input\\fsh\\mappings\\workflow-for-CarePlan.fsh": {
+      "Length": 1641,
+      "LastWriteTime": "2025-03-10T06:54:09.1695806+00:00",
+      "Hash": "A5D7EA67D428AF0F8580FCFFD3F82138"
+    },
+    "input\\fsh\\mappings\\workflow-for-ChargeItem.fsh": {
+      "Length": 783,
+      "LastWriteTime": "2025-03-10T06:54:09.185288+00:00",
+      "Hash": "D97C38E8466BF3544A60E6427D21095C"
+    },
+    "input\\fsh\\mappings\\workflow-for-Claim.fsh": {
+      "Length": 591,
+      "LastWriteTime": "2025-03-10T06:54:09.185288+00:00",
+      "Hash": "69748B8D128F9248B59794C33DB7C98F"
+    },
+    "input\\fsh\\mappings\\workflow-for-ClaimResponse.fsh": {
+      "Length": 346,
+      "LastWriteTime": "2025-03-10T06:54:09.2013161+00:00",
+      "Hash": "F043800CA4C00A68A329B45205C13098"
+    },
+    "input\\fsh\\mappings\\workflow-for-ClinicalImpression.fsh": {
+      "Length": 457,
+      "LastWriteTime": "2025-03-10T06:54:09.2013161+00:00",
+      "Hash": "406DA7694BA0CE12880EAA995B9E3AFB"
+    },
+    "input\\fsh\\mappings\\workflow-for-Composition.fsh": {
+      "Length": 364,
+      "LastWriteTime": "2025-03-10T06:54:09.2013161+00:00",
+      "Hash": "08F5D6591DB219428293728A204B585C"
+    },
+    "input\\fsh\\mappings\\workflow-for-Condition.fsh": {
+      "Length": 443,
+      "LastWriteTime": "2025-03-10T06:54:09.2194084+00:00",
+      "Hash": "098AC79462BEE42AACEBE24CCD949A5D"
+    },
+    "input\\fsh\\mappings\\workflow-for-Coverage.fsh": {
+      "Length": 276,
+      "LastWriteTime": "2025-03-10T06:54:09.2315421+00:00",
+      "Hash": "33774B4628DC8AB0EA0B7F5973A5A2DA"
+    },
+    "input\\fsh\\mappings\\workflow-for-CoverageEligibilityRequest.fsh": {
+      "Length": 459,
+      "LastWriteTime": "2025-03-10T06:54:09.2431027+00:00",
+      "Hash": "557A4FDDB9E24EAF43493C91D0198A48"
+    },
+    "input\\fsh\\mappings\\workflow-for-CoverageEligibilityResponse.fsh": {
+      "Length": 336,
+      "LastWriteTime": "2025-03-10T06:54:09.2471391+00:00",
+      "Hash": "4BCD360CCA8D96C0D892946AFC02E8B2"
+    },
+    "input\\fsh\\mappings\\workflow-for-DiagnosticReport.fsh": {
+      "Length": 471,
+      "LastWriteTime": "2025-03-10T06:54:09.2493354+00:00",
+      "Hash": "704D35338A24D3CD3D0C795B7831357A"
+    },
+    "input\\fsh\\mappings\\workflow-for-Encounter.fsh": {
+      "Length": 845,
+      "LastWriteTime": "2025-03-10T06:54:09.2620632+00:00",
+      "Hash": "74692AE5BC9BDBFF48B1140DFEB6988A"
+    },
+    "input\\fsh\\mappings\\workflow-for-EpisodeOfCare.fsh": {
+      "Length": 522,
+      "LastWriteTime": "2025-03-10T06:54:09.2686795+00:00",
+      "Hash": "230D88524A3764E6CF812FBF1C7EC9C1"
+    },
+    "input\\fsh\\mappings\\workflow-for-FamilyMemberHistory.fsh": {
+      "Length": 469,
+      "LastWriteTime": "2025-03-10T06:54:09.2706971+00:00",
+      "Hash": "E0A0394FC1CDB3D2B64B7698CC82A9BA"
+    },
+    "input\\fsh\\mappings\\workflow-for-ImagingStudy.fsh": {
+      "Length": 597,
+      "LastWriteTime": "2025-03-10T06:54:09.2808672+00:00",
+      "Hash": "D09A0EFB5F81AE452148FC6C510BC353"
+    },
+    "input\\fsh\\mappings\\workflow-for-Immunization.fsh": {
+      "Length": 660,
+      "LastWriteTime": "2025-03-10T06:54:09.2808672+00:00",
+      "Hash": "E97A7E85A1049B1FCAF7E9C3124549C4"
+    },
+    "input\\fsh\\mappings\\workflow-for-Invoice.fsh": {
+      "Length": 333,
+      "LastWriteTime": "2025-03-10T06:54:09.304204+00:00",
+      "Hash": "580033941B22CDADF58172AD53D18588"
+    },
+    "input\\fsh\\mappings\\workflow-for-MedicationAdministration.fsh": {
+      "Length": 749,
+      "LastWriteTime": "2025-03-10T06:54:09.3218662+00:00",
+      "Hash": "DD2E7A1482E0AB6F3A8465FADECFECEB"
+    },
+    "input\\fsh\\mappings\\workflow-for-MedicationDispense.fsh": {
+      "Length": 584,
+      "LastWriteTime": "2025-03-10T06:54:09.330618+00:00",
+      "Hash": "9F3FC3BEA21DA724690D887DCCAE5617"
+    },
+    "input\\fsh\\mappings\\workflow-for-MedicationRequest.fsh": {
+      "Length": 1060,
+      "LastWriteTime": "2025-03-10T06:54:09.3392073+00:00",
+      "Hash": "25A7C5E83BF4B5D3E291D00D3E4E791D"
+    },
+    "input\\fsh\\mappings\\workflow-for-MedicationStatement.fsh": {
+      "Length": 567,
+      "LastWriteTime": "2025-03-10T06:54:09.3446138+00:00",
+      "Hash": "1F73A3CD4F8E3D006BC63F5D27A77597"
+    },
+    "input\\fsh\\mappings\\workflow-for-Observation.fsh": {
+      "Length": 438,
+      "LastWriteTime": "2025-03-10T06:54:09.3446138+00:00",
+      "Hash": "ACC482DF78DAC2CA103D06AA313401EF"
+    },
+    "input\\fsh\\mappings\\workflow-for-Procedure.fsh": {
+      "Length": 776,
+      "LastWriteTime": "2025-03-10T06:54:09.3904495+00:00",
+      "Hash": "CA747E4F38C557F0B0EC2D0E290DE7DD"
+    },
+    "input\\fsh\\mappings\\workflow-for-Questionnaire.fsh": {
+      "Length": 906,
+      "LastWriteTime": "2025-03-10T06:54:09.3958256+00:00",
+      "Hash": "D2406C1BFC19804A93B325DD470024B9"
+    },
+    "input\\fsh\\mappings\\workflow-for-QuestionnaireResponse.fsh": {
+      "Length": 464,
+      "LastWriteTime": "2025-03-10T06:54:09.4006437+00:00",
+      "Hash": "F38986D72BB7573D22A10CFFA1BA6DA7"
+    },
+    "input\\fsh\\mappings\\workflow-for-ServiceRequest.fsh": {
+      "Length": 1083,
+      "LastWriteTime": "2025-03-10T06:54:09.4077536+00:00",
+      "Hash": "0C291400328708C705FDC97E511C4092"
+    },
+    "input\\fsh\\profiles\\observation-abortus.fsh": {
+      "Length": 14276,
+      "LastWriteTime": "2025-03-10T06:15:03.6155752+00:00",
+      "Hash": "4392224C111C2CB10ECD5A7400331508"
+    },
+    "input\\fsh\\profiles\\observation-blood-pressure.fsh": {
+      "Length": 14046,
+      "LastWriteTime": "2025-03-10T06:15:11.6079916+00:00",
+      "Hash": "F0B6B248334669E1AF429B42D6BFC6D5"
+    },
+    "input\\fsh\\profiles\\observation-blood-type.fsh": {
+      "Length": 13868,
+      "LastWriteTime": "2025-03-10T06:15:21.2818846+00:00",
+      "Hash": "9C1461776DE9A45FD3ED95FE07C35048"
+    },
+    "input\\fsh\\profiles\\observation-gravida.fsh": {
+      "Length": 14239,
+      "LastWriteTime": "2025-03-10T06:15:29.8474396+00:00",
+      "Hash": "0B5A7B72B31A798A31F824414F6630AF"
+    },
+    "input\\fsh\\profiles\\observation-height.fsh": {
+      "Length": 14340,
+      "LastWriteTime": "2025-03-10T06:15:37.3000607+00:00",
+      "Hash": "0009F3655D1FA8D841E30BEC56428BC9"
+    },
+    "input\\fsh\\profiles\\observation-hemoglobin.fsh": {
+      "Length": 14721,
+      "LastWriteTime": "2025-03-10T06:15:42.6793582+00:00",
+      "Hash": "D4D2A0CCF240E8FD63A44A5220D074AF"
+    },
+    "input\\fsh\\profiles\\observation-hep-b-screening.fsh": {
+      "Length": 15149,
+      "LastWriteTime": "2025-03-10T06:15:46.5276266+00:00",
+      "Hash": "063AEC7785CD7A28374CC08368022664"
+    },
+    "input\\fsh\\profiles\\observation-hiv-screening.fsh": {
+      "Length": 14500,
+      "LastWriteTime": "2025-03-10T06:15:50.2429531+00:00",
+      "Hash": "10F01D588B04C1EA1387260EA0D05F6F"
+    },
+    "input\\fsh\\profiles\\observation-hpht.fsh": {
+      "Length": 13872,
+      "LastWriteTime": "2025-03-10T06:15:58.2903448+00:00",
+      "Hash": "15061ADEACF8B52D5F7ED6925546C8A4"
+    },
+    "input\\fsh\\profiles\\observation-muac.fsh": {
+      "Length": 15098,
+      "LastWriteTime": "2025-03-10T06:16:02.1800252+00:00",
+      "Hash": "5450A22BC57D068E96B09F2D96F6B1BC"
+    },
+    "input\\fsh\\profiles\\observation-paritas.fsh": {
+      "Length": 13816,
+      "LastWriteTime": "2025-03-10T06:16:07.4496965+00:00",
+      "Hash": "046BAF2D290B7804A99A1D8A5E9E8509"
+    },
+    "input\\fsh\\profiles\\observation-protein-urine copy.fsh": {
+      "Length": 14417,
+      "LastWriteTime": "2025-03-10T06:34:07.7419449+00:00",
+      "Hash": "0672D1C084051FDB85300D182CF25FFE"
+    },
+    "input\\fsh\\profiles\\observation-protein-urine.fsh": {
+      "Length": 14417,
+      "LastWriteTime": "2025-03-10T06:16:23.0184233+00:00",
+      "Hash": "0672D1C084051FDB85300D182CF25FFE"
+    },
+    "input\\fsh\\profiles\\observation-random-blood-sugar.fsh": {
+      "Length": 13483,
+      "LastWriteTime": "2025-03-10T06:16:47.7291851+00:00",
+      "Hash": "BDEB11FA0486829225DFA682D67710DC"
+    },
+    "input\\fsh\\profiles\\observation-rhesus.fsh": {
+      "Length": 13547,
+      "LastWriteTime": "2025-03-10T06:16:57.1327125+00:00",
+      "Hash": "9228E294DECA054B3B5551CE02E7209B"
+    },
+    "input\\fsh\\profiles\\observation-syphillis-vdrl.fsh": {
+      "Length": 15149,
+      "LastWriteTime": "2025-03-10T06:17:01.0600609+00:00",
+      "Hash": "22D539FB92586E2412BF96A1D2091D70"
+    },
+    "input\\fsh\\profiles\\observation-weight.fsh": {
+      "Length": 14349,
+      "LastWriteTime": "2025-03-10T06:17:10.7563095+00:00",
+      "Hash": "398A5FE640604FC3F38EC43E7128D333"
+    },
+    "input\\fsh\\profiles\\tetanus-immunization-administration.fsh": {
+      "Length": 16326,
+      "LastWriteTime": "2025-03-10T06:19:54.6408806+00:00",
+      "Hash": "A3A61E670E7ADF2ACA78AF5EC5E63A87"
+    },
+    "input\\fsh\\profiles\\tetanus-immunization-history.fsh": {
+      "Length": 17027,
+      "LastWriteTime": "2025-03-10T07:02:08.8805452+00:00",
+      "Hash": "925C59C3F895E91BF0E077187965C48D"
     }
   }
 }

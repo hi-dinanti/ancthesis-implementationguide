@@ -1,0 +1,23 @@
+Mapping: rim-for-List
+Id: rim
+Title: "RIM Mapping"
+Source: List
+Target: "http://hl7.org/v3"
+* -> "Act[classCode<ORG,moodCode=EVN]"
+* identifier -> ".id"
+* status -> ".status[current=active;retired=obsolete;entered-in-error=nullified]"
+* mode -> ".outBoundRelationship[typeCode=COMP].target[classCode=OBS\"].value"
+* title -> ".title"
+* code -> ".code"
+* subject -> ".participation[typeCode<SUB].role (and sometimes .player)"
+* encounter -> "inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN]"
+* date -> ".participation[typeCode<AUT].time[type=TS]"
+* source -> ".participation[typeCode<AUT].role[classCode=REL].player[classCode=PSN,determinerCode=INST] or .participation[typeCode<AUT].role[classCode=REL].player[classCode=DEV,determinerCode=INST]"
+* orderedBy -> ".outboundRelationship[typeCode=COMP].sequenceNumber > 1"
+* note -> ".inboundRelationship[typeCode=SUBJ].act.text"
+* entry -> ".outboundRelationship[typeCode=COMP] or  .participation[typeCode=SBJ]"
+* entry.flag -> ".outBoundRelationship[typeCode=COMP].target[classCode=OBS\"].value"
+* entry.deleted -> "added: .updateMode=(\"A\",\"AR\")  retained: .updateMode=\"NC\"  updated: .updateMode=\"R\"  deleted: .updateMode=\"D\""
+* entry.date -> ".availabilityTime"
+* entry.item -> ".target or .role or .role.entity"
+* emptyReason -> ".inboundRelationship[typeCode=SUBJ,code<ListEmptyReason].value[type=CD]"

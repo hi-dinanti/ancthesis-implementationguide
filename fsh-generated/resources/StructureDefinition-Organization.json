@@ -2,34 +2,34 @@
   "resourceType": "StructureDefinition",
   "id": "Organization",
   "meta": {
-    "lastUpdated": "2025-02-11T05:37:17.0007956+00:00"
+    "lastUpdated": "2019-10-31T22:29:23.356+00:00"
   },
   "extension": [
     {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/structuredefinition-category",
       "valueString": "Base.Entities"
     },
     {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "trial-use"
     },
     {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/structuredefinition-fmm",
       "valueInteger": 3
     },
     {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/structuredefinition-security-category",
       "valueCode": "business"
     },
     {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/structuredefinition-wg",
       "valueCode": "pa"
     }
   ],
-  "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/Organization",
+  "url": "https://fhir.pwskia.id//StructureDefinition/Organization",
   "name": "Organization",
   "status": "draft",
-  "date": "2019-11-01T09:29:23+11:00",
+  "date": "2023-05-12T04:00:39.3091812+00:00",
   "publisher": "Health Level Seven International (Patient Administration)",
   "contact": [
     {
@@ -51,10 +51,27 @@
   ],
   "description": "A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.",
   "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "servd",
+      "name": "ServD",
+      "uri": "http://www.omg.org/spec/ServD/1.0/"
+    },
+    {
+      "identity": "v2",
+      "name": "HL7 v2 Mapping",
+      "uri": "http://hl7.org/v2"
+    },
+    {
+      "identity": "w5",
+      "name": "FiveWs Pattern Mapping",
+      "uri": "http://hl7.org/fhir/fivews"
+    }
+  ],
   "kind": "resource",
   "abstract": false,
   "type": "Organization",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DomainResource",
+  "baseDefinition": "https://fhir.pwskia.id//StructureDefinition/DomainResource",
   "derivation": "specialization",
   "differential": {
     "element": [
@@ -62,7 +79,21 @@
         "id": "Organization",
         "path": "Organization",
         "short": "A grouping of people or organizations with a common purpose",
-        "definition": "A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc."
+        "definition": "A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "Organization(classCode=ORG, determinerCode=INST)"
+          },
+          {
+            "identity": "servd",
+            "map": "Organization"
+          },
+          {
+            "identity": "v2",
+            "map": "(also see master files messages)"
+          }
+        ]
       },
       {
         "id": "Organization.identifier",
@@ -71,7 +102,7 @@
         "definition": "Identifier for the organization that is used to identify the organization across multiple disparate systems.",
         "requirements": "Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization.",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "type": [
           {
             "code": "Identifier"
@@ -80,7 +111,25 @@
         "condition": [
           "org-1"
         ],
-        "isSummary": true
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": ".scopes[Role](classCode=IDENT)"
+          },
+          {
+            "identity": "servd",
+            "map": "./Identifiers"
+          },
+          {
+            "identity": "v2",
+            "map": "XON.10 / XON.3"
+          },
+          {
+            "identity": "w5",
+            "map": "FiveWs.identifier"
+          }
+        ]
       },
       {
         "id": "Organization.active",
@@ -99,7 +148,25 @@
         "meaningWhenMissing": "This resource is generally assumed to be active if no value is provided for the active element",
         "isModifier": true,
         "isModifierReason": "This element is labelled as a modifier because it is a status element that can indicate that a record should not be treated as valid",
-        "isSummary": true
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": ".status"
+          },
+          {
+            "identity": "servd",
+            "map": "./Status (however this concept in ServD more covers why the organization is active or not, could be delisted, deregistered, not operational yet) this could alternatively be derived from ./StartDate and ./EndDate and given a context date."
+          },
+          {
+            "identity": "v2",
+            "map": "No equivalent in HL7 v2"
+          },
+          {
+            "identity": "w5",
+            "map": "FiveWs.status"
+          }
+        ]
       },
       {
         "id": "Organization.type",
@@ -109,7 +176,7 @@
         "comment": "Organizations can be corporations, wards, sections, clinical teams, government departments, etc. Note that code is generally a classifier of the type of organization; in many applications, codes are used to identity a particular organization (say, ward) as opposed to another of the same type - these are identifiers, not codes\n\nWhen considering if multiple types are appropriate, you should evaluate if child organizations would be a more appropriate use of the concept, as different types likely are in different sub-areas of the organization. This is most likely to be used where type values have orthogonal values, such as a religious, academic and medical center.\n\nWe expect that some jurisdictions will profile this optionality to be a single cardinality.",
         "requirements": "Need to be able to track the kind of organization that this is - different organization types have different uses.",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "type": [
           {
             "code": "CodeableConcept"
@@ -121,12 +188,30 @@
           "valueSet": "http://hl7.org/fhir/ValueSet/organization-type",
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/elementdefinition-bindingName",
               "valueString": "OrganizationType"
             }
           ],
           "description": "Used to categorize the organization."
-        }
+        },
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": ".code"
+          },
+          {
+            "identity": "servd",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "No equivalent in v2"
+          },
+          {
+            "identity": "w5",
+            "map": "FiveWs.class"
+          }
+        ]
       },
       {
         "id": "Organization.name",
@@ -145,7 +230,21 @@
         "condition": [
           "org-1"
         ],
-        "isSummary": true
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": ".name"
+          },
+          {
+            "identity": "servd",
+            "map": ".PreferredName/Name"
+          },
+          {
+            "identity": "v2",
+            "map": "XON.1"
+          }
+        ]
       },
       {
         "id": "Organization.alias",
@@ -155,10 +254,16 @@
         "comment": "There are no dates associated with the alias/historic names, as this is not intended to track when names were used, but to assist in searching so that older names can still result in identifying the organization.",
         "requirements": "Over time locations and organizations go through many changes and can be known by different names.\n\nFor searching knowing previous names that the organization was known by can be very useful.",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "type": [
           {
             "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": ".name"
           }
         ]
       },
@@ -170,7 +275,7 @@
         "comment": "The use code 'home' is not to be used. Note that these contacts are not the contact details of people who are employed by or represent the organization, but official contacts for the organization itself.",
         "requirements": "Human contact for the organization.",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "type": [
           {
             "code": "ContactPoint"
@@ -178,6 +283,20 @@
         ],
         "condition": [
           "org-3"
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": ".telecom"
+          },
+          {
+            "identity": "servd",
+            "map": "./ContactPoints"
+          },
+          {
+            "identity": "v2",
+            "map": "ORC-22?"
+          }
         ]
       },
       {
@@ -188,7 +307,7 @@
         "comment": "Organization may have multiple addresses with different uses or applicable periods. The use code 'home' is not to be used.",
         "requirements": "May need to keep track of the organization's addresses for contacting, billing or reporting requirements.",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "type": [
           {
             "code": "Address"
@@ -196,6 +315,20 @@
         ],
         "condition": [
           "org-2"
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": ".address"
+          },
+          {
+            "identity": "servd",
+            "map": "./PrimaryAddress and ./OtherAddresses"
+          },
+          {
+            "identity": "v2",
+            "map": "ORC-23?"
+          }
         ]
       },
       {
@@ -210,17 +343,31 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "https://fhir.kemkes.go.id/r4/StructureDefinition/Organization"
             ],
             "extension": [
               {
-                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
+                "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/structuredefinition-hierarchy",
                 "valueBoolean": true
               }
             ]
           }
         ],
-        "isSummary": true
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": ".playedBy[classCode=Part].scoper"
+          },
+          {
+            "identity": "servd",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "No equivalent in HL7 v2"
+          }
+        ]
       },
       {
         "id": "Organization.contact",
@@ -230,10 +377,16 @@
         "comment": "Where multiple contacts for the same purpose are provided there is a standard extension that can be used to determine which one is the preferred contact to use.",
         "requirements": "Need to keep track of assigned contact points within bigger organization.",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "type": [
           {
             "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": ".contactParty"
           }
         ]
       },
@@ -255,12 +408,18 @@
           "valueSet": "http://hl7.org/fhir/ValueSet/contactentity-type",
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/elementdefinition-bindingName",
               "valueString": "ContactPartyType"
             }
           ],
           "description": "The purpose for which you would contact a contact party."
-        }
+        },
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "./type"
+          }
+        ]
       },
       {
         "id": "Organization.contact.name",
@@ -274,6 +433,16 @@
           {
             "code": "HumanName"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "./name"
+          },
+          {
+            "identity": "v2",
+            "map": "PID-5, PID-9"
+          }
         ]
       },
       {
@@ -283,10 +452,20 @@
         "definition": "A contact detail (e.g. a telephone number or an email address) by which the party may be contacted.",
         "requirements": "People have (primary) ways to contact them in some way such as phone, email.",
         "min": 0,
-        "max": "0",
+        "max": "*",
         "type": [
           {
             "code": "ContactPoint"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "./telecom"
+          },
+          {
+            "identity": "v2",
+            "map": "PID-13, PID-14"
           }
         ]
       },
@@ -302,22 +481,31 @@
           {
             "code": "Address"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "./addr"
+          },
+          {
+            "identity": "v2",
+            "map": "PID-11"
+          }
         ]
       },
       {
         "id": "Organization.endpoint",
         "path": "Organization.endpoint",
-        "short": "Technical endpoints providing access to services operated for the organization",
-        "definition": "Technical endpoints providing access to services operated for the organization.",
         "requirements": "Organizations have multiple systems that provide various services and need to be able to define the technical connection details for how to connect to them, and for what purpose.",
-        "min": 0,
-        "max": "0",
         "type": [
           {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Endpoint"
-            ]
+            "code": "Reference"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
           }
         ]
       }

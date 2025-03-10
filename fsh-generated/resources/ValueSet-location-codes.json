@@ -5,7 +5,7 @@
   "id": "location-codes",
   "title": "Location Codes",
   "description": "Codes representing different healthcare facilities and service locations.",
-  "url": "https://simplifier.net/smart-anc-satusehat-r4/ValueSet/location-codes",
+  "url": "https://fhir.pwskia.id//ValueSet/location-codes",
   "compose": {
     "include": [
       {

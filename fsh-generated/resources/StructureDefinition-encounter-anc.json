@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "encounter-anc",
+  "id": "Encounter-ANC",
   "meta": {
     "lastUpdated": "2025-02-11T06:32:01.879599+00:00"
   },
@@ -27,7 +27,7 @@
     }
   ],
   "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/Encounter",
-  "name": "Encounter-ANC",
+  "name": "EncounterANC",
   "title": "Antenatal Care Encounter",
   "status": "draft",
   "date": "2019-11-01T09:29:23+11:00",
@@ -55,18 +55,116 @@
   "kind": "resource",
   "abstract": false,
   "type": "Encounter",
-  "baseDefinition": "https://simplifier.net/smart-anc-satusehat-r4/StructureDefinition/Encounter",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Encounter",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
-        "id": "Encounter",
-        "path": "Encounter",
-        "short": "An interaction during which services are provided to the patient",
-        "definition": "An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
-        "alias": [
-          "Visit"
-        ]
+        "id": "Encounter.identifier",
+        "path": "Encounter.identifier",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true,
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "value"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Encounter.identifier:K1A",
+        "path": "Encounter.identifier",
+        "sliceName": "K1A",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "type": [{ "code": "Identifier" }],
+        "fixedIdentifier": {
+          "system": "http://terminology.kemkes.go.id/CodeSystem/episodeofcare/ANC",
+          "value": "K1A"
+        }
+      },
+      {
+        "id": "Encounter.identifier:K1M",
+        "path": "Encounter.identifier",
+        "sliceName": "K1M",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "type": [{ "code": "Identifier" }],
+        "fixedIdentifier": {
+          "system": "http://terminology.kemkes.go.id/CodeSystem/episodeofcare/ANC",
+          "value": "K1M"
+        }
+      },
+      {
+        "id": "Encounter.identifier:K2",
+        "path": "Encounter.identifier",
+        "sliceName": "K2",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "type": [{ "code": "Identifier" }],
+        "fixedIdentifier": {
+          "system": "http://terminology.kemkes.go.id/CodeSystem/episodeofcare/ANC",
+          "value": "K2"
+        }
+      },
+      {
+        "id": "Encounter.identifier:K3",
+        "path": "Encounter.identifier",
+        "sliceName": "K3",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "type": [{ "code": "Identifier" }],
+        "fixedIdentifier": {
+          "system": "http://terminology.kemkes.go.id/CodeSystem/episodeofcare/ANC",
+          "value": "K3"
+        }
+      },
+      {
+        "id": "Encounter.identifier:K4",
+        "path": "Encounter.identifier",
+        "sliceName": "K4",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "type": [{ "code": "Identifier" }],
+        "fixedIdentifier": {
+          "system": "http://terminology.kemkes.go.id/CodeSystem/episodeofcare/ANC",
+          "value": "K4"
+        }
+      },
+      {
+        "id": "Encounter.identifier:K5",
+        "path": "Encounter.identifier",
+        "sliceName": "K5",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "type": [{ "code": "Identifier" }],
+        "fixedIdentifier": {
+          "system": "http://terminology.kemkes.go.id/CodeSystem/episodeofcare/ANC",
+          "value": "K5"
+        }
+      },
+      {
+        "id": "Encounter.identifier:K6",
+        "path": "Encounter.identifier",
+        "sliceName": "K6",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "type": [{ "code": "Identifier" }],
+        "fixedIdentifier": {
+          "system": "http://terminology.kemkes.go.id/CodeSystem/episodeofcare/ANC",
+          "value": "K6"
+        }
       }
     ]
   }

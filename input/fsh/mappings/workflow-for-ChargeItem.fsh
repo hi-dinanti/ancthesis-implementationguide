@@ -1,0 +1,23 @@
+Mapping: workflow-for-ChargeItem
+Id: workflow
+Title: "Workflow Pattern"
+Source: ChargeItem
+Target: "http://hl7.org/fhir/workflow"
+* -> "Event"
+* identifier -> "Event.identifier"
+* definitionUri -> "Event.instantiates"
+* definitionCanonical -> "Event.instantiates"
+* status -> "Event.status"
+* partOf -> "Event.partOf"
+* code -> "Event.code"
+* subject -> "Event.subject"
+* context -> "Event.context"
+* occurrence[x] -> "Event.occurrence[x]"
+* performer -> "Event.performer"
+* performer.function -> "Event.performer.function"
+* performer.actor -> "Event.performer.actor"
+* performingOrganization -> "Event.performer.actor"
+* reason -> "Event.reasonCode"
+* service -> "Event.reasonReference"
+* note -> "Event.note"
+* supportingInformation -> "Event.supportingInfo"

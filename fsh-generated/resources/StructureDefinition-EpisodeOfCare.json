@@ -1,22 +1,93 @@
 {
   "resourceType": "StructureDefinition",
   "id": "EpisodeOfCare",
-  "url": "https://simplifier.net/smart-anc-satusehat-r4/StructureDefinition/EpisodeOfCare",
+  "meta": {
+    "lastUpdated": "2019-10-31T22:29:23.356+00:00"
+  },
+  "extension": [
+    {
+      "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Management"
+    },
+    {
+      "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    },
+    {
+      "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    },
+    {
+      "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pa"
+    }
+  ],
+  "url": "https://fhir.pwskia.id//StructureDefinition/EpisodeOfCare",
   "name": "EpisodeOfCare",
   "status": "draft",
+  "date": "2023-05-12T03:54:04.8907436+00:00",
+  "publisher": "Health Level Seven International (Patient Administration)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "An association between a patient and an organization / healthcare provider(s) during which time encounters may occur. The managing organization assumes a level of responsibility for the patient during this time.",
   "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "w5",
+      "name": "FiveWs Pattern Mapping",
+      "uri": "http://hl7.org/fhir/fivews"
+    },
+    {
+      "identity": "workflow",
+      "name": "Workflow Pattern",
+      "uri": "http://hl7.org/fhir/workflow"
+    }
+  ],
   "kind": "resource",
   "abstract": false,
   "type": "EpisodeOfCare",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DomainResource",
+  "baseDefinition": "https://fhir.pwskia.id//StructureDefinition/DomainResource",
   "derivation": "specialization",
   "differential": {
     "element": [
       {
         "id": "EpisodeOfCare",
         "path": "EpisodeOfCare",
-        "short": "EpisodeOfCare",
-        "definition": "EpisodeOfCare"
+        "short": "An association of a Patient with an Organization and  Healthcare Provider(s) for a period of time that the Organization assumes some level of responsibility",
+        "definition": "An association between a patient and an organization / healthcare provider(s) during which time encounters may occur. The managing organization assumes a level of responsibility for the patient during this time.",
+        "alias": [
+          "Case Program Problem"
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "workflow",
+            "map": "Event"
+          }
+        ]
       }
     ]
   }

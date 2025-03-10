@@ -1,354 +1,538 @@
 [
   {
-    "outputFile": "CodeSystem-anc-custom-codes.json",
-    "fshName": "anc-custom-codes",
+    "outputFile": "CodeSystem-ANCCustomCode.json",
+    "fshName": "ANCCustomCode",
     "fshType": "CodeSystem",
-    "fshFile": "valueset-anc-custom-code.fsh",
+    "fshFile": "valueset\\valueset-anc-custom-code.fsh",
     "startLine": 1,
-    "endLine": 37
+    "endLine": 1
   },
   {
-    "outputFile": "CodeSystem-primary-care-lab-parameter-code.json",
+    "outputFile": "CodeSystem-PrimaryCareLabParameter.json",
     "fshName": "PrimaryCareLabParameter",
     "fshType": "CodeSystem",
-    "fshFile": "valueset-primary-care-lab-parameter.fsh",
+    "fshFile": "valueset\\valueset-primary-care-lab-parameter.fsh",
     "startLine": 1,
     "endLine": 108
   },
   {
-    "outputFile": "CodeSystem-primary-care-lab-value-code.json",
+    "outputFile": "CodeSystem-PrimaryCareLabValue.json",
     "fshName": "PrimaryCareLabValue",
     "fshType": "CodeSystem",
-    "fshFile": "valueset-primary-care-lab-value.fsh",
+    "fshFile": "valueset\\valueset-primary-care-lab-value.fsh",
     "startLine": 1,
     "endLine": 122
   },
   {
-    "outputFile": "CodeSystem-satusehat-custom-codes.json",
-    "fshName": "satusehat-custom-codes",
+    "outputFile": "CodeSystem-SATUSEHATCustomCode.json",
+    "fshName": "SATUSEHATCustomCode",
     "fshType": "CodeSystem",
-    "fshFile": "valueset-satusehat-custom-code.fsh",
+    "fshFile": "valueset\\valueset-satusehat-custom-code.fsh",
     "startLine": 1,
-    "endLine": 52
+    "endLine": 51
   },
   {
-    "outputFile": "StructureDefinition-AdministrativeCode.json",
-    "fshName": "AdministrativeCode",
-    "fshType": "Extension",
-    "fshFile": "extension-administrative-code.fsh",
+    "outputFile": "StructureDefinition-ANCPatient.json",
+    "fshName": "ANCPatient",
+    "fshType": "Profile",
+    "fshFile": "core\\core-patient-anc.fsh",
     "startLine": 1,
-    "endLine": 25
+    "endLine": 6
+  },
+  {
+    "outputFile": "StructureDefinition-ANCVisit.json",
+    "fshName": "ANCVisit",
+    "fshType": "Logical",
+    "fshFile": "instances\\anc-logical-model.fsh",
+    "startLine": 1,
+    "endLine": 33
+  },
+  {
+    "outputFile": "StructureDefinition-Account.json",
+    "fshName": "Account",
+    "fshType": "Resource",
+    "fshFile": "base-satusehat\\Account.fsh",
+    "startLine": 1,
+    "endLine": 62
   },
   {
     "outputFile": "StructureDefinition-AllergyIntolerance.json",
     "fshName": "AllergyIntolerance",
     "fshType": "Resource",
-    "fshFile": "core-allergyIntollerance.fsh",
+    "fshFile": "base-satusehat\\AllergyIntolerance.fsh",
     "startLine": 1,
-    "endLine": 134
-  },
-  {
-    "outputFile": "StructureDefinition-BirthPlace.json",
-    "fshName": "BirthPlace",
-    "fshType": "Extension",
-    "fshFile": "extension-birthplace.fsh",
-    "startLine": 1,
-    "endLine": 23
-  },
-  {
-    "outputFile": "StructureDefinition-Bundle.json",
-    "fshName": "Bundle",
-    "fshType": "Resource",
-    "fshFile": "core-bundle.fsh",
-    "startLine": 1,
-    "endLine": 89
+    "endLine": 29
   },
   {
     "outputFile": "StructureDefinition-CarePlan.json",
     "fshName": "CarePlan",
     "fshType": "Resource",
-    "fshFile": "core-carePlan.fsh",
+    "fshFile": "base-satusehat\\CarePlan.fsh",
     "startLine": 1,
-    "endLine": 182
+    "endLine": 25
   },
   {
-    "outputFile": "StructureDefinition-CareTeam.json",
-    "fshName": "CareTeam",
+    "outputFile": "StructureDefinition-ChargeItem.json",
+    "fshName": "ChargeItem",
     "fshType": "Resource",
-    "fshFile": "core-careTeam.fsh",
+    "fshFile": "base-satusehat\\ChargeItem.fsh",
     "startLine": 1,
-    "endLine": 75
+    "endLine": 28
+  },
+  {
+    "outputFile": "StructureDefinition-ChargeItemResponse.json",
+    "fshName": "ChargeItemResponse",
+    "fshType": "Extension",
+    "fshFile": "extensions\\ChargeItemResponse.fsh",
+    "startLine": 1,
+    "endLine": 30
   },
   {
     "outputFile": "StructureDefinition-Claim.json",
     "fshName": "Claim",
     "fshType": "Resource",
-    "fshFile": "core-claim.fsh",
+    "fshFile": "base-satusehat\\Claim.fsh",
     "startLine": 1,
-    "endLine": 479
+    "endLine": 39
+  },
+  {
+    "outputFile": "StructureDefinition-ClaimResponse.json",
+    "fshName": "ClaimResponse",
+    "fshType": "Resource",
+    "fshFile": "base-satusehat\\ClaimResponse.fsh",
+    "startLine": 1,
+    "endLine": 389
+  },
+  {
+    "outputFile": "StructureDefinition-ClinicalImpression.json",
+    "fshName": "ClinicalImpression",
+    "fshType": "Resource",
+    "fshFile": "base-satusehat\\ClinicalImpression.fsh",
+    "startLine": 1,
+    "endLine": 23
   },
   {
     "outputFile": "StructureDefinition-Composition.json",
     "fshName": "Composition",
     "fshType": "Resource",
-    "fshFile": "core-composition.fsh",
+    "fshFile": "base-satusehat\\Composition.fsh",
     "startLine": 1,
-    "endLine": 156
+    "endLine": 31
   },
   {
     "outputFile": "StructureDefinition-Condition.json",
     "fshName": "Condition",
     "fshType": "Resource",
-    "fshFile": "core-condition.fsh",
+    "fshFile": "base-satusehat\\Condition.fsh",
     "startLine": 1,
-    "endLine": 111
+    "endLine": 24
   },
   {
-    "outputFile": "StructureDefinition-Consent.json",
-    "fshName": "Consent",
-    "fshType": "Resource",
-    "fshFile": "core-consent.fsh",
+    "outputFile": "StructureDefinition-ConditionHistory.json",
+    "fshName": "ConditionHistory",
+    "fshType": "Extension",
+    "fshFile": "extensions\\ConditionHistory.fsh",
     "startLine": 1,
-    "endLine": 144
+    "endLine": 11
   },
   {
     "outputFile": "StructureDefinition-Coverage.json",
     "fshName": "Coverage",
     "fshType": "Resource",
-    "fshFile": "core-coverage.fsh",
+    "fshFile": "base-satusehat\\Coverage.fsh",
     "startLine": 1,
-    "endLine": 123
+    "endLine": 30
   },
   {
-    "outputFile": "StructureDefinition-Device.json",
-    "fshName": "Device",
+    "outputFile": "StructureDefinition-CoverageEligibilityRequest.json",
+    "fshName": "CoverageEligibilityRequest",
     "fshType": "Resource",
-    "fshFile": "core-device.fsh",
+    "fshFile": "base-satusehat\\CoverageEligibilityRequest.fsh",
     "startLine": 1,
-    "endLine": 110
+    "endLine": 132
+  },
+  {
+    "outputFile": "StructureDefinition-CoverageEligibilityResponse.json",
+    "fshName": "CoverageEligibilityResponse",
+    "fshType": "Resource",
+    "fshFile": "base-satusehat\\CoverageEligibilityResponse.fsh",
+    "startLine": 1,
+    "endLine": 32
   },
   {
     "outputFile": "StructureDefinition-DiagnosticReport.json",
     "fshName": "DiagnosticReport",
     "fshType": "Resource",
-    "fshFile": "core-diagnosticReport.fsh",
+    "fshFile": "base-satusehat\\DiagnosticReport.fsh",
     "startLine": 1,
-    "endLine": 135
+    "endLine": 31
+  },
+  {
+    "outputFile": "StructureDefinition-DocumentStatus.json",
+    "fshName": "DocumentStatus",
+    "fshType": "Extension",
+    "fshFile": "extensions\\DocumentStatus.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "StructureDefinition-DomainResource.json",
+    "fshName": "DomainResource",
+    "fshType": "Resource",
+    "fshFile": "base-satusehat\\DomainResource.fsh",
+    "startLine": 1,
+    "endLine": 43
+  },
+  {
+    "outputFile": "StructureDefinition-EligibilityStatus.json",
+    "fshName": "EligibilityStatus",
+    "fshType": "Extension",
+    "fshFile": "extensions\\EligibilityStatus.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "StructureDefinition-Encounter-ANC.json",
+    "fshName": "EncounterANC",
+    "fshType": "Profile",
+    "fshFile": "core\\core-anc-encounter.fsh",
+    "startLine": 1,
+    "endLine": 28
   },
   {
     "outputFile": "StructureDefinition-Encounter.json",
     "fshName": "Encounter",
     "fshType": "Resource",
-    "fshFile": "base-anc-encounter.fsh",
+    "fshFile": "base-satusehat\\Encounter.fsh",
     "startLine": 1,
-    "endLine": 1
+    "endLine": 24
+  },
+  {
+    "outputFile": "StructureDefinition-EpisodeOfCare-ANC.json",
+    "fshName": "EpisodeOfCareANC",
+    "fshType": "Profile",
+    "fshFile": "core\\core-anc-episodeofcare.fsh",
+    "startLine": 1,
+    "endLine": 27
   },
   {
     "outputFile": "StructureDefinition-EpisodeOfCare.json",
     "fshName": "EpisodeOfCare",
     "fshType": "Resource",
-    "fshFile": "base-anc-episodeOfCare.fsh",
+    "fshFile": "base-satusehat\\EpisodeOfCare.fsh",
     "startLine": 1,
-    "endLine": 1
+    "endLine": 25
+  },
+  {
+    "outputFile": "StructureDefinition-FamilyMemberHistory.json",
+    "fshName": "FamilyMemberHistory",
+    "fshType": "Resource",
+    "fshFile": "base-satusehat\\FamilyMemberHistory.fsh",
+    "startLine": 1,
+    "endLine": 98
   },
   {
     "outputFile": "StructureDefinition-HealthcareService.json",
     "fshName": "HealthcareService",
     "fshType": "Resource",
-    "fshFile": "core-healthcareService.fsh",
+    "fshFile": "base-satusehat\\HealthcareService.fsh",
     "startLine": 1,
-    "endLine": 118
+    "endLine": 24
+  },
+  {
+    "outputFile": "StructureDefinition-ImagingStudy.json",
+    "fshName": "ImagingStudy",
+    "fshType": "Resource",
+    "fshFile": "base-satusehat\\ImagingStudy.fsh",
+    "startLine": 1,
+    "endLine": 24
+  },
+  {
+    "outputFile": "StructureDefinition-Immunization.json",
+    "fshName": "Immunization",
+    "fshType": "Resource",
+    "fshFile": "base-satusehat\\Immunization.fsh",
+    "startLine": 1,
+    "endLine": 24
+  },
+  {
+    "outputFile": "StructureDefinition-Invoice.json",
+    "fshName": "Invoice",
+    "fshType": "Resource",
+    "fshFile": "base-satusehat\\Invoice.fsh",
+    "startLine": 1,
+    "endLine": 87
+  },
+  {
+    "outputFile": "StructureDefinition-List.json",
+    "fshName": "List",
+    "fshType": "Resource",
+    "fshFile": "base-satusehat\\List.fsh",
+    "startLine": 1,
+    "endLine": 29
   },
   {
     "outputFile": "StructureDefinition-Location.json",
     "fshName": "Location",
     "fshType": "Resource",
-    "fshFile": "core-location.fsh",
+    "fshFile": "base-satusehat\\Location.fsh",
     "startLine": 1,
-    "endLine": 92
+    "endLine": 32
+  },
+  {
+    "outputFile": "StructureDefinition-LocationServiceClass.json",
+    "fshName": "LocationServiceClass",
+    "fshType": "Extension",
+    "fshFile": "extensions\\LocationServiceClass.fsh",
+    "startLine": 1,
+    "endLine": 7
   },
   {
     "outputFile": "StructureDefinition-Medication.json",
     "fshName": "Medication",
     "fshType": "Resource",
-    "fshFile": "core-medication.fsh",
+    "fshFile": "base-satusehat\\Medication.fsh",
     "startLine": 1,
-    "endLine": 56
+    "endLine": 32
   },
   {
     "outputFile": "StructureDefinition-MedicationAdministration.json",
     "fshName": "MedicationAdministration",
     "fshType": "Resource",
-    "fshFile": "core-medicationAdministration.fsh",
+    "fshFile": "base-satusehat\\MedicationAdministration.fsh",
     "startLine": 1,
-    "endLine": 98
+    "endLine": 24
   },
   {
     "outputFile": "StructureDefinition-MedicationDispense.json",
     "fshName": "MedicationDispense",
     "fshType": "Resource",
-    "fshFile": "core-medicationDispense.fsh",
+    "fshFile": "base-satusehat\\MedicationDispense.fsh",
     "startLine": 1,
-    "endLine": 100
+    "endLine": 24
   },
   {
     "outputFile": "StructureDefinition-MedicationRequest.json",
     "fshName": "MedicationRequest",
     "fshType": "Resource",
-    "fshFile": "core-medicationRequest.fsh",
+    "fshFile": "base-satusehat\\MedicationRequest.fsh",
     "startLine": 1,
-    "endLine": 141
+    "endLine": 25
   },
   {
     "outputFile": "StructureDefinition-MedicationStatement.json",
     "fshName": "MedicationStatement",
     "fshType": "Resource",
-    "fshFile": "core-medicationStatement.fsh",
+    "fshFile": "base-satusehat\\MedicationStatement.fsh",
     "startLine": 1,
-    "endLine": 75
+    "endLine": 27
+  },
+  {
+    "outputFile": "StructureDefinition-Observation.json",
+    "fshName": "Observation",
+    "fshType": "Resource",
+    "fshFile": "base-satusehat\\Observation.fsh",
+    "startLine": 1,
+    "endLine": 33
+  },
+  {
+    "outputFile": "StructureDefinition-ObservationDefinition.json",
+    "fshName": "ObservationDefinition",
+    "fshType": "Resource",
+    "fshFile": "base-satusehat\\ObservationDefinition.fsh",
+    "startLine": 1,
+    "endLine": 111
+  },
+  {
+    "outputFile": "StructureDefinition-OperationOutcome.json",
+    "fshName": "OperationOutcome",
+    "fshType": "Resource",
+    "fshFile": "base-satusehat\\OperationOutcome.fsh",
+    "startLine": 1,
+    "endLine": 24
   },
   {
     "outputFile": "StructureDefinition-Organization.json",
     "fshName": "Organization",
     "fshType": "Resource",
-    "fshFile": "core-organization.fsh",
+    "fshFile": "base-satusehat\\Organization.fsh",
     "startLine": 1,
-    "endLine": 79
+    "endLine": 77
   },
   {
-    "outputFile": "StructureDefinition-Person.json",
-    "fshName": "Person",
+    "outputFile": "StructureDefinition-OrganizationAffiliation.json",
+    "fshName": "OrganizationAffiliation",
     "fshType": "Resource",
-    "fshFile": "core-person.fsh",
+    "fshFile": "base-satusehat\\OrganizationAffiliation.fsh",
     "startLine": 1,
-    "endLine": 61
+    "endLine": 50
   },
   {
-    "outputFile": "StructureDefinition-Practitioner.json",
-    "fshName": "Practitioner",
-    "fshType": "Resource",
-    "fshFile": "core-practitioner.fsh",
+    "outputFile": "StructureDefinition-Package.json",
+    "fshName": "Package",
+    "fshType": "Extension",
+    "fshFile": "extensions\\Package.fsh",
     "startLine": 1,
-    "endLine": 73
+    "endLine": 33
   },
   {
-    "outputFile": "StructureDefinition-PractitionerRole.json",
-    "fshName": "PractitionerRole",
-    "fshType": "Resource",
-    "fshFile": "core-practitionerRole.fsh",
+    "outputFile": "StructureDefinition-PolicyClass.json",
+    "fshName": "PolicyClass",
+    "fshType": "Extension",
+    "fshFile": "extensions\\PolicyClass.fsh",
     "startLine": 1,
-    "endLine": 68
+    "endLine": 22
   },
   {
     "outputFile": "StructureDefinition-Procedure.json",
     "fshName": "Procedure",
     "fshType": "Resource",
-    "fshFile": "core-procedure.fsh",
+    "fshFile": "base-satusehat\\Procedure.fsh",
     "startLine": 1,
-    "endLine": 134
-  },
-  {
-    "outputFile": "StructureDefinition-Provenance.json",
-    "fshName": "Provenance",
-    "fshType": "Resource",
-    "fshFile": "core-provenance.fsh",
-    "startLine": 1,
-    "endLine": 77
+    "endLine": 23
   },
   {
     "outputFile": "StructureDefinition-Questionnaire.json",
     "fshName": "Questionnaire",
     "fshType": "Resource",
-    "fshFile": "core-questionnaire.fsh",
+    "fshFile": "base-satusehat\\Questionnaire.fsh",
     "startLine": 1,
-    "endLine": 211
+    "endLine": 31
   },
   {
     "outputFile": "StructureDefinition-QuestionnaireResponse.json",
     "fshName": "QuestionnaireResponse",
     "fshType": "Resource",
-    "fshFile": "core-questionnaireResponse.fsh",
+    "fshFile": "base-satusehat\\QuestionnaireResponse.fsh",
     "startLine": 1,
-    "endLine": 96
+    "endLine": 27
+  },
+  {
+    "outputFile": "StructureDefinition-ReceivedPerson.json",
+    "fshName": "ReceivedPerson",
+    "fshType": "Extension",
+    "fshFile": "extensions\\ReceivedPerson.fsh",
+    "startLine": 1,
+    "endLine": 7
   },
   {
     "outputFile": "StructureDefinition-RelatedPerson.json",
     "fshName": "RelatedPerson",
     "fshType": "Resource",
-    "fshFile": "core-relatedPerson.fsh",
+    "fshFile": "base-satusehat\\RelatedPerson.fsh",
     "startLine": 1,
-    "endLine": 76
+    "endLine": 25
+  },
+  {
+    "outputFile": "StructureDefinition-ServiceClass.json",
+    "fshName": "ServiceClass",
+    "fshType": "Extension",
+    "fshFile": "extensions\\ServiceClass.fsh",
+    "startLine": 1,
+    "endLine": 15
   },
   {
     "outputFile": "StructureDefinition-ServiceRequest.json",
     "fshName": "ServiceRequest",
     "fshType": "Resource",
-    "fshFile": "core-servicerRequest.fsh",
+    "fshFile": "base-satusehat\\ServiceRequest.fsh",
     "startLine": 1,
-    "endLine": 153
+    "endLine": 28
   },
   {
     "outputFile": "StructureDefinition-Specimen.json",
     "fshName": "Specimen",
     "fshType": "Resource",
-    "fshFile": "core-specimen.fsh",
+    "fshFile": "base-satusehat\\Specimen.fsh",
     "startLine": 1,
-    "endLine": 100
+    "endLine": 40
   },
   {
-    "outputFile": "StructureDefinition-anc-episodeofcare.json",
-    "fshName": "EpisodeOfCare-ANC",
-    "fshType": "Profile",
-    "fshFile": "base-anc-episodeOfCare.fsh",
-    "startLine": 2,
-    "endLine": 28
-  },
-  {
-    "outputFile": "StructureDefinition-anc-patient.json",
-    "fshName": "Patient",
+    "outputFile": "StructureDefinition-SpecimenDefinition.json",
+    "fshName": "SpecimenDefinition",
     "fshType": "Resource",
-    "fshFile": "base-patient-anc.fsh",
+    "fshFile": "base-satusehat\\SpecimenDefinition.fsh",
     "startLine": 1,
-    "endLine": 153
+    "endLine": 105
   },
   {
-    "outputFile": "StructureDefinition-encounter-anc.json",
-    "fshName": "Encounter-ANC",
-    "fshType": "Profile",
-    "fshFile": "base-anc-encounter.fsh",
-    "startLine": 2,
-    "endLine": 29
+    "outputFile": "StructureDefinition-TransportedPerson.json",
+    "fshName": "TransportedPerson",
+    "fshType": "Extension",
+    "fshFile": "extensions\\TransportedPerson.fsh",
+    "startLine": 1,
+    "endLine": 8
   },
   {
-    "outputFile": "ValueSet-anc-code-system.json",
+    "outputFile": "StructureDefinition-TransportedTime.json",
+    "fshName": "TransportedTime",
+    "fshType": "Extension",
+    "fshFile": "extensions\\TransportedTime.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-primaryCareProvider.json",
+    "fshName": "PrimaryCareProvider",
+    "fshType": "Extension",
+    "fshFile": "extensions\\PrimaryCareProvider.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "StructureDefinition-totalPrice.json",
+    "fshName": "TotalPrice",
+    "fshType": "Extension",
+    "fshFile": "extensions\\TotalPrice.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "StructureDefinition-unitPrice.json",
+    "fshName": "UnitPrice",
+    "fshType": "Extension",
+    "fshFile": "extensions\\UnitPrice.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "ValueSet-ANCCodeSystem.json",
     "fshName": "CodeSystem",
     "fshType": "ValueSet",
-    "fshFile": "valueset-code-system.fsh",
+    "fshFile": "valueset\\valueset-code-system.fsh",
     "startLine": 1,
     "endLine": 16
   },
   {
-    "outputFile": "ValueSet-anc-scenario-custom-code.json",
-    "fshName": "anc-scenario-custom-code",
+    "outputFile": "ValueSet-ANCEncounterIdentifier.json",
+    "fshName": "ANCEncounterIdentifier",
     "fshType": "ValueSet",
-    "fshFile": "valueset-scenario-custom-code.fsh",
+    "fshFile": "valueset\\valueset-anc-encounter-identifier.fsh",
+    "startLine": 1,
+    "endLine": 31
+  },
+  {
+    "outputFile": "ValueSet-ANCScenario.json",
+    "fshName": "ANCScenario",
+    "fshType": "ValueSet",
+    "fshFile": "valueset\\valueset-scenario-custom-code.fsh",
     "startLine": 3,
     "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-ServiceRequestCodes.json",
+    "fshName": "ServiceRequestCodes",
+    "fshType": "ValueSet",
+    "fshFile": "valueset\\valueset-service-request-code.fsh",
+    "startLine": 1,
+    "endLine": 14
   },
   {
     "outputFile": "ValueSet-location-codes.json",
     "fshName": "LocationCodes",
     "fshType": "ValueSet",
-    "fshFile": "valueset-service-request-code.fsh",
+    "fshFile": "valueset\\valueset-service-request-code.fsh",
     "startLine": 17,
     "endLine": 22
-  },
-  {
-    "outputFile": "ValueSet-service-request-codes.json",
-    "fshName": "ServiceRequestCodes",
-    "fshType": "ValueSet",
-    "fshFile": "valueset-service-request-code.fsh",
-    "startLine": 1,
-    "endLine": 14
   }
 ]
