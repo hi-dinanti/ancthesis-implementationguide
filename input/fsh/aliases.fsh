@@ -2,7 +2,6 @@ Alias: $Observation = https://fhir.kemkes.go.id/r4/StructureDefinition/Observati
 Alias: $Immunization = https://fhir.kemkes.go.id/r4/StructureDefinition/Immunization
 Alias: $Bundle = https://fhir.kemkes.go.id/r4/StructureDefinition/Bundle
 Alias: $Extension = https://fhir.kemkes.go.id/r4/StructureDefinition/Extension
-Alias: $Extension = https://fhir.kemkes.go.id/r4/StructureDefinition/Extension
 Alias: $Identifier = https://fhir.kemkes.go.id/r4/StructureDefinition/Identifier
 Alias: $Organization = http://hl7.org/fhir/StructureDefinition/Organization
 Alias: $Practitioner = https://hl7.org/fhir/CompartmentDefinition/Practitioner

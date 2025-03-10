@@ -6,8 +6,6 @@ Description: "List of observation code used in laboratory result value based on 
 * ^status = #active
 * ^experimental = false
 
-* include codes from system PrimaryCareLabValue
-
 * #LA11832-5 "Trace"
 * #LA11841-6 "1+"
 * #LA11842-4 "2+"

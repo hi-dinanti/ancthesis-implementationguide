@@ -1,10 +1,9 @@
 CodeSystem: ANCCustomCode
-Parent: $WHO-ANC
 Id: ANCCustomCode
 Title: "Extended Codes CodeSystem"
 Description: "Set of WHO-Custom-ANC codes adapted in the implementation guide"
 * ^url = "http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes" 
-* ^status = #draft
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 * ^content = #complete
@@ -19,7 +18,7 @@ Description: "Set of WHO-Custom-ANC codes adapted in the implementation guide"
 * #ANC.B8.DE10 "Expected weight gain"
 * #ANC.B6.DE17 "Gestational age"
 * #ANC.B8.DE3 "Current weight"
-* #ANC.B8.DE3 "Symphysis-fundal height (SFH)"
+* #ANC.B8.DE105 "Symphysis-fundal height (SFH)"
 * #ANC.B8.DE17 "Systolic blood pressure"
 * #ANC.B8.DE19 "Diastolic blood pressure"
 * #ANC.B8.DE36 "Pulse rate"

@@ -6,8 +6,6 @@ Description: "List of LOINC code used in laboratory system based on Jakarta mast
 * ^status = #active
 * ^experimental = false
 
-* include codes from system PrimaryCareLabParameter
-
 * #88874-3 "Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method"
 * #89372-7 "Mycobacterium tuberculosis complex rpoB gene rifAMPin resistance mutation [Presence] by Molecular method"
 * #42902-7 "Elastase.pancreatic [Presence] in Stool"
@@ -20,8 +18,6 @@ Description: "List of LOINC code used in laboratory system based on Jakarta mast
 * #10704-10 "Ova and parasites identified in Stool by Light microscopy"
 * #10704-11 "Ova and parasites identified in Stool by Light microscopy"
 * #X099193 "Bakteri"
-* #X099194 "Bakteri"
-* #X099195 "Bakteri"
 * #X099196 "Bakteri"
 * #X099197 "Bakteri"
 * #41278-3 "Gross blood [Presence] of Stool Qualitative"
@@ -39,7 +35,6 @@ Description: "List of LOINC code used in laboratory system based on Jakarta mast
 * #11029-15 "Consistency of Stool"
 * #11029-16 "Consistency of Stool"
 * #11029-17 "Consistency of Stool"
-* #X099195 "Lain-lain"
 * #2270-7 "Fat [Presence] in Stool"
 * #2270-8 "Fat [Presence] in Stool"
 * #42524-9 "Mucus [Presence] in Stool by Light microscopy"
@@ -105,8 +100,8 @@ Description: "List of LOINC code used in laboratory system based on Jakarta mast
 * #70569-9 "Plasmodium sp Ag [Identifier] in Blood by Rapid immunoassay"
 * #5339-7 "Salmonella paratyphi A H Ab [Presence] in Serum by Latex agglutination"
 * #5340-5 "Salmonella paratyphi A O Ab [Presence] in Serum by Latex agglutination"
-* #5341-3 ""Salmonella paratyphi B H Ab [Presence] in Serum by Latex agglutination"
-* #5342-1 ""Salmonella paratyphi B O Ab [Presence] in Serum by Latex agglutination"
+* #5341-3 "Salmonella paratyphi B H Ab [Presence] in Serum by Latex agglutination"
+* #5342-1 "Salmonella paratyphi B O Ab [Presence] in Serum by Latex agglutination"
 * #5343-9 "Salmonella paratyphi C H Ab [Presence] in Serum by Latex agglutination"
 * #5344-7 "Salmonella paratyphi C O Ab [Presence] in Serum by Latex agglutination"
 * #5345-4 "Salmonella typhi H Ab [Presence] in Serum by Latex agglutination"
@@ -178,7 +173,6 @@ Description: "List of LOINC code used in laboratory system based on Jakarta mast
 * #58442-5 "Other elements [Identifier] in Urine sediment by Light microscopy"
 * #9439-1 "Casts [#/area] in Urine sediment by Microscopy high power field"
 * #20409-9 "Erythrocytes [#/volume] in Urine by Test strip"
-* #2112-1 "Choriogonadotropin.beta subunit (pregnancy test) [Presence] in Urine"
 * #70144-1 "Cannabinoids [Presence] in Urine by Screen method"
 * #70145-8 "Cannabinoids [Presence] in Urine by Screen method"
 * #49754-5 "Epitel Squamous in Urine sediment by Light microscopy"

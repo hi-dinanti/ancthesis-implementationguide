@@ -1,0 +1,199 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Encounter-ANC",
+  "meta": {
+    "lastUpdated": "2025-02-11T06:32:01.879599+00:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Management"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pa"
+    }
+  ],
+  "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/Encounter",
+  "name": "EncounterANC",
+  "title": "Antenatal Care Encounter",
+  "status": "draft",
+  "date": "2019-10-31T22:29:23+00:00",
+  "publisher": "Health Level Seven International (Patient Administration)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "An interaction between a pregnant individual and a healthcare provider for the purpose of conducting antenatal assessments, providing maternal and fetal health services, and ensuring continuity of care throughout pregnancy. This includes routine check-ups, screenings, interventions, and counseling as part of comprehensive antenatal care.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Encounter",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Encounter",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Encounter.identifier",
+        "path": "Encounter.identifier",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true,
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "value"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Encounter.identifier:K1A",
+        "path": "Encounter.identifier",
+        "sliceName": "K1A",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "fixedIdentifier": {
+          "system": "http://terminology.kemkes.go.id/CodeSystem/episodeofcare/ANC",
+          "value": "K1A"
+        }
+      },
+      {
+        "id": "Encounter.identifier:K1M",
+        "path": "Encounter.identifier",
+        "sliceName": "K1M",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "fixedIdentifier": {
+          "system": "http://terminology.kemkes.go.id/CodeSystem/episodeofcare/ANC",
+          "value": "K1M"
+        }
+      },
+      {
+        "id": "Encounter.identifier:K2",
+        "path": "Encounter.identifier",
+        "sliceName": "K2",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "fixedIdentifier": {
+          "system": "http://terminology.kemkes.go.id/CodeSystem/episodeofcare/ANC",
+          "value": "K2"
+        }
+      },
+      {
+        "id": "Encounter.identifier:K3",
+        "path": "Encounter.identifier",
+        "sliceName": "K3",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "fixedIdentifier": {
+          "system": "http://terminology.kemkes.go.id/CodeSystem/episodeofcare/ANC",
+          "value": "K3"
+        }
+      },
+      {
+        "id": "Encounter.identifier:K4",
+        "path": "Encounter.identifier",
+        "sliceName": "K4",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "fixedIdentifier": {
+          "system": "http://terminology.kemkes.go.id/CodeSystem/episodeofcare/ANC",
+          "value": "K4"
+        }
+      },
+      {
+        "id": "Encounter.identifier:K5",
+        "path": "Encounter.identifier",
+        "sliceName": "K5",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "fixedIdentifier": {
+          "system": "http://terminology.kemkes.go.id/CodeSystem/episodeofcare/ANC",
+          "value": "K5"
+        }
+      },
+      {
+        "id": "Encounter.identifier:K6",
+        "path": "Encounter.identifier",
+        "sliceName": "K6",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "fixedIdentifier": {
+          "system": "http://terminology.kemkes.go.id/CodeSystem/episodeofcare/ANC",
+          "value": "K6"
+        }
+      }
+    ]
+  }
+}

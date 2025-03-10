@@ -16,11 +16,10 @@ Description: "Logical model for antenatal care visits, including assessments, di
 
 * assessment 1..1 BackboneElement "Clinical Assessment"
   * bloodPressure 1..1 Quantity "Blood pressure measurement"
-    * ^unit = "mmHg"
   * proteinuria 1..1 boolean "Presence of protein in urine"
   * labTests 0..* BackboneElement "Laboratory Tests"
-    * testCode 1..1 CodeableConcept "LOINC/SNOMED code of test"
-    * result 1..1 string "Result of the test"
+  * testCode 1..1 CodeableConcept "LOINC/SNOMED code of test"
+  * result 1..1 string "Result of the test"
 
 * diagnosis 1..1 BackboneElement "Diagnosis"
   * code 1..1 CodeableConcept "Diagnosis Code"
