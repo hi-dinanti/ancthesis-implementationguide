@@ -1,7 +1,7 @@
 
 # Introduction
 
-This is a FHIR Implementation Guide to be used for Indonesian Health Service (SATUSEHAT) and developed based on SATUSEHAT Antenatal Care Playbook to be used in maternal and child health local area monitoring applications.
+This is a FHIR Implementation Guide to be used for Indonesian Health Service (SATUSEHAT) and developed based on SATUSEHAT Antenatal Care Playbook to be used in maternal and child health local area monitoring applications. The aim of thesis project is to evaluate the adaptation of WHO SMART Guideline, with focus on L2 (Digital Adaptation Kit for Antenatal Care) and L3 (FHIR Implementation Guide for Antenatal Care)
 
 # Installation
 
