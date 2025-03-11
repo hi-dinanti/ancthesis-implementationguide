@@ -26,7 +26,7 @@
       "valueCode": "pa"
     }
   ],
-  "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/Encounter",
+  "url": "https://fhir.pwskia.id/Encounter",
   "name": "EncounterANC",
   "title": "Antenatal Care Encounter",
   "status": "draft",
