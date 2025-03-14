@@ -1,7 +1,0 @@
-Output File                              Name                     Type        FSH File                                          Lines
-CodeSystem-ANCCustomCode.json            ANCCustomCode            CodeSystem  valueset\valueset-anc-custom-code.fsh             1 - 37
-CodeSystem-PrimaryCareLabParameter.json  PrimaryCareLabParameter  CodeSystem  valueset\valueset-primary-care-lab-parameter.fsh  1 - 179
-CodeSystem-PrimaryCareLabValue.json      PrimaryCareLabValue      CodeSystem  valueset\valueset-primary-care-lab-value.fsh      1 - 120
-StructureDefinition-ANCVisit.json        ANCVisit                 Logical     instances\anc-logical-model.fsh                   1 - 32
-ValueSet-ANCEncounterIdentifier.json     ANCEncounterIdentifier   ValueSet    valueset\valueset-anc-encounter-identifier.fsh    1 - 31
-ValueSet-ServiceRequestCodes.json        ServiceRequestCodes      ValueSet    valueset\valueset-service-request-code.fsh        1 - 13

@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ServiceRequestCodes",
+  "id": "ServiceRequestCodes",
+  "title": "Service Request Codes",
+  "description": "Codes for various types of service requests, including diagnostics, procedures, and referrals.",
+  "url": "https://fhir.pwskia.id//ValueSet/ServiceRequestCodes",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "3457005",
+            "display": "Patient referral"
+          },
+          {
+            "code": "306098008",
+            "display": "Self-referral"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,462 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "PrimaryCareLabValue",
+  "id": "PrimaryCareLabValue",
+  "title": "Primary Care Lab Value Code",
+  "description": "List of observation code used in laboratory result value based on Jakarta master data",
+  "url": "http://loinc.org",
+  "concept": [
+    {
+      "code": "LA11832-5",
+      "display": "Trace"
+    },
+    {
+      "code": "LA11841-6",
+      "display": "1+"
+    },
+    {
+      "code": "LA11842-4",
+      "display": "2+"
+    },
+    {
+      "code": "LA11843-2",
+      "display": "3+"
+    },
+    {
+      "code": "LA11844-0",
+      "display": "4+"
+    },
+    {
+      "code": "LA11882-0",
+      "display": "Detected"
+    },
+    {
+      "code": "LA11883-8",
+      "display": "Not detected"
+    },
+    {
+      "code": "LA11884-6",
+      "display": "Indeterminate"
+    },
+    {
+      "code": "LA12812-6",
+      "display": "Acetaminophen crystals"
+    },
+    {
+      "code": "LA12813-4",
+      "display": "Ammonium urate crystals"
+    },
+    {
+      "code": "LA12814-2",
+      "display": "Bilirubin crystals"
+    },
+    {
+      "code": "LA12815-9",
+      "display": "Calcium carbonate crystals"
+    },
+    {
+      "code": "LA12816-7",
+      "display": "Calcium hydrogen phosphate dihydrate crystals"
+    },
+    {
+      "code": "LA12817-5",
+      "display": "Calcium oxalate crystals"
+    },
+    {
+      "code": "LA12818-3",
+      "display": "Calcium oxalate dihydrate crystals"
+    },
+    {
+      "code": "LA12819-1",
+      "display": "Calcium phosphate crystals"
+    },
+    {
+      "code": "LA12820-9",
+      "display": "Calcium sulfate crystals"
+    },
+    {
+      "code": "LA12821-7",
+      "display": "Cholesterol crystals"
+    },
+    {
+      "code": "LA12822-5",
+      "display": "Crystals.amorphous"
+    },
+    {
+      "code": "LA12823-3",
+      "display": "Crystals.unidentified"
+    },
+    {
+      "code": "LA12824-1",
+      "display": "Cystine crystals"
+    },
+    {
+      "code": "LA12825-8",
+      "display": "Dimagnesium phosphate crystals"
+    },
+    {
+      "code": "LA12826-6",
+      "display": "Drug crystals"
+    },
+    {
+      "code": "LA12827-4",
+      "display": "Hippurate crystals"
+    },
+    {
+      "code": "LA12828-2",
+      "display": "Leucine crystals"
+    },
+    {
+      "code": "LA12830-8",
+      "display": "Phosphate crystals.amorphous"
+    },
+    {
+      "code": "LA12831-6",
+      "display": "Pyrophosphate crystals"
+    },
+    {
+      "code": "LA12832-4",
+      "display": "Sodium urate crystals"
+    },
+    {
+      "code": "LA12833-2",
+      "display": "Sulfonamide crystals"
+    },
+    {
+      "code": "LA12834-0",
+      "display": "Triple phosphate crystals"
+    },
+    {
+      "code": "LA12835-7",
+      "display": "Tyrosine crystals"
+    },
+    {
+      "code": "LA12836-5",
+      "display": "Urate crystals"
+    },
+    {
+      "code": "LA12837-3",
+      "display": "Urate crystals.amorphous"
+    },
+    {
+      "code": "LA12859-7",
+      "display": "Bacterial casts"
+    },
+    {
+      "code": "LA12863-9",
+      "display": "Epithelial casts"
+    },
+    {
+      "code": "LA12864-7",
+      "display": "Erythrocyte casts"
+    },
+    {
+      "code": "LA12866-2",
+      "display": "Granular casts"
+    },
+    {
+      "code": "LA12869-6",
+      "display": "Hemoglobin casts"
+    },
+    {
+      "code": "LA12870-4",
+      "display": "Hyaline casts"
+    },
+    {
+      "code": "LA12872-0",
+      "display": "Leukocyte casts"
+    },
+    {
+      "code": "LA13487-6",
+      "display": "A"
+    },
+    {
+      "code": "LA13503-0",
+      "display": "E"
+    },
+    {
+      "code": "LA13504-8",
+      "display": "F"
+    },
+    {
+      "code": "LA14518-7",
+      "display": "B"
+    },
+    {
+      "code": "LA14519-5",
+      "display": "C"
+    },
+    {
+      "code": "LA14520-3",
+      "display": "D"
+    },
+    {
+      "code": "LA14744-9",
+      "display": "Soft"
+    },
+    {
+      "code": "LA14745-6",
+      "display": "Hard"
+    },
+    {
+      "code": "LA15255-5",
+      "display": "Reactive"
+    },
+    {
+      "code": "LA15256-3",
+      "display": "Nonreactive"
+    },
+    {
+      "code": "LA15555-8",
+      "display": "Green"
+    },
+    {
+      "code": "LA15839-6",
+      "display": "Entamoeba histolytica/dispar"
+    },
+    {
+      "code": "LA17192-8",
+      "display": "Pink"
+    },
+    {
+      "code": "LA17193-6",
+      "display": "Red"
+    },
+    {
+      "code": "LA17195-1",
+      "display": "Yellow"
+    },
+    {
+      "code": "LA17199-3",
+      "display": "Dry"
+    },
+    {
+      "code": "LA18330-3",
+      "display": "HIV-1 reactive"
+    },
+    {
+      "code": "LA18331-1",
+      "display": "HIV-2 reactive"
+    },
+    {
+      "code": "LA18496-2",
+      "display": "Plasmodium falciparum"
+    },
+    {
+      "code": "LA18497-0",
+      "display": "Plasmodium falciparum + Plasmodium vivax"
+    },
+    {
+      "code": "LA18498-8",
+      "display": "Plasmodium falciparum or Plasmodium falciparum + Plasmodium sp (not P. vivax)"
+    },
+    {
+      "code": "LA18499-6",
+      "display": "Plasmodium falciparum or Plasmodium falciparum + Plasmodium sp"
+    },
+    {
+      "code": "LA18500-1",
+      "display": "Plasmodium falciparum + Plasmodium vivax or Plasmodium falciparum + Plasmodium vivax + Plasmodium sp"
+    },
+    {
+      "code": "LA18501-9",
+      "display": "Plasmodium vivax"
+    },
+    {
+      "code": "LA18502-7",
+      "display": "Plasmodium vivax or Plasmodium vivax + Plasmodium sp"
+    },
+    {
+      "code": "LA18503-5",
+      "display": "Plasmodium sp (not P. falciparum)"
+    },
+    {
+      "code": "LA18504-3",
+      "display": "Plasmodium sp (not P. vivax or P. falciparum)"
+    },
+    {
+      "code": "LA19150-4",
+      "display": "G"
+    },
+    {
+      "code": "LA19174-4",
+      "display": "H"
+    },
+    {
+      "code": "LA19274-2",
+      "display": "Blastocystis hominis"
+    },
+    {
+      "code": "LA19275-9",
+      "display": "Endolimax nana"
+    },
+    {
+      "code": "LA19276-7",
+      "display": "Entamoeba coli"
+    },
+    {
+      "code": "LA19277-5",
+      "display": "Entamoeba hartmanni"
+    },
+    {
+      "code": "LA19278-3",
+      "display": "Entamoeba histolytica"
+    },
+    {
+      "code": "LA19279-1",
+      "display": "Iodamoeba butshlii"
+    },
+    {
+      "code": "LA19708-9",
+      "display": "Group O"
+    },
+    {
+      "code": "LA19709-7",
+      "display": "Group B"
+    },
+    {
+      "code": "LA19710-5",
+      "display": "Group A"
+    },
+    {
+      "code": "LA19732-9",
+      "display": "Clear"
+    },
+    {
+      "code": "LA19733-7",
+      "display": "Cloudy"
+    },
+    {
+      "code": "LA19736-0",
+      "display": "Bloody"
+    },
+    {
+      "code": "LA21321-7",
+      "display": "O Pos"
+    },
+    {
+      "code": "LA21322-5",
+      "display": "O Neg"
+    },
+    {
+      "code": "LA21323-3",
+      "display": "AB Pos"
+    },
+    {
+      "code": "LA21324-1",
+      "display": "AB Neg"
+    },
+    {
+      "code": "LA21325-8",
+      "display": "A Pos"
+    },
+    {
+      "code": "LA21326-6",
+      "display": "A Neg"
+    },
+    {
+      "code": "LA21327-4",
+      "display": "B Pos"
+    },
+    {
+      "code": "LA21328-2",
+      "display": "B Neg"
+    },
+    {
+      "code": "LA24952-6",
+      "display": "HIV-1 Indeterminate"
+    },
+    {
+      "code": "LA24953-4",
+      "display": "HIV-2 Indeterminate"
+    },
+    {
+      "code": "LA25011-0",
+      "display": "Liquid"
+    },
+    {
+      "code": "LA25012-8",
+      "display": "Loose"
+    },
+    {
+      "code": "LA25023-5",
+      "display": "Orange stool"
+    },
+    {
+      "code": "LA25024-3",
+      "display": "Red streaked stool"
+    },
+    {
+      "code": "LA25074-8",
+      "display": "Clots present"
+    },
+    {
+      "code": "LA25075-5",
+      "display": "Creamy"
+    },
+    {
+      "code": "LA25078-9",
+      "display": "Frothy"
+    },
+    {
+      "code": "LA25082-1",
+      "display": "Mucoid"
+    },
+    {
+      "code": "LA25083-9",
+      "display": "Seedy"
+    },
+    {
+      "code": "LA25084-7",
+      "display": "Tarry"
+    },
+    {
+      "code": "LA25957-4",
+      "display": "Pink-tinged"
+    },
+    {
+      "code": "LA25958-2",
+      "display": "Pale yellow"
+    },
+    {
+      "code": "LA28449-9",
+      "display": "Group AB"
+    },
+    {
+      "code": "LA6576-8",
+      "display": "Positive"
+    },
+    {
+      "code": "LA6577-6",
+      "display": "Negative"
+    },
+    {
+      "code": "LA6626-1",
+      "display": "Normal"
+    },
+    {
+      "code": "LA6751-7",
+      "display": "Moderate"
+    },
+    {
+      "code": "LA8981-8",
+      "display": "Large"
+    },
+    {
+      "code": "LA8983-4",
+      "display": "Small"
+    },
+    {
+      "code": "LA9633-4",
+      "display": "Present"
+    },
+    {
+      "code": "LA9634-2",
+      "display": "Absent"
+    }
+  ],
+  "experimental": false,
+  "count": 112
+}
