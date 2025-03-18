@@ -1,5 +1,3 @@
-*.log
-*.uml
 .DS_Store
 Thumbs.db
 /fsh-generated
@@ -7,3 +5,4 @@ Thumbs.db
 /output
 /temp
 /template
+/archived

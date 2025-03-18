@@ -1,0 +1,19 @@
+Mapping: w5
+Id: w5
+Title: "FiveWs Pattern Mapping"
+Source: Encounter
+Target: "http://hl7.org/fhir/fivews"
+* identifier -> "FiveWs.identifier"
+* status -> "FiveWs.status"
+* class -> "FiveWs.class"
+* type -> "FiveWs.class"
+* priority -> "FiveWs.grade"
+* subject -> "FiveWs.subject[x]"
+* subject -> "FiveWs.subject"
+* episodeOfCare -> "FiveWs.context"
+* participant.individual -> "FiveWs.who"
+* period -> "FiveWs.done[x]"
+* reasonCode -> "FiveWs.why[x]"
+* reasonReference -> "FiveWs.why[x]"
+* diagnosis.condition -> "FiveWs.why[x]"
+* location.location -> "FiveWs.where[x]"
