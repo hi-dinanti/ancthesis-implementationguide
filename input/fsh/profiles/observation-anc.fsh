@@ -4,7 +4,7 @@ Id: ANCObservation
 Title: "Antenatal Care Observation"
 Description: "Antenatal Care Observation"
 * ^url = "https://fhir.pwskia.id/r4/StructureDefinition/Observation"
-* ^status = #draft
+* ^status = #active
 * ^type = "Observation"
 // * ^experimental = true
 * category 0..1 

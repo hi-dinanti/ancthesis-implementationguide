@@ -4,7 +4,8 @@ Id: ANCGPA
 Title: "Obstetric Status in GPA (Observation)" 
 Description: "Observation representing obstetric [GPA#] status of antenatal care patient as reported in a survey. Gravida represents total number of pregnancies, parity represent number of times a woman has given birth to a viable offspring (parity), abortus represent the number of miscarriages and/or abortions."
 * ^url = "https://fhir.pwskia.id/r4/StructureDefinition/ANCGPA"
-
+* ^status = #draft
+* ^experimental = true
 * category.coding.code = #survey
 * category.coding.display = "Survey"
 

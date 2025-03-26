@@ -1,36 +1,22 @@
 Profile: ANCRandomBloodSugar
 Parent: ANCObservation
 Id: ANCRandomBloodSugar
-Title: "RandomBloodSugar (Observation)" 
+Title: "Random Blood Sugar (Observation)" 
 Description: "Observation representing random blood sugar (Gula Darah Sewaktu) levels recorded during an antenatal care visit. This data supports gestational diabetes screening and maternal health assessment as part of the Indonesian minimum 10T exam."
 * ^url = "https://fhir.pwskia.id/r4/StructureDefinition/ANCRandomBloodSugar"
+* ^status = #active
 
+* category.coding 1..1
+* category.coding.system = "http://terminology.hl7.org/CodeSystem/observation-category"
 * category.coding.code = #laboratory
 * category.coding.display = "Laboratory"
 
-* code.coding 1..* MS
-
-// Enable slicing on code.coding
-* code.coding ^slicing.discriminator.type = #value
-* code.coding ^slicing.discriminator.path = "system"
-* code.coding ^slicing.rules = #closed
-* code.coding contains LOINC 0..1 MS and ANC 0..1 MS
-
-// Assign values to the LOINC 
-* code.coding[LOINC].system 1..1
-* code.coding[LOINC].code 1..1
-* code.coding[LOINC].display 1..1
-* code.coding[LOINC].system = "http://loinc.org"
-* code.coding[LOINC].code = #74774-1
-* code.coding[LOINC].display = "Glucose [Mass/volume] in Serum, Plasma or Blood"
-
-// Assign values to the 
-* code.coding[ANC].system 1..1
-* code.coding[ANC].code 1..1
-* code.coding[ANC].display 1..1
-* code.coding[ANC].system = "http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes"
-* code.coding[ANC].code = #ANC.B9.DE159
-* code.coding[ANC].display = "Blood glucose test conducted"
+* code 1..1 MS
+* code.coding 2..* MS
+* code ^binding.extension[0].url = "https://fhir.kemkes.go.id/r4/StructureDefinition/elementdefinition-bindingName"
+* code ^binding.extension[=].valueString = "ANCGlucoseLabVS"
+* code ^binding.description = "Codes for glucose laboratory test in ANC."
+* code from ANCGlucoseLabVS (required)
 
 * value[x] 0..1 MS 
 * value[x] ^comment = "Value can be Quantity or CodeableConcept. ValueCodeableConcept refers to .component."

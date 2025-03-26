@@ -7,69 +7,69 @@
       "Hash": "A606472D97A4A4E9364D1464F6973093"
     },
     "fsh-generated\\resources\\ImplementationGuide-hl7.fhir.r4.id.satusehat-anc.json": {
-      "Length": 15209,
-      "LastWriteTime": "2025-03-26T18:48:43.5788535+00:00",
-      "Hash": "C85FEC099C671A9C0CC0FBDA98CB3843"
+      "Length": 19187,
+      "LastWriteTime": "2025-03-26T21:54:10.7652501+00:00",
+      "Hash": "00152C7179A5FB945CB01D29CC1842D9"
     },
     "fsh-generated\\resources\\StructureDefinition-ANCBloodPressure.json": {
-      "Length": 7159,
-      "LastWriteTime": "2025-03-26T18:48:43.1526943+00:00",
-      "Hash": "28687BC4E12EBE883A5EA22CA163A9F3"
+      "Length": 7183,
+      "LastWriteTime": "2025-03-26T20:03:39.776332+00:00",
+      "Hash": "118102749824D2B34027E9F8760B2928"
     },
     "fsh-generated\\resources\\StructureDefinition-ANCBloodTypes.json": {
-      "Length": 10045,
-      "LastWriteTime": "2025-03-26T18:48:43.1792661+00:00",
-      "Hash": "19DDEAE6C119A9D15AFE186739181FF5"
+      "Length": 3244,
+      "LastWriteTime": "2025-03-26T21:10:21.644653+00:00",
+      "Hash": "E09E68E38553B6EAE6C732014365A578"
     },
     "fsh-generated\\resources\\StructureDefinition-ANCCurrentWeight.json": {
-      "Length": 4514,
-      "LastWriteTime": "2025-03-26T18:48:43.3547547+00:00",
-      "Hash": "BB3B5F7A9F1F8D8937534FD5ACD9B647"
+      "Length": 3160,
+      "LastWriteTime": "2025-03-26T21:54:10.498247+00:00",
+      "Hash": "55BFF10B44741953D8D793442B8A9A5B"
     },
     "fsh-generated\\resources\\StructureDefinition-ANCHeight.json": {
-      "Length": 4476,
-      "LastWriteTime": "2025-03-26T18:48:43.2129527+00:00",
-      "Hash": "1AA8B1AF725BEA0D0784D6AE7ECB1A73"
+      "Length": 3119,
+      "LastWriteTime": "2025-03-26T21:10:21.6705334+00:00",
+      "Hash": "D0CDD8E8F449005F080F698E644E5B34"
     },
     "fsh-generated\\resources\\StructureDefinition-ANCHemoglobin.json": {
-      "Length": 4554,
-      "LastWriteTime": "2025-03-26T18:48:43.2201647+00:00",
-      "Hash": "17679813343E0811ED6CBBFF82CE41A5"
+      "Length": 3153,
+      "LastWriteTime": "2025-03-26T21:10:21.6838522+00:00",
+      "Hash": "2A236FDFF1168F98DEC04D8DD17F17CF"
     },
     "fsh-generated\\resources\\StructureDefinition-ANCImmunization.json": {
-      "Length": 1998,
-      "LastWriteTime": "2025-03-26T18:48:43.0927402+00:00",
-      "Hash": "8DB92B7C211DE9FBCC788D1701D6DDC8"
+      "Length": 1999,
+      "LastWriteTime": "2025-03-26T21:10:21.5962829+00:00",
+      "Hash": "B8B716241EFCAE54A2B1E2EBED7CA6ED"
     },
     "fsh-generated\\resources\\StructureDefinition-ANCLMP.json": {
-      "Length": 4052,
-      "LastWriteTime": "2025-03-26T18:48:43.232026+00:00",
-      "Hash": "710D795E8DED27F5C13E8FE05D03EC54"
+      "Length": 2644,
+      "LastWriteTime": "2025-03-26T21:10:21.6865367+00:00",
+      "Hash": "265A787EA673EC18101A9927998F39D3"
     },
     "fsh-generated\\resources\\StructureDefinition-ANCMUAC.json": {
-      "Length": 7530,
-      "LastWriteTime": "2025-03-26T18:48:43.2680964+00:00",
-      "Hash": "7BF8B65BCAAA0FAAA551F065C96DDB7E"
+      "Length": 3498,
+      "LastWriteTime": "2025-03-26T21:28:47.5170045+00:00",
+      "Hash": "9EABC48FBC52C75F2DBDBC6E983D6037"
     },
     "fsh-generated\\resources\\StructureDefinition-ANCObservation.json": {
-      "Length": 2706,
-      "LastWriteTime": "2025-03-26T18:48:43.1278141+00:00",
-      "Hash": "D2E6F813B7DFECD898EAF81EC53CB602"
+      "Length": 2707,
+      "LastWriteTime": "2025-03-26T20:03:39.7508424+00:00",
+      "Hash": "5D77B66411392D2C5E439FBF067831A4"
     },
     "fsh-generated\\resources\\StructureDefinition-ANCProteinUrine.json": {
-      "Length": 9721,
-      "LastWriteTime": "2025-03-26T18:48:43.3078103+00:00",
-      "Hash": "FB61106960349441E74A6DE3323269F6"
+      "Length": 4154,
+      "LastWriteTime": "2025-03-26T21:54:10.4585233+00:00",
+      "Hash": "233E2E22450C0D98C8B7C39940BE115E"
     },
     "fsh-generated\\resources\\StructureDefinition-ANCRandomBloodSugar.json": {
-      "Length": 6698,
-      "LastWriteTime": "2025-03-26T18:48:43.3235837+00:00",
-      "Hash": "F8D3BC92C8DDF934E6D26C622CE67582"
+      "Length": 5326,
+      "LastWriteTime": "2025-03-26T21:54:10.4763961+00:00",
+      "Hash": "C104BC83C1147C382D9DCBE90F8C9AA1"
     },
     "fsh-generated\\resources\\StructureDefinition-ANCRhesus.json": {
-      "Length": 6811,
-      "LastWriteTime": "2025-03-26T18:48:43.3469683+00:00",
-      "Hash": "002EEF9AF38CD86985279CC471290CD2"
+      "Length": 3625,
+      "LastWriteTime": "2025-03-26T21:54:10.4924632+00:00",
+      "Hash": "5FA6B614B18720674E8708A25EC247F8"
     },
     "fsh-generated\\resources\\StructureDefinition-SatuSehatEncounter.json": {
       "Length": 16767,
@@ -112,14 +112,184 @@
       "Hash": "C53B9AD8C99FFDC413A9C20C3BC5D7F7"
     },
     "input\\fsh\\profiles\\immunization-anc.fsh": {
-      "Length": 492,
-      "LastWriteTime": "2025-03-26T18:14:34.2370504+00:00",
-      "Hash": "BDBBD0BC8162980931C1EF867C86C745"
+      "Length": 493,
+      "LastWriteTime": "2025-03-26T21:09:02.5477714+00:00",
+      "Hash": "CAF454EB9F4265EBC65067450DD6EC17"
     },
     "input\\fsh\\profiles\\observation-anc.fsh": {
-      "Length": 1872,
-      "LastWriteTime": "2025-03-26T18:14:34.2370504+00:00",
-      "Hash": "14ED10EE877ADCAA235B1AD3D6E8E230"
+      "Length": 1873,
+      "LastWriteTime": "2025-03-26T19:08:11.217108+00:00",
+      "Hash": "B1FFE0BFF945DBE01E6B9187E0AD8D4D"
+    },
+    "fsh-generated\\resources\\CodeSystem-ANC10TCode.json": {
+      "Length": 30328,
+      "LastWriteTime": "2025-03-26T21:54:10.6699633+00:00",
+      "Hash": "ADC3F87B00652FC4FDE23B117162AEE3"
+    },
+    "fsh-generated\\resources\\ValueSet-ANC10TValueSet.json": {
+      "Length": 352,
+      "LastWriteTime": "2025-03-26T20:03:40.087828+00:00",
+      "Hash": "88CFF7B8D820A5DA59952978BA6A1FFE"
+    },
+    "input\\fsh\\codesystems\\ANC10TCode.fsh": {
+      "Length": 16197,
+      "LastWriteTime": "2025-03-26T21:49:59.8105551+00:00",
+      "Hash": "7DD301EEC561DFCAA379F2D1DF9AF275"
+    },
+    "input\\fsh\\valuesets\\ANC10TValueSet.fsh": {
+      "Length": 230,
+      "LastWriteTime": "2025-03-26T20:03:09.0875445+00:00",
+      "Hash": "26316F315AB50A6A461E75D3911F91FE"
+    },
+    "fsh-generated\\resources\\ValueSet-ANCHeightVS.json": {
+      "Length": 746,
+      "LastWriteTime": "2025-03-26T20:16:56.6721147+00:00",
+      "Hash": "8A57390EFE589E2896ECEAD85B9B29DF"
+    },
+    "input\\fsh\\valuesets\\ANCHeightVS.fsh": {
+      "Length": 401,
+      "LastWriteTime": "2025-03-26T20:39:24.1526623+00:00",
+      "Hash": "A8E81F43F502C909A3DD85C1D41AA294"
+    },
+    "fsh-generated\\resources\\CodeSystem-ANCSatuSehatCustomCode.json": {
+      "Length": 2640,
+      "LastWriteTime": "2025-03-26T20:52:33.6546777+00:00",
+      "Hash": "0F267BCCAD3D7D0936311B2A970C243D"
+    },
+    "fsh-generated\\resources\\ValueSet-ANCHemoglobinVS.json": {
+      "Length": 737,
+      "LastWriteTime": "2025-03-26T21:28:47.7265146+00:00",
+      "Hash": "D3B2C01DAC6428CED964C79277AAD7DA"
+    },
+    "fsh-generated\\resources\\ValueSet-ANCLMPVS.json": {
+      "Length": 720,
+      "LastWriteTime": "2025-03-26T21:28:47.7265146+00:00",
+      "Hash": "B2047C152C3FAF6261B58EDFD613B5E5"
+    },
+    "fsh-generated\\resources\\ValueSet-ANCMUACInterpretationVS.json": {
+      "Length": 1057,
+      "LastWriteTime": "2025-03-26T20:52:33.6409997+00:00",
+      "Hash": "591C0FB6B57C1CAD77BE8CB8911A428D"
+    },
+    "fsh-generated\\resources\\ValueSet-ANCMUACVS.json": {
+      "Length": 755,
+      "LastWriteTime": "2025-03-26T21:28:47.7411214+00:00",
+      "Hash": "C0E863EA50DA148BE1517CF5ED081A02"
+    },
+    "fsh-generated\\resources\\ValueSet-BloodGroupCodeVS.json": {
+      "Length": 856,
+      "LastWriteTime": "2025-03-26T21:54:10.6480856+00:00",
+      "Hash": "0B7E1250BA95D4D16ACBD4C867C03436"
+    },
+    "input\\fsh\\codesystems\\ANCSatuSehatCode.fsh": {
+      "Length": 1469,
+      "LastWriteTime": "2025-03-26T20:49:47.3926343+00:00",
+      "Hash": "EFBE06D617F5925E48B01AE8FC3BF442"
+    },
+    "input\\fsh\\valuesets\\ANCHemoglobinVS.fsh": {
+      "Length": 439,
+      "LastWriteTime": "2025-03-26T21:12:09.3074613+00:00",
+      "Hash": "8F9B77FCA5E9EB6D47933BBDEA7370CC"
+    },
+    "input\\fsh\\valuesets\\ANCLMPVS.fsh": {
+      "Length": 422,
+      "LastWriteTime": "2025-03-26T21:14:06.3186815+00:00",
+      "Hash": "B70ACE4FC2DC6A87B29C9835C438EF28"
+    },
+    "input\\fsh\\valuesets\\ANCMUACInterpretationVS.fsh": {
+      "Length": 637,
+      "LastWriteTime": "2025-03-26T20:52:06.8053503+00:00",
+      "Hash": "440BB982930CB8ACC1EB9560835B7B5A"
+    },
+    "input\\fsh\\valuesets\\ANCMUACVS.fsh": {
+      "Length": 446,
+      "LastWriteTime": "2025-03-26T21:14:51.4295451+00:00",
+      "Hash": "A3D5C18F2E4104A492C5601FF41DF42B"
+    },
+    "input\\fsh\\valuesets\\BloodGroupVS.fsh": {
+      "Length": 507,
+      "LastWriteTime": "2025-03-26T21:44:57.6494577+00:00",
+      "Hash": "E4EB1394488B9720BB1843D85D674204"
+    },
+    "fsh-generated\\resources\\CodeSystem-MoHClinicalTerm.json": {
+      "Length": 3047,
+      "LastWriteTime": "2025-03-26T21:05:32.0462048+00:00",
+      "Hash": "2E3E5CE268CE4EF3AE460CBD5DC21713"
+    },
+    "input\\fsh\\codesystems\\MoHClinicalTerm.fsh": {
+      "Length": 1451,
+      "LastWriteTime": "2025-03-26T21:04:56.8590021+00:00",
+      "Hash": "4E06F5BC778C7E21A347A5F0BE3F4A53"
+    },
+    "fsh-generated\\resources\\ValueSet-ANCProteinUrineVS.json": {
+      "Length": 777,
+      "LastWriteTime": "2025-03-26T21:28:47.7441191+00:00",
+      "Hash": "911AC2B37863A05AE76BC0C67C8497D8"
+    },
+    "fsh-generated\\resources\\ValueSet-UrineLabResultVS.json": {
+      "Length": 1525,
+      "LastWriteTime": "2025-03-26T21:54:10.6649924+00:00",
+      "Hash": "FCCA53901C6D707A7EA074CFC44DACB3"
+    },
+    "input\\fsh\\valuesets\\ANCProteinUrineVS.fsh": {
+      "Length": 479,
+      "LastWriteTime": "2025-03-26T21:26:47.5896016+00:00",
+      "Hash": "F14C05AA9E75F1BE00215F8389349D8D"
+    },
+    "input\\fsh\\valuesets\\UrineLabValueSet.fsh": {
+      "Length": 691,
+      "LastWriteTime": "2025-03-26T21:45:32.8757859+00:00",
+      "Hash": "AF1463546F40343E4D85F8961A7F4505"
+    },
+    "input\\fsh\\valuesets\\ANCGlucoseLabVS.fsh": {
+      "Length": 505,
+      "LastWriteTime": "2025-03-26T21:30:48.3376424+00:00",
+      "Hash": "C1FB44E5A7F7077B282C7D3A2BA0E0DE"
+    },
+    "fsh-generated\\resources\\ValueSet-ANCGlucoseLabVS.json": {
+      "Length": 796,
+      "LastWriteTime": "2025-03-26T21:32:43.4544867+00:00",
+      "Hash": "544443C1384B0F88F7FE51DC6F5E1783"
+    },
+    "input\\fsh\\valuesets\\LabNominalResultVS.fsh": {
+      "Length": 415,
+      "LastWriteTime": "2025-03-26T21:35:27.4549237+00:00",
+      "Hash": "A35369E4E33F2ABC6A1D91A4CF3A9A54"
+    },
+    "fsh-generated\\resources\\ValueSet-ANCCurrentWeightVS.json": {
+      "Length": 803,
+      "LastWriteTime": "2025-03-26T21:54:10.632974+00:00",
+      "Hash": "8B18CFEA7C613D30D006CF2646FFA922"
+    },
+    "fsh-generated\\resources\\ValueSet-LabNominalResultVS.json": {
+      "Length": 761,
+      "LastWriteTime": "2025-03-26T21:54:10.6505248+00:00",
+      "Hash": "28C5FADAE7C70BE2C40189EA0663D7C3"
+    },
+    "fsh-generated\\resources\\ValueSet-PrimaryCareLabParameterVS.json": {
+      "Length": 33522,
+      "LastWriteTime": "2025-03-26T21:54:10.6525368+00:00",
+      "Hash": "C67779AD1BCFF4B1263A34A9508C86D2"
+    },
+    "fsh-generated\\resources\\ValueSet-PrimaryCareLabValueVS.json": {
+      "Length": 22487,
+      "LastWriteTime": "2025-03-26T21:54:10.6597095+00:00",
+      "Hash": "91F8E92822FD78BBDC927279EFCA493C"
+    },
+    "input\\fsh\\valuesets\\ANCCurrentWeightVS.fsh": {
+      "Length": 435,
+      "LastWriteTime": "2025-03-26T21:52:07.580647+00:00",
+      "Hash": "85319D06671D0B5D29EC029A232025C6"
+    },
+    "input\\fsh\\valuesets\\PrimaryCareLabParameter.fsh": {
+      "Length": 20330,
+      "LastWriteTime": "2025-03-26T21:47:32.1185581+00:00",
+      "Hash": "86D6D326EE309271724655488B53E693"
+    },
+    "input\\fsh\\valuesets\\PrimaryCareLabValue.fsh": {
+      "Length": 10171,
+      "LastWriteTime": "2025-03-26T21:47:39.0283089+00:00",
+      "Hash": "2A9F668D9465CD1F9485E2481B8DB57E"
     }
   }
 }

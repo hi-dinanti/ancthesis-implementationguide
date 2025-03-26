@@ -7,6 +7,8 @@ Description: "Observation representing systolic and diastolic blood pressure mea
 
 * category.coding.code = #vital-signs
 * category.coding.display = "Vital Signs"
+* ^status = #draft
+* ^experimental = true
 
 // Enable slicing on code.coding
 * code.coding ^slicing.discriminator.type = #pattern
