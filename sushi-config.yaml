@@ -3,11 +3,13 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: ANC-PWS-KIA
+id: hl7.fhir.r4.id.satusehat-anc
+packageId: hl7.fhir.r4.id.satusehat-anc
 canonical: https://fhir.pwskia.id/
-name: IG-PWSKIA-ANC
-title: "Implementation Guide for PWS KIA application based on SATUSEHAT Module"
-description: "Implementation Guide for PWS KIA application based on SATUSEHAT Module (Draft)"
+url: https://fhir.pwskia.id/ImplementationGuide/hl7.fhir.r4.id.satusehat-anc
+name: FHIR IG ANC Satusehat R4
+title: "FHIR IG ANC Satusehat R4"
+description: "FHIR IG for SATUSEHAT Antenatal Care (Draft)"
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
@@ -25,8 +27,7 @@ publisher:
 # use cases, the value can be an object with keys for id, uri, and version.
 #
 dependencies:
-#  hl7.fhir.r4.id.core: 0.1.0
-  hl7.fhir.r4.core: 4.0.1
+  hl7.fhir.r4.id.core: 0.1.0
 #   hl7.fhir.us.core: 3.1.0
 #   hl7.fhir.us.mcode:
 #     id: mcode
@@ -79,7 +80,7 @@ parameters:
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
-  Home: index.md
+  Home: index.html
   # Profiles: profiles.html
   # Artifacts: artifacts.html
 

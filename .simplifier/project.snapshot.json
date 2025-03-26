@@ -1,0 +1,125 @@
+{
+  "Timestamp": "2025-03-16T05:42:27.707796+00:00",
+  "Files": {
+    "package.json": {
+      "Length": 104,
+      "LastWriteTime": "2025-03-15T22:37:56+00:00",
+      "Hash": "A606472D97A4A4E9364D1464F6973093"
+    },
+    "fsh-generated\\resources\\ImplementationGuide-hl7.fhir.r4.id.satusehat-anc.json": {
+      "Length": 15209,
+      "LastWriteTime": "2025-03-26T18:48:43.5788535+00:00",
+      "Hash": "C85FEC099C671A9C0CC0FBDA98CB3843"
+    },
+    "fsh-generated\\resources\\StructureDefinition-ANCBloodPressure.json": {
+      "Length": 7159,
+      "LastWriteTime": "2025-03-26T18:48:43.1526943+00:00",
+      "Hash": "28687BC4E12EBE883A5EA22CA163A9F3"
+    },
+    "fsh-generated\\resources\\StructureDefinition-ANCBloodTypes.json": {
+      "Length": 10045,
+      "LastWriteTime": "2025-03-26T18:48:43.1792661+00:00",
+      "Hash": "19DDEAE6C119A9D15AFE186739181FF5"
+    },
+    "fsh-generated\\resources\\StructureDefinition-ANCCurrentWeight.json": {
+      "Length": 4514,
+      "LastWriteTime": "2025-03-26T18:48:43.3547547+00:00",
+      "Hash": "BB3B5F7A9F1F8D8937534FD5ACD9B647"
+    },
+    "fsh-generated\\resources\\StructureDefinition-ANCHeight.json": {
+      "Length": 4476,
+      "LastWriteTime": "2025-03-26T18:48:43.2129527+00:00",
+      "Hash": "1AA8B1AF725BEA0D0784D6AE7ECB1A73"
+    },
+    "fsh-generated\\resources\\StructureDefinition-ANCHemoglobin.json": {
+      "Length": 4554,
+      "LastWriteTime": "2025-03-26T18:48:43.2201647+00:00",
+      "Hash": "17679813343E0811ED6CBBFF82CE41A5"
+    },
+    "fsh-generated\\resources\\StructureDefinition-ANCImmunization.json": {
+      "Length": 1998,
+      "LastWriteTime": "2025-03-26T18:48:43.0927402+00:00",
+      "Hash": "8DB92B7C211DE9FBCC788D1701D6DDC8"
+    },
+    "fsh-generated\\resources\\StructureDefinition-ANCLMP.json": {
+      "Length": 4052,
+      "LastWriteTime": "2025-03-26T18:48:43.232026+00:00",
+      "Hash": "710D795E8DED27F5C13E8FE05D03EC54"
+    },
+    "fsh-generated\\resources\\StructureDefinition-ANCMUAC.json": {
+      "Length": 7530,
+      "LastWriteTime": "2025-03-26T18:48:43.2680964+00:00",
+      "Hash": "7BF8B65BCAAA0FAAA551F065C96DDB7E"
+    },
+    "fsh-generated\\resources\\StructureDefinition-ANCObservation.json": {
+      "Length": 2706,
+      "LastWriteTime": "2025-03-26T18:48:43.1278141+00:00",
+      "Hash": "D2E6F813B7DFECD898EAF81EC53CB602"
+    },
+    "fsh-generated\\resources\\StructureDefinition-ANCProteinUrine.json": {
+      "Length": 9721,
+      "LastWriteTime": "2025-03-26T18:48:43.3078103+00:00",
+      "Hash": "FB61106960349441E74A6DE3323269F6"
+    },
+    "fsh-generated\\resources\\StructureDefinition-ANCRandomBloodSugar.json": {
+      "Length": 6698,
+      "LastWriteTime": "2025-03-26T18:48:43.3235837+00:00",
+      "Hash": "F8D3BC92C8DDF934E6D26C622CE67582"
+    },
+    "fsh-generated\\resources\\StructureDefinition-ANCRhesus.json": {
+      "Length": 6811,
+      "LastWriteTime": "2025-03-26T18:48:43.3469683+00:00",
+      "Hash": "002EEF9AF38CD86985279CC471290CD2"
+    },
+    "fsh-generated\\resources\\StructureDefinition-SatuSehatEncounter.json": {
+      "Length": 16767,
+      "LastWriteTime": "2025-03-26T18:48:43.0198926+00:00",
+      "Hash": "58E674EA2442275D714FFE11AA7CC7A7"
+    },
+    "fsh-generated\\resources\\StructureDefinition-SatuSehatEpisodeOfCare.json": {
+      "Length": 7062,
+      "LastWriteTime": "2025-03-26T18:48:43.0694423+00:00",
+      "Hash": "2FE24B9B9FA769AD53FC774C49F71A8F"
+    },
+    "fsh-generated\\resources\\StructureDefinition-SatuSehatImmunization.json": {
+      "Length": 10833,
+      "LastWriteTime": "2025-03-26T18:48:43.0872694+00:00",
+      "Hash": "7AFF9634F2AFD88E121480F4DA332A43"
+    },
+    "fsh-generated\\resources\\StructureDefinition-SatuSehatObservation.json": {
+      "Length": 15383,
+      "LastWriteTime": "2025-03-26T18:48:43.1033667+00:00",
+      "Hash": "7AB68DC43980C91409518B6BC953D000"
+    },
+    "fsh-generated\\resources\\StructureDefinition-SatuSehatOrganization.json": {
+      "Length": 1983,
+      "LastWriteTime": "2025-03-26T18:48:43.4363094+00:00",
+      "Hash": "9EE3FACE4519F25F8F95706A785C2C0B"
+    },
+    "fsh-generated\\resources\\StructureDefinition-SatuSehatPatient.json": {
+      "Length": 9617,
+      "LastWriteTime": "2025-03-26T18:48:43.3798774+00:00",
+      "Hash": "24212395E2FC9847151B61D42E51CB70"
+    },
+    "fsh-generated\\resources\\StructureDefinition-ServiceClass.json": {
+      "Length": 2196,
+      "LastWriteTime": "2025-03-26T18:48:43.4792744+00:00",
+      "Hash": "34530E62A235DE97988102786F4566FA"
+    },
+    "input\\fsh\\extensions\\ServiceClass.fsh": {
+      "Length": 1165,
+      "LastWriteTime": "2025-03-26T18:31:20.7625934+00:00",
+      "Hash": "C53B9AD8C99FFDC413A9C20C3BC5D7F7"
+    },
+    "input\\fsh\\profiles\\immunization-anc.fsh": {
+      "Length": 492,
+      "LastWriteTime": "2025-03-26T18:14:34.2370504+00:00",
+      "Hash": "BDBBD0BC8162980931C1EF867C86C745"
+    },
+    "input\\fsh\\profiles\\observation-anc.fsh": {
+      "Length": 1872,
+      "LastWriteTime": "2025-03-26T18:14:34.2370504+00:00",
+      "Hash": "14ED10EE877ADCAA235B1AD3D6E8E230"
+    }
+  }
+}
