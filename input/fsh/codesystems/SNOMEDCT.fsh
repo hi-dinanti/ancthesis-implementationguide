@@ -1,0 +1,20 @@
+CodeSystem: SNOMEDCT
+Id: SNOMEDCT
+Title: "SNOMEDCT Code"
+Description: "Set of SNOMED Codes ANC 10T Exam Parameter"
+* ^status = #active
+* ^url = "http://snomed.info/sct"
+* #11214006 "Reactive"
+* #131194007 "Non-Reactive"
+* #119334006 "Sputum specimen"
+* #119339001 "Stool specimen"
+* #258520000 "Vaginal swab"
+* #445295009 "Blood specimen with edetic acid"
+* #119297000 "Blood specimen"
+* #119364003 "Serum specimen"
+* #258500001 "Nasopharyngeal swab (specimen)"
+* #122575003 "Urine specimen"
+* #119325001 "Skin (tissue) specimen"
+* #284473002 "Mid upper arm circumference"
+* #3457005 "Patient referral"
+* #306098008 "Self-referral"

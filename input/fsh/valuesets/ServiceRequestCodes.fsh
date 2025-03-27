@@ -5,5 +5,5 @@ Description: "Codes for various types of service requests, including diagnostics
 * ^status = #active
 * ^url = "https://fhir.pwskia.id//ValueSet/ServiceRequestCodes"
 * ^experimental = false
-* SNOMED_CT#3457005 "Patient referral"
-* SNOMED_CT#306098008 "Self-referral"
+* SNOMEDCT#3457005 "Patient referral"
+* SNOMEDCT#306098008 "Self-referral"

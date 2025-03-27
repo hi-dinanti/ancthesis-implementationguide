@@ -16,24 +16,10 @@ Description: "Observation representing obstetric [GPA#] status of antenatal care
 * component ^slicing.description = "Slicing for Gravida, Paritas, and Abortus"
 
 * component contains
-    gravida 0..1 MS and
-    paritas 0..1 MS and
-    abortus 0..1 MS
+    gravida 1..1 MS and
+    paritas 1..1 MS and
+    abortus 1..1 MS
 
-// Gravida
-* component[gravida].code.coding.system = "http://loinc.org"
-* component[gravida].code.coding.code = #11996-6
-* component[gravida].code.coding.display = "[#] Pregnancies"
-* component[gravida].valueInteger 0..1
-
-// Paritas
-* component[paritas].code.coding.system = "http://loinc.org"
-* component[paritas].code.coding.code = #11977-6
-* component[paritas].code.coding.display = "[#] Parity"
-* component[paritas].valueInteger 0..1
-
-// Abortus
-* component[abortus].code.coding.system = "http://loinc.org"
-* component[abortus].code.coding.code = #69043-8
-* component[abortus].code.coding.display = "Other pregnancy outcomes #"
-* component[abortus].valueInteger 0..1
+* component[gravida] ^type.profile = "https://fhir.pwskia.id/r4/StructureDefinition/ANCGravida"
+* component[paritas] ^type.profile = "https://fhir.pwskia.id/r4/StructureDefinition/ANCParitas"
+* component[abortus] ^type.profile = "https://fhir.pwskia.id/r4/StructureDefinition/ANCAbortus"
