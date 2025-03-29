@@ -12,9 +12,7 @@ Description: "Observation representing blood type (ABO antibody) recorded during
 * code.coding.system 0..1
 * code.coding.code 0..1
 * code.coding.display 0..1
-* code.coding.system = "http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes"
-* code.coding.code = #ANC.B9.DE24
-* code.coding.display = "Blood type"
+* code from BloodTypesVS (required)
 
 // Define value binding for blood groups
 * valueCodeableConcept from BloodGroupVS (required)

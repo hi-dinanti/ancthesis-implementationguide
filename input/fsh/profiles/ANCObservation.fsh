@@ -21,6 +21,10 @@ Description: "Antenatal Care Observation"
 * subject 1..1 MS 
 * subject only Reference(ANCPatient)
 * encounter only Reference(ANCEncounter) 
+* value[x] 0..1
+* value[x] ^comment = "Value can be Quantity or CodeableConcept"
+* valueCodeableConcept 0..1
+* valueQuantity 0..1
 
 * note 0..1 // Annotation "Comments about the observation. Comments about the observation or the results."
 * note ^comment = "May include general statements about the observation, or statements about significant, unexpected or unreliable results values, or information about its source when relevant to its interpretation."

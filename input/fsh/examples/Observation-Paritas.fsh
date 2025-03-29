@@ -6,6 +6,7 @@ Usage: #example
 
 * identifier.system = "http://sys-ids.kemkes.go.id/episode-of-care/{{Org_id}}"
 * identifier.value = "{{Org_id}}"
+
 * status = #final
 * category.coding.system = "http://terminology.hl7.org/CodeSystem/observation-category"
 * category.coding.code = #survey

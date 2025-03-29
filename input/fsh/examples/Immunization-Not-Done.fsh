@@ -1,6 +1,6 @@
-Instance: Immunization-TdHistory-Not-Done
+Instance: ImmunizationTdHistoryNotDone
 InstanceOf: ANCTdHistory
-Title: "Immunization Tetanus Not Administered (T0)"
+Title: "Immunization Tetanus Not Administered (Example)"
 Description: "Immunization instance where tetanus vaccine was not administered."
 Usage: #example
 

@@ -20,6 +20,7 @@ Description: "Observation representing random blood sugar (Gula Darah Sewaktu) l
 
 * value[x] 0..1 MS 
 * value[x] ^comment = "Value can be Quantity or CodeableConcept. ValueCodeableConcept refers to .component."
+* valueCodeableConcept 0..1
 * valueQuantity 0..1
 * valueQuantity.unit = "mg/dL"
 * valueQuantity.system = "http://unitsofmeasure.org"

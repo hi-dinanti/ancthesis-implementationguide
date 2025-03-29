@@ -1,6 +1,6 @@
 Instance: ANCEpisodeOfCareExample
 InstanceOf: ANCEpisodeOfCare
-Title: "Antenatal Care Episode for Aisyah"
+Title: "Antenatal Care Episode (Example)"
 Description: "An antenatal care episode of care for Aisyah, following the Indonesian standard of a minimum of six visits."
 Usage: #example
 

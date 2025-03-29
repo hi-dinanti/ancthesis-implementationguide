@@ -1,9 +1,9 @@
-Profile: ANCHeartrate
+Profile: ANCHeartRate
 Parent: ANCObservation
-Id: ANCHeartrate
+Id: ANCHeartRate
 Title: "Heart Rate (Observation)" 
 Description: "Observation representing the heart rate measurement. This data supports antenatal care assessments for maternal health monitoring as part of the 10T minimum service exam."
-* ^url = "https://fhir.pwskia.id/r4/StructureDefinition/ANCHeartrate"
+* ^url = "https://fhir.pwskia.id/r4/StructureDefinition/ANCHeartRate"
 * ^status = #active
 
 * category 1..1

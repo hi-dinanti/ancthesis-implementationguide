@@ -1,6 +1,6 @@
-Instance: ImmunizationAdministeredT1
+Instance: ImmunizationAdministered
 InstanceOf: ANCTdAdministration
-Title: "Tetanus Immunization Administered (T1)"
+Title: "Tetanus Immunization Administered (Example)"
 Description: "Immunization instance where tetanus vaccine was administered."
 Usage: #example
 
