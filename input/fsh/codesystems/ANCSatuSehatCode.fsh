@@ -1,6 +1,6 @@
 CodeSystem: ANCSatuSehatCustomCode
 Id: ANCSatuSehatCustomCode
-Title: "Extended ANC SATUSEHAT Code adapting from WHO DAK"
+Title: "Extended ANC SATUSEHAT Code adapted from WHO DAK"
 Description: "Set of SATUSEHAT-Custom-ANC codes adapted in the implementation guide"
 * ^status = #active
 * ^url = "http://terminology.kemkes.go.id/CodeSystem/anc-custom-codes"

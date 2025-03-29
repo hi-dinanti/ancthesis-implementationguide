@@ -1,6 +1,6 @@
 CodeSystem: ANCCustomCode
 Id: ANCCustomCode
-Title: "Extended ANC Code conforming to WHO DAK"
+Title: "Extended ANC Code adapted from WHO DAK"
 Description: "Set of WHO-Custom-ANC codes adapted in the implementation guide"
 * ^status = #active
 * ^content = #complete

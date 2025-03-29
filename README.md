@@ -1,6 +1,6 @@
 # Introduction
 
-This is a FHIR Implementation Guide (IG) for the  Indonesian Health Service (SATUSEHAT) , developed based on the SATUSEHAT Antenatal Care Playbook to support maternal and child health monitoring applications at the local level.
+This is a FHIR Implementation Guide (IG) for the Indonesian Health Service (SATUSEHAT) , developed based on the SATUSEHAT Antenatal Care Playbook to support maternal and child health monitoring applications at the local level.
 
 This project is part of a thesis research evaluating the adaptation of the  WHO SMART Guidelines , particularly:
 
@@ -9,8 +9,8 @@ This project is part of a thesis research evaluating the adaptation of the  WHO 
 
 # Dependencies
 
-* JSON data from [Indonesian Core ID](https://simplifier.net/guide/indonesia-satusehat-ihs-fhir-r4?version=current) (available publicly in [Simplifier.net](https://simplifier.net)) was converted to FHIR Shorthand (FSH) using  GoFSH .
-* The rest of the IG content, including  profiles, value sets, and invariants , was authored using  FSH tooling .
+* JSON data from [Indonesian Core ID](https://simplifier.net/guide/indonesia-satusehat-ihs-fhir-r4?version=current) (available publicly in [Simplifier.net](https://simplifier.net)) was converted to FHIR Shorthand (FSH) using  GoFSH.
+* The rest of the IG content, including  profiles, value sets, and invariants , was authored using  FSH tooling.
 
 # Installation
 

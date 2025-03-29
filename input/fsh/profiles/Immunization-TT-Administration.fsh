@@ -10,10 +10,10 @@ Description: "Describes the event of antenatal care patient being administered a
 * status ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * status ^binding.extension.valueString = "ImmunizationStatus"
 * status ^binding.description = "A set of codes indicating the current status of an Immunization."
-* vaccineCode 1..1 MS // 
+* vaccineCode 1.. MS // 
 * vaccineCode ^comment = "Vaccine that was administered or was to be administered."
 * vaccineCode.coding.system = "http://sys-ids.kemkes.go.id/kfa"
-* vaccineCode.coding.code = #VG139 (exactly)
+* vaccineCode.coding.code = #VG139
 * vaccineCode.coding.code ^comment = "Local code used for tetanus immunization for pregnant women"
 * vaccineCode.coding.display = "Td"
 * vaccineCode from http://hl7.org/fhir/ValueSet/vaccine-code (example)

@@ -1,0 +1,82 @@
+Profile: SatuSehatCondition
+Parent: Condition
+Id: SatuSehatCondition
+Description: "A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern."
+* ^extension[0].url = "https://fhir.kemkes.go.id/r4/StructureDefinition/structuredefinition-category"
+* ^extension[=].valueString = "Clinical.Summary"
+* ^extension[+].url = "https://fhir.kemkes.go.id/r4/StructureDefinition/structuredefinition-standards-status"
+* ^extension[=].valueCode = #trial-use
+* ^extension[+].url = "https://fhir.kemkes.go.id/r4/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 3
+* ^extension[+].url = "https://fhir.kemkes.go.id/r4/StructureDefinition/structuredefinition-security-category"
+* ^extension[=].valueCode = #patient
+* ^publisher = "Health Level Seven International (Patient Care)"
+* ^contact[0].telecom.system = #url
+* ^contact[=].telecom.value = "http://hl7.org/fhir"
+* . ^short = "Detailed information about conditions, problems or diagnoses"
+* . ^definition = "A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern."
+* identifier 0..1 // MS // Identifier "External Ids for this condition Business identifiers assigned to this condition by the performer or other systems which remain constant as the resource is updated and propagates from server to server."
+* identifier ^comment = "This is a business identifier, not a resource identifier (see [discussion](resource.html#identifiers)).  It is best practice for the identifier to only appear on a single resource instance, however business practices may occasionally dictate that multiple resource instances with the same identifier can exist - possibly even with different resource types.  For example, multiple Patient and a Person resource instance might share the same social insurance number."
+* identifier ^requirements = "Allows identification of the condition as it is known by various participating systems and in a way that remains consistent across servers."
+* clinicalStatus 0..1 // ?! MS // CodeableConcept "active | recurrence | relapse | inactive | remission | resolved The clinical status of the condition."
+* clinicalStatus from http://hl7.org/fhir/ValueSet/condition-clinical|4.0.1 (required)
+* clinicalStatus ^comment = "The data type is CodeableConcept because clinicalStatus has some clinical judgment involved, such that there might need to be more specificity than the required FHIR value set allows. For example, a SNOMED coding might allow for additional specificity."
+* clinicalStatus ^isModifierReason = "This element is labeled as a modifier because the status contains codes that mark the condition as no longer active."
+* clinicalStatus ^binding.extension.url = "https://fhir.kemkes.go.id/r4/StructureDefinition/elementdefinition-bindingName"
+* clinicalStatus ^binding.extension.valueString = "ConditionClinicalStatus"
+* clinicalStatus ^binding.description = "The clinical status of the condition or diagnosis."
+* verificationStatus 0..1 // ?! MS // CodeableConcept "unconfirmed | provisional | differential | confirmed | refuted | entered-in-error The verification status to support the clinical status of the condition."
+* verificationStatus from http://hl7.org/fhir/ValueSet/condition-ver-status|4.0.1 (required)
+* verificationStatus ^comment = "verificationStatus is not required.  For example, when a patient has abdominal pain in the ED, there is not likely going to be a verification status.\nThe data type is CodeableConcept because verificationStatus has some clinical judgment involved, such that there might need to be more specificity than the required FHIR value set allows. For example, a SNOMED coding might allow for additional specificity."
+* verificationStatus ^isModifierReason = "This element is labeled as a modifier because the status contains the code refuted and entered-in-error that mark the Condition as not currently valid."
+* verificationStatus ^binding.extension.url = "https://fhir.kemkes.go.id/r4/StructureDefinition/elementdefinition-bindingName"
+* verificationStatus ^binding.extension.valueString = "ConditionVerificationStatus"
+* verificationStatus ^binding.description = "The verification status to support or decline the clinical status of the condition or diagnosis."
+* category 0..1 // CodeableConcept "problem-list-item | encounter-diagnosis A category assigned to the condition."
+* category from http://hl7.org/fhir/ValueSet/condition-category (extensible)
+* category ^comment = "The categorization is often highly contextual and may appear poorly differentiated or not very useful in other contexts."
+* category ^binding.extension.url = "https://fhir.kemkes.go.id/r4/StructureDefinition/elementdefinition-bindingName"
+* category ^binding.extension.valueString = "ConditionCategory"
+* category ^binding.description = "A category assigned to the condition."
+* severity 0..1 // CodeableConcept "Subjective severity of condition A subjective assessment of the severity of the condition as evaluated by the clinician."
+* severity from http://hl7.org/fhir/ValueSet/condition-severity (preferred)
+* severity ^comment = "Coding of the severity with a terminology is preferred, where possible."
+* severity ^binding.extension.url = "https://fhir.kemkes.go.id/r4/StructureDefinition/elementdefinition-bindingName"
+* severity ^binding.extension.valueString = "ConditionSeverity"
+* severity ^binding.description = "A subjective assessment of the severity of the condition as evaluated by the clinician."
+* code 1..1 MS // CodeableConcept "Identification of the condition, problem or diagnosis Identification of the condition, problem or diagnosis."
+* code from http://hl7.org/fhir/ValueSet/condition-code (example)
+* code ^requirements = "0..1 // to account for primarily narrative only resources."
+* code ^alias = "type"
+* code ^binding.extension.url = "https://fhir.kemkes.go.id/r4/StructureDefinition/elementdefinition-bindingName"
+* code ^binding.extension.valueString = "ConditionKind"
+* code ^binding.description = "Identification of the condition or diagnosis."
+* bodySite 0..1 // MS // CodeableConcept "Anatomical location, if relevant The anatomical location where this condition manifests itself."
+* bodySite from http://hl7.org/fhir/ValueSet/body-site (example)
+* bodySite ^comment = "Only used if not implicit in code found in Condition.code. If the use case requires attributes from the BodySite resource (e.g. to identify and track separately) then use the standard extension [bodySite](extension-bodysite.html).  May be a summary code, or a reference to a very precise definition of the location, or both."
+* bodySite ^binding.extension.url = "https://fhir.kemkes.go.id/r4/StructureDefinition/elementdefinition-bindingName"
+* bodySite ^binding.extension.valueString = "BodySite"
+* bodySite ^binding.description = "Codes describing anatomical locations. May include laterality."
+* subject 1..1 MS // Reference(https://fhir.kemkes.go.id/r4/StructureDefinition/Patient or https://fhir.kemkes.go.id/r4/StructureDefinition/Group) "Who has the condition? Indicates the patient or group who the condition record is associated with."
+* subject ^requirements = "Group is typically used for veterinary or public health use cases."
+* subject ^alias = "patient"
+* encounter 1..1 MS // Reference(https://fhir.kemkes.go.id/r4/StructureDefinition/Encounter) "Encounter created as part of The Encounter during which this Condition was created or to which the creation of this record is tightly associated."
+* encounter ^comment = "This will typically be the encounter the event occurred within, but some activities may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter. This record indicates the encounter this particular record is associated with.  In the case of a \"new\" diagnosis reflecting ongoing/revised information about the condition, this might be distinct from the first encounter in which the underlying condition was first \"known\"."
+* onset[x] 0..1 // MS // dateTime or Age or Period or Range or string "Estimated or actual date,  date-time, or age Estimated or actual date or date-time  the condition began, in the opinion of the clinician."
+* onset[x] ^comment = "Age is generally used when the patient reports an age at which the Condition began to occur."
+* recordedDate 0..1 // MS // dateTime "Date record was first recorded The recordedDate represents when this particular Condition record was created in the system, which is often a system-generated date."
+* recorder 0..1 // MS // Reference(https://fhir.kemkes.go.id/r4/StructureDefinition/Practitioner or https://fhir.kemkes.go.id/r4/StructureDefinition/PractitionerRole or https://fhir.kemkes.go.id/r4/StructureDefinition/Patient or https://fhir.kemkes.go.id/r4/StructureDefinition/RelatedPerson) "Who recorded the condition Individual who recorded the record and takes responsibility for its content."
+* asserter 0..1 // MS // Reference(https://fhir.kemkes.go.id/r4/StructureDefinition/Practitioner or https://fhir.kemkes.go.id/r4/StructureDefinition/PractitionerRole or https://fhir.kemkes.go.id/r4/StructureDefinition/Patient or https://fhir.kemkes.go.id/r4/StructureDefinition/RelatedPerson) "Person who asserts this condition Individual who is making the condition statement."
+* stage 0..1 // BackboneElement "Stage/grade, usually assessed formally Clinical stage or grade of a condition. May include formal severity assessments."
+* stage.summary 0..1 // CodeableConcept "Simple summary (disease specific) A simple summary of the stage such as \"Stage 3\". The determination of the stage is disease-specific."
+* stage.summary from http://hl7.org/fhir/ValueSet/condition-stage (example)
+* stage.summary ^binding.extension.url = "https://fhir.kemkes.go.id/r4/StructureDefinition/elementdefinition-bindingName"
+* stage.summary ^binding.extension.valueString = "ConditionStage"
+* stage.summary ^binding.description = "Codes describing condition stages (e.g. Cancer stages)."
+* stage.assessment 0..1 // Reference(https://fhir.kemkes.go.id/r4/StructureDefinition/ClinicalImpression or https://fhir.kemkes.go.id/r4/StructureDefinition/DiagnosticReport or https://fhir.kemkes.go.id/r4/StructureDefinition/Observation) "Formal record of assessment Reference to a formal record of the evidence on which the staging assessment is based."
+* stage.type 0..1 // CodeableConcept "Kind of staging The kind of staging, such as pathological or clinical staging."
+* stage.type from http://hl7.org/fhir/ValueSet/condition-stage-type (example)
+* stage.type ^binding.extension.url = "https://fhir.kemkes.go.id/r4/StructureDefinition/elementdefinition-bindingName"
+* stage.type ^binding.extension.valueString = "ConditionStageType"
+* stage.type ^binding.description = "Codes describing the kind of condition staging (e.g. clinical or pathological)."
+* note 0..1 // Annotation "Additional information about the Condition Additional information about the Condition. This is a general notes/comments entry  for description of the Condition, its diagnosis and prognosis."

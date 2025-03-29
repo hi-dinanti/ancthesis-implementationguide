@@ -37,7 +37,7 @@ Description: "Describes the event of a patient being administered a vaccine or a
 * statusReason ^binding.extension.url = "https://fhir.kemkes.go.id/r4/StructureDefinition/elementdefinition-bindingName"
 * statusReason ^binding.extension.valueString = "ImmunizationStatusReason"
 * statusReason ^binding.description = "The reason why a vaccine was not administered."
-* vaccineCode 1..1 MS //  CodeableConcept "Vaccine product administered" "Vaccine that was administered or was to be administered."
+* vaccineCode 1.. MS //  CodeableConcept "Vaccine product administered" "Vaccine that was administered or was to be administered."
 * vaccineCode from http://hl7.org/fhir/ValueSet/vaccine-code (example)
 * vaccineCode ^binding.extension.url = "https://fhir.kemkes.go.id/r4/StructureDefinition/elementdefinition-bindingName"
 * vaccineCode ^binding.extension.valueString = "VaccineCode"
@@ -47,7 +47,8 @@ Description: "Describes the event of a patient being administered a vaccine or a
 * encounter 0..1 // Reference(https://fhir.kemkes.go.id/r4/StructureDefinition/Encounter) "Encounter immunization was part of" "The visit or admission or other contact between patient and health care provider the immunization was performed as part of."
 * encounter only Reference(Encounter or SatuSehatEncounter)
 * occurrence[x] 1..1 MS //  dateTime or string "Vaccine administration date" "Date vaccine administered or was to be administered."
-* occurrence[x] ^comment = "When immunizations are given a specific date and time should always be known.   When immunizations are patient reported, a specific date might not be known.  Although partial dates are allowed, an adult patient might not be able to recall the year a childhood immunization was given. An exact date is always preferable, but the use of the String data type is acceptable when an exact date is not known. A small number of vaccines (e.g. live oral typhoid vaccine) are given as a series of patient self-administered dose over a span of time. In cases like this, often, only the first dose (typically a provider supervised dose) is recorded with the occurrence indicating the date/time of the first dose."
+* occurrence[x] ^comment = "When immunizations are given a specific date and time should always be known.  When immunizations are patient reported, a specific date might not be known.  Although partial dates are allowed, an adult patient might not be able to recall the year a childhood immunization was given. An exact date is always preferable, but the use of the String data type is acceptable when an exact date is not known. A small number of vaccines (e.g. live oral typhoid vaccine) are given as a series of patient self-administered dose over a span of time. In cases like this, often, only the first dose (typically a provider supervised dose) is recorded with the occurrence indicating the date/time of the first dose."
+* occurrenceDateTime 0..1
 * recorded 0..1 // dateTime "When the immunization was first captured in the subject's record" "The date the occurrence of the immunization was first captured in the record - potentially significantly after the occurrence of the event."
 * recorded ^isSummary = false
 * primarySource 0..1 MS //  boolean "Indicates context the data was recorded in" "An indication that the content of the record is based on information from the person who administered the vaccine. This reflects the context under which the data was originally recorded."
